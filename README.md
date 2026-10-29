@@ -3,6 +3,8 @@
 Reverse-engineering research for the Monster Hunter Frontier Z PC client (`mhfo-hd.dll`): function names, file-format and
 subsystem specs, analysis tools and the naming pipeline.
 
+The next step of the project is to decompile the code for the ps vita/ps3 ports of mhfz due to them being easier to read than the pc version, and use the references from those to aid in the decompilation of the pc version
+
 **No Capcom code or data is included.** There is no decompiled output, Ghidra database, game binary or asset in this repo.
 Everything here is either original tooling or a description of how the client works. To get readable decompiled code,
 apply the names in this repo to your own copy of the game (see below).
