@@ -1,0 +1,1592 @@
+mhf_addr,mh2_name,mh2_file,score,method,evidence
+10003f10,Anim_EvalMixedF,sub_main\unk_2E3940.c,0.570,constants+layout,weight=9.8 margin=0.04; graph 0/0
+10004070,Anim_EvalLinearS,sub_main\unk_2E3940.c,0.494,layout:sub_main\unk_2E3940.c,between Anim_EvalMixedF and Mtx_RotateX; graph 0/0
+10004120,Anim_EvalCubicS,sub_main\unk_2E3940.c,0.494,layout:sub_main\unk_2E3940.c,between Anim_EvalMixedF and Mtx_RotateX; graph 0/0
+10004aa0,Mtx_RotateY,sub_main\unk_2E3940.c,0.203,callcount-vote,votes=2 next=1 round=0; graph 9/9
+10004b60,Mtx_RotateZ,sub_main\unk_2E3940.c,0.203,switch-case,votes=2 trusted-switch; graph 3/3
+10004f80,Mtx_RotateXYZ,sub_main\unk_2E3940.c,0.203,switch-case,votes=1 trusted-switch; graph 3/4
+10005830,Mtx_RotateZXY,sub_main\unk_2E3940.c,0.203,switch-case,votes=1 trusted-switch; graph 1/1
+10005e00,Mtx_CopyRot,sub_main\unk_2E3940.c,0.753,layout:sub_main\unk_2E3940.c,between Mtx_RotateZXY and Vec_RotateX; graph 0/0
+10006830,Vec_RotateX,sub_main\unk_2E3940.c,0.141,callcount-vote,votes=2 next=0 round=0; graph 4/6
+10006880,Vec_RotateY,sub_main\unk_2E3940.c,0.416,callcount-vote,votes=5 next=2 round=0; graph 32/32
+10006930,Bone_GetAnimMoveFrom,sub_main\unk_2E3940.c,0.714,window:sub_main\unk_2E3940.c,cluster 10004aa0-1000cff0; graph 0/1
+10006b10,Camera_SetPerspective,sub_main\unk_2E3940.c,0.436,layout:sub_main\unk_2E3940.c,between Anim_EvalMixedF and Mtx_RotateX; graph 0/0
+10006f00,Frustum_TestSphere,sub_main\unk_2E3940.c,0.593,window:sub_main\unk_2E3940.c,cluster 10004aa0-1000cff0; graph 0/0
+10007fa0,Model_FreeBlock,sub_main\unk_2E3940.c,0.525,layout-edge:sub_main\unk_2E3940.c,after matched block; graph 1/1
+10007fd0,Mem_Free,main\unk_17FE20.c,0.109,callcount-vote,votes=2 next=0 round=0; graph 1/1
+10008c80,Mtx_ClearRotation,sub_main\unk_2E3940.c,0.644,layout:sub_main\unk_2E3940.c,between Anim_EvalMixedF and Mtx_RotateX; graph 0/0
+1000c7d0,Effect_DrawModel,sub_main\unk_3240E0.c,0.188,call-sandwich,in StageObj_K14_Draw between matched calls; graph 10/13
+1000c830,Gs_SetState,main\unk_183D20.c,0.483,constants,shared=48 weight=167.6 margin=0.08; graph 0/19
+1000cff0,Mtx_RotateX,sub_main\unk_2E3940.c,0.242,switch-case,votes=2 trusted-switch; graph 5/5
+10011310,Table_GetWordAt8,sub_main\unk_2E3940.c,0.738,window:sub_main\unk_2E3940.c,cluster 10004aa0-1000cff0; graph 0/0
+1003c030,Loading_ClearDrift,sub_main\unk_3D4100.c,0.659,constants,shared=2 weight=14.4 margin=0.31; graph 0/0
+100433b0,Vec_Distance,sub_main\unk_2E3940.c,0.344,constants+layout,weight=7.4 margin=0.04; graph 0/53
+100df800,EmBlangonga_State4_02,game\em_blangonga.c,0.491,constants,shared=6 weight=22.0 margin=0.15; graph 1/1
+1010b8e0,EmKutku_State2_08,game\em_kutku.c,0.308,callee-intersection,"4 matched callees, 1 candidates; graph 5/7"
+101b3420,Player_ClearUnk540,sub_main\unk_331A40.c,0.526,constants,shared=3 weight=17.4 margin=0.30; graph 0/0
+101bef80,Player_AddSkill,sub_main\unk_3AC9C0.c,0.753,layout-edge:sub_main\unk_3AC9C0.c,before matched block; graph 0/0
+101c06a0,Player_HasSkill,sub_main\unk_3AC9C0.c,0.128,callcount-vote,votes=3 next=0 round=0; graph 7/8
+101c5900,HitShape_Place,sub_main\unk_3AC9C0.c,0.605,window:sub_main\unk_3AC9C0.c,cluster 101bef80-101c06a0; graph 0/0
+101c8ec0,Equip_GetSkillPoints,sub_main\unk_3AC9C0.c,0.581,window:sub_main\unk_3AC9C0.c,cluster 101bef80-101c5900; graph 0/0
+101d0340,BoneHit_Place,sub_main\unk_3AC9C0.c,0.698,window:sub_main\unk_3AC9C0.c,cluster 101bef80-101c8ec0; graph 0/0
+101d5710,PointShop_Input,lobby\unk_6CB690.c,0.579,constants,shared=7 weight=22.9 margin=0.15; graph 0/4
+101d6ee0,Obj_StartMotionEntry,sub_main\unk_3AC9C0.c,0.706,window:sub_main\unk_3AC9C0.c,cluster 101bef80-101d0340; graph 0/0
+101dc490,Player_GetSkill,sub_main\unk_3AC9C0.c,0.636,window:sub_main\unk_3AC9C0.c,cluster 101bef80-101d6ee0; graph 0/1
+101e6670,EmKutku_State3_1D,game\em_kutku.c,0.413,constants+layout,weight=4.9 margin=0.06; graph 0/1
+102c4a50,Player_AddAimPitch,game\unk_70A290.c,0.501,constants,shared=2 weight=10.9 margin=0.20; graph 0/0
+102e50d0,Em_StartBlind,game\unk_70A290.c,0.522,caseset:game\unk_70A290.c,"label-set similarity 0.87, 1 candidates; graph 0/1"
+10350c90,Area_IsOnlineHouse,lobby\unk_7949D0.c,0.669,constants,shared=3 weight=11.9 margin=0.20; graph 0/1
+103aa560,Equip_GetKind,sub_main\unk_3B4C80.c,0.123,callcount-vote,votes=2 next=0 round=0; graph 1/1
+103aa680,Records_HuntedAtLeast,sub_main\unk_3B4C80.c,0.543,window:sub_main\unk_3B4C80.c,cluster 103aa560-103b6a70; graph 0/1
+103b3ee0,Equip_GetClass,sub_main\unk_3B4C80.c,0.525,layout-edge:sub_main\unk_3B4C80.c,before matched block; graph 1/1
+103b40b0,Player_StaminaLocked,sub_main\unk_3B4C80.c,0.709,window:sub_main\unk_3B4C80.c,cluster 103aa560-103b6a70; graph 0/1
+103b6880,WeaponClass_IsGunner,sub_main\unk_3B4C80.c,0.431,layout:sub_main\unk_3B4C80.c,between Equip_GetClass and Equip_GetPrice; graph 0/0
+103b6a70,Equip_GetPrice,sub_main\unk_3B4C80.c,0.567,constants,shared=4 weight=10.1 margin=0.31; graph 0/0
+103d8410,NetTcp_SetOptions,sub_main\net_tcp.c,0.467,constants,shared=1 weight=8.1 margin=0.10; graph 0/0
+103e3480,ArenaMenu_ListInput,lobby\unk_6F16A0.c,0.627,caller-of:Menu_WrapLeftRight,margin=0.20 round=1; graph 2/3
+103e3850,ArenaFeed_DrawList,lobby\unk_6F16A0.c,0.411,constants+layout,weight=56.4 margin=0.16; graph 1/2
+103f34c0,NpcSetA_MotionFx,lobby\unk_75B360.c,0.547,constants,shared=33 weight=112.8 margin=0.28; graph 4/4
+103f3950,NpcSetB_MotionFx,lobby\unk_75B360.c,0.616,constants,shared=86 weight=340.1 margin=0.26; graph 6/6
+103f4770,NpcSetC_MotionFx,lobby\unk_75B360.c,0.779,constants,shared=122 weight=566.0 margin=0.39; graph 6/6
+103f5610,Npc51_State4E,lobby\unk_780580.c,0.094,callcount-vote,votes=2 next=0 round=0; graph 1/2
+103f6090,Records_TitlesInput,lobby\unk_6B0570.c,0.395,callee-intersection,"3 matched callees, 1 candidates; graph 4/4"
+103f8be0,Menu_GridMove,lobby\unk_7A7560.c,0.781,constants,shared=5 weight=21.8 margin=0.31; graph 0/1
+103fdf10,Village_GetTimerState,lobby\unk_6CB690.c,0.180,callcount-vote,votes=2 next=0 round=0; graph 3/4
+103fdf40,Cond_Check,lobby\unk_75B360.c,0.102,callcount-vote,votes=4 next=0 round=0; graph 11/23
+103fe3f0,Cond_CheckRank,lobby\unk_75B360.c,0.681,constants,shared=23 weight=83.4 margin=0.13; graph 0/3
+103fe6a0,Gift_Which,lobby\unk_75E3B0.c,0.426,switch-case,votes=1 trusted-switch; graph 1/2
+10419d30,BaitMenu_GiveInput,lobby\unk_6C3E40.c,0.342,callee-intersection,"4 matched callees, 1 candidates; graph 5/5"
+1041a3a0,TalkMenu_DrawItems,lobby\unk_6C3E40.c,0.364,constants+layout,weight=29.5 margin=0.05; graph 0/0
+10420c10,MapGroup_IsOpen,lobby\unk_71B880.c,0.680,callee-of:Quest_IsOffered,margin=0.39 round=0; graph 3/3
+10427520,Quest_MatchesSeasonTime,lobby\unk_71B880.c,0.666,constants,shared=5 weight=27.9 margin=0.18; graph 3/3
+104277f0,Quest_IsOffered,lobby\unk_71B880.c,0.728,constants,shared=69 weight=385.9 margin=0.12; graph 5/5
+1044e7f0,Dojo_AllCleared201,lobby\unk_6CB690.c,0.524,constants,shared=2 weight=10.1 margin=0.11; graph 0/1
+10470f60,Contest_Play,lobby\unk_6F7AA0.c,0.402,callee-intersection,"4 matched callees, 1 candidates; graph 5/5"
+10471700,Contest_RecvResult,lobby\unk_6F7AA0.c,0.516,layout:lobby\unk_6F7AA0.c,between Contest_Play and Contest_GivePrize; graph 1/2
+104719c0,Contest_GivePrize,lobby\unk_6F7AA0.c,0.437,constants+layout,weight=12.7 margin=0.09; graph 1/2
+10471c50,DrinkContest_Update,lobby\unk_6F8CC0.c,0.336,constants+layout,weight=29.3 margin=0.07; graph 4/4
+10472180,Minigame_Update,lobby\unk_6F8CC0.c,0.335,callee-intersection,"5 matched callees, 1 candidates; graph 9/9"
+1047a820,Quest_GetDiscInfo,lobby\unk_75E3B0.c,0.266,callcount-vote,votes=3 next=0 round=0; graph 3/4
+1047b350,Quest_CheckOrderTerms,lobby\unk_75FDB0.c,0.352,callee-intersection,"2 matched callees, 1 candidates; graph 3/3"
+1047e3f0,Menu_DrawDecoFrame,lobby\unk_760C70.c,0.474,constants,shared=13 weight=63.5 margin=0.18; graph 0/0
+1048d6c0,TagText_HandleTag,lobby\unk_7BE430.c,0.633,layout-edge:lobby\unk_7BE430.c,before matched block; graph 1/1
+1048d890,TagText_ReadTags,lobby\unk_7BE430.c,0.353,callcount-vote,votes=2 next=0 round=0; graph 2/2
+1048d920,TagText_ReadLine,lobby\unk_7BE430.c,0.383,constants+layout,weight=11.1 margin=0.13; graph 1/1
+1048db00,TagText_DrawLine,lobby\unk_7BE430.c,0.618,constants,shared=9 weight=20.1 margin=0.31; graph 0/0
+1049a850,VillageBoard_ListInput,lobby\unk_6E82B0.c,0.603,caller-of:Menu_WrapLeftRight,margin=0.28 round=2; graph 2/3
+104a9de0,EmBlangonga_State6_04,game\em_blangonga.c,0.352,constants+layout,weight=15.4 margin=0.03; graph 0/4
+105b9f70,LobbyExit_Steps4,lobby\unk_7BC3A0.c,0.465,callee-intersection,"3 matched callees, 2 candidates; graph 4/4"
+1065dba0,Npc_SetRouteByTime,lobby\unk_77A960.c,0.172,switch-case,votes=17; graph 2/2
+1065dc00,Npc_SetRouteByKind,lobby\unk_77A960.c,0.606,constants,shared=20 weight=71.0 margin=0.35; graph 2/2
+1065dff0,Npc_SetRouteByVillage,lobby\unk_77A960.c,0.440,constants+layout,weight=31.1 margin=0.19; graph 0/0
+1065fb60,Npc_SeOnFrame,lobby\unk_77E540.c,0.159,callcount-vote,votes=2 next=0 round=0; graph 5/5
+1065fbe0,Npc_SeOnFrameB,lobby\unk_77E540.c,0.159,callcount-vote,votes=2 next=0 round=0; graph 4/4
+1065fca0,Npc_PlayVoice,lobby\unk_77E540.c,0.195,callcount-vote,votes=2 next=0 round=0; graph 2/3
+1065fd70,Npc_MotionSounds,lobby\unk_77E540.c,0.678,constants,shared=136 weight=689.9 margin=0.41; graph 7/7
+10660f00,Npc_Find,lobby\unk_77E540.c,0.250,switch-case,votes=1 trusted-switch; graph 3/7
+10661080,Npc_SetRouteFromHairChair,lobby\unk_77E540.c,0.156,call-sandwich,in Npc51_State9B between matched calls; graph 2/2
+106610d0,Npc_IsFreeAct2Bto30,lobby\unk_77E540.c,0.668,window:lobby\unk_77E540.c,cluster 1065fb60-10661250; graph 2/3
+10661180,Npc_IsFreeAct15to19,lobby\unk_77E540.c,0.801,window:lobby\unk_77E540.c,cluster 1065fb60-10661250; graph 4/4
+106611e0,Npc_IsFreeAct18Set,lobby\unk_77E540.c,0.830,window:lobby\unk_77E540.c,cluster 1065fb60-10661250; graph 3/3
+10661250,Npc_IsBusyNotAct3C4B,lobby\unk_77E540.c,0.383,switch-case,votes=1 trusted-switch; graph 7/7
+106613d0,Npc_IsFree,lobby\unk_77E540.c,0.164,callcount-vote,votes=6 next=0 round=0; graph 5/5
+10661760,Npc_IsType31to36,lobby\unk_77FD80.c,0.619,callee-of:Npc_State2C,margin=0.37 round=0; graph 3/3
+10661840,Npc_IsType3Cto3E,lobby\unk_77FD80.c,0.502,caller-intersection,"2 matched callers, 3 candidates; graph 2/2"
+10668640,Npc_NextRoutePoint,lobby\unk_780580.c,0.229,callcount-vote,votes=6 next=0 round=0; graph 10/11
+10668b70,Npc_CheckSideRoute,lobby\unk_780580.c,0.452,layout:lobby\unk_780580.c,between Npc_TurnToPlayer and Npc_Idle69; graph 0/0
+10668f10,Npc_Idle69,lobby\unk_780580.c,0.426,constants+layout,weight=29.9 margin=0.19; graph 5/6
+10669030,Npc_Idle4D,lobby\unk_780580.c,0.280,call-sandwich,in Npc_State01 between matched calls; graph 3/3
+10669150,Npc_Idle4B,lobby\unk_780580.c,0.441,constants+layout,weight=17.4 margin=0.11; graph 2/3
+10669430,Npc_State01,lobby\unk_780580.c,0.282,switch-case,votes=1 trusted-switch; graph 12/13
+10669850,Npc_PickIdleState,lobby\unk_780580.c,0.437,constants+layout,weight=58.6 margin=0.18; graph 6/6
+10669ba0,Npc_State03,lobby\unk_780580.c,0.305,switch-case,votes=1 trusted-switch; graph 8/13
+10669f30,Npc_State04,lobby\unk_780580.c,0.258,switch-case,votes=1 trusted-switch; graph 4/7
+1066a130,Npc_State35,lobby\unk_780580.c,0.350,constants+layout,weight=16.3 margin=0.08; graph 2/2
+1066a1a0,Npc_State43,lobby\unk_780580.c,0.386,constants+layout,weight=47.8 margin=0.10; graph 5/7
+1066a5d0,Npc_State5A,lobby\unk_780580.c,0.180,switch-case,votes=1 trusted-switch; graph 3/3
+1066a6d0,Npc_State37,lobby\unk_780580.c,0.382,constants+layout,weight=23.4 margin=0.14; graph 2/2
+1066a760,Npc_State2C,lobby\unk_780580.c,0.712,constants,shared=70 weight=403.8 margin=0.50; graph 8/8
+1066b3c0,Npc_State46,lobby\unk_780580.c,0.572,constants,shared=3 weight=15.9 margin=0.37; graph 2/2
+1066b410,Npc_State3A,lobby\unk_780580.c,0.414,constants+layout,weight=18.2 margin=0.16; graph 2/2
+1066b4a0,Npc_State41,lobby\unk_780580.c,0.316,switch-case,votes=1 trusted-switch; graph 3/3
+1066b630,Npc_State14,lobby\unk_780580.c,0.295,switch-case,votes=2 trusted-switch; graph 2/2
+1066b6f0,Npc_State42,lobby\unk_780580.c,0.554,window:lobby\unk_780580.c,cluster 1066a760-1067eac0; graph 2/2
+1066b730,Npc_State5B,lobby\unk_780580.c,0.186,switch-case,votes=1 trusted-switch; graph 4/6
+1066b7f0,Npc_State84,lobby\unk_780580.c,0.188,switch-case,votes=1 trusted-switch; graph 3/5
+1066b8b0,Npc_State4B,lobby\unk_780580.c,0.455,constants,shared=2 weight=16.1 margin=0.08; graph 2/2
+1066b900,Npc_State4C,lobby\unk_780580.c,0.449,constants+layout,weight=15.4 margin=0.05; graph 2/2
+1066b960,Npc_State30,lobby\unk_780580.c,0.146,switch-case,votes=1 trusted-switch; graph 4/5
+1066ba80,Npc_State31,lobby\unk_780580.c,0.362,constants+layout,weight=31.3 margin=0.11; graph 4/4
+1066bcb0,Npc_StateA2,lobby\unk_780580.c,0.264,switch-case,votes=1 trusted-switch; graph 1/2
+1066bd70,Npc_State0E,lobby\unk_780580.c,0.224,switch-case,votes=1 trusted-switch; graph 3/4
+1066bdd0,Npc_State32,lobby\unk_780580.c,0.444,constants+layout,weight=34.9 margin=0.17; graph 4/4
+1066bf50,Npc_State33,lobby\unk_780580.c,0.248,switch-case,votes=1 trusted-switch; graph 3/4
+1066c000,Npc_State34,lobby\unk_780580.c,0.347,constants+layout,weight=19.4 margin=0.04; graph 4/4
+1066c130,Npc_State3F,lobby\unk_780580.c,0.327,switch-case,votes=1 trusted-switch; graph 3/3
+1066c660,Npc_State2F,lobby\unk_780580.c,0.171,switch-case,votes=1 trusted-switch; graph 4/4
+1066cf70,Npc_State3C,lobby\unk_780580.c,0.346,constants+layout,weight=19.0 margin=0.09; graph 3/4
+1066d0b0,Npc_State3D,lobby\unk_780580.c,0.245,switch-case,votes=1 trusted-switch; graph 3/5
+1066d1f0,Npc_State3E,lobby\unk_780580.c,0.458,layout:lobby\unk_780580.c,between Npc_State3C and Npc_State76; graph 3/4
+1066d350,Npc_State66,lobby\unk_780580.c,0.251,switch-case,votes=1 trusted-switch; graph 3/4
+1066d570,Npc_State67,lobby\unk_780580.c,0.267,switch-case,votes=1 trusted-switch; graph 3/4
+1066d790,Npc_State68,lobby\unk_780580.c,0.199,switch-case,votes=2 trusted-switch; graph 3/3
+1066dc90,Npc_State76,lobby\unk_780580.c,0.660,constants,shared=10 weight=44.1 margin=0.32; graph 5/5
+1066de40,Npc_State9D,lobby\unk_780580.c,0.457,constants,shared=5 weight=26.7 margin=0.12; graph 5/5
+1066df50,Npc_State78,lobby\unk_780580.c,0.318,switch-case,votes=1 trusted-switch; graph 3/4
+1066e080,Npc_State77Pair,lobby\unk_780580.c,0.448,layout:lobby\unk_780580.c,between Npc_State9D and Npc_StateA6; graph 2/3
+1066e1e0,Npc_State7B,lobby\unk_780580.c,0.324,switch-case,votes=1 trusted-switch; graph 2/2
+1066e230,Npc_StateA1,lobby\unk_780580.c,0.221,switch-case,votes=1 trusted-switch; graph 2/2
+1066e320,Npc_StateA6,lobby\unk_780580.c,0.508,constants,shared=6 weight=19.9 margin=0.26; graph 2/2
+1066e400,Npc_State6A,lobby\unk_780580.c,0.311,switch-case,votes=1 trusted-switch; graph 4/5
+1066e660,Npc_State6B,lobby\unk_780580.c,0.226,switch-case,votes=1 trusted-switch; graph 5/6
+1066ea10,Npc_State6D,lobby\unk_780580.c,0.174,switch-case,votes=1 trusted-switch; graph 3/5
+1066eb50,Npc_State6E,lobby\unk_780580.c,0.176,switch-case,votes=1 trusted-switch; graph 2/2
+1066eba0,Npc_State6F,lobby\unk_780580.c,0.422,constants+layout,weight=8.0 margin=0.15; graph 2/2
+1066ebe0,Npc_State72,lobby\unk_780580.c,0.458,constants+layout,weight=8.4 margin=0.05; graph 3/3
+1066ec30,Npc_State73,lobby\unk_780580.c,0.139,switch-case,votes=1 trusted-switch; graph 2/3
+1066ec90,Npc_State75,lobby\unk_780580.c,0.291,switch-case,votes=1 trusted-switch; graph 2/2
+1066ecd0,Npc_State7E,lobby\unk_780580.c,0.412,constants+layout,weight=47.7 margin=0.19; graph 4/5
+1066ef60,Npc_State81,lobby\unk_780580.c,0.191,switch-case,votes=1 trusted-switch; graph 3/3
+1066efc0,Npc_State82,lobby\unk_780580.c,0.226,switch-case,votes=1 trusted-switch; graph 3/6
+1066f1b0,Npc_State8A,lobby\unk_780580.c,0.449,constants+layout,weight=15.4 margin=0.08; graph 3/3
+1066f280,Npc_State8E,lobby\unk_780580.c,0.524,constants,shared=3 weight=11.1 margin=0.14; graph 4/5
+1066f360,Npc_State8F,lobby\unk_780580.c,0.320,switch-case,votes=1 trusted-switch; graph 2/4
+1066f6a0,Npc_State92,lobby\unk_780580.c,0.424,constants+layout,weight=34.2 margin=0.23; graph 3/3
+1066f7d0,Npc_State93,lobby\unk_780580.c,0.233,switch-case,votes=1 trusted-switch; graph 2/3
+1066f860,Npc_State96,lobby\unk_780580.c,0.339,constants+layout,weight=36.3 margin=0.13; graph 2/2
+1066fa30,Npc_State9F,lobby\unk_780580.c,0.199,switch-case,votes=1 trusted-switch; graph 1/2
+1066fa80,Npc_StateA3,lobby\unk_780580.c,0.325,switch-case,votes=1 trusted-switch; graph 3/3
+1066fae0,Npc_StateA4,lobby\unk_780580.c,0.141,switch-case,votes=1 trusted-switch; graph 3/3
+1066ffe0,Npc_StateA5,lobby\unk_780580.c,0.205,switch-case,votes=1 trusted-switch; graph 2/2
+10670050,Npc_StateAD,lobby\unk_780580.c,0.219,switch-case,votes=1 trusted-switch; graph 2/3
+106700f0,Npc_StateAE,lobby\unk_780580.c,0.374,switch-case,votes=1 trusted-switch; graph 3/3
+106702d0,Npc_State18,lobby\unk_780580.c,0.162,switch-case,votes=1 trusted-switch; graph 4/4
+10671760,Npc_State83,lobby\unk_780580.c,0.203,switch-case,votes=1 trusted-switch; graph 3/3
+106717a0,Npc_StateB3,lobby\unk_780580.c,0.190,switch-case,votes=1 trusted-switch; graph 3/4
+10671b80,Npc_RunState,lobby\unk_780580.c,0.539,callee-intersection,"7 matched callees, 1 candidates; graph 64/64"
+10677390,Npc51_State02,lobby\unk_780580.c,0.429,constants+layout,weight=32.0 margin=0.19; graph 3/5
+10677650,Npc51_State4F,lobby\unk_780580.c,0.263,switch-case,votes=1 trusted-switch; graph 2/3
+106776f0,Npc51_State50,lobby\unk_780580.c,0.309,switch-case,votes=1 trusted-switch; graph 3/4
+10677810,Npc51_StateAA,lobby\unk_780580.c,0.269,switch-case,votes=1 trusted-switch; graph 7/8
+10677a80,Npc51_State97,lobby\unk_780580.c,0.372,constants+layout,weight=33.7 margin=0.10; graph 3/3
+10677bf0,Npc51_State98,lobby\unk_780580.c,0.234,switch-case,votes=1 trusted-switch; graph 3/5
+10677df0,Npc51_StateB1,lobby\unk_780580.c,0.211,switch-case,votes=1 trusted-switch; graph 1/2
+10677e30,Npc51_StateB2,lobby\unk_780580.c,0.309,switch-case,votes=1 trusted-switch; graph 2/3
+10677ee0,Npc51_State99,lobby\unk_780580.c,0.333,switch-case,votes=1 trusted-switch; graph 3/4
+10677fb0,Npc51_State9B,lobby\unk_780580.c,0.360,constants+layout,weight=30.2 margin=0.03; graph 5/5
+10678140,Npc51_State2C,lobby\unk_780580.c,0.341,constants+layout,weight=54.1 margin=0.12; graph 5/5
+10678b20,Npc51_State9E,lobby\unk_780580.c,0.175,switch-case,votes=1 trusted-switch; graph 1/2
+10678b70,Npc51_State55,lobby\unk_780580.c,0.334,constants+layout,weight=17.4 margin=0.09; graph 2/3
+10679720,Npc51_StateB4,lobby\unk_780580.c,0.304,switch-case,votes=1 trusted-switch; graph 2/3
+106797d0,Npc51_StateB5,lobby\unk_780580.c,0.538,constants,shared=7 weight=28.5 margin=0.30; graph 3/3
+10679b20,Npc51_RunState,lobby\unk_780580.c,0.330,callee-intersection,"10 matched callees, 1 candidates; graph 20/20"
+1067b3b0,Npc4F_StateB6,lobby\unk_780580.c,0.284,switch-case,votes=1 trusted-switch; graph 2/2
+1067b4b0,Npc4F_State52,lobby\unk_780580.c,0.416,switch-case,votes=2 trusted-switch; graph 3/4
+1067b940,Npc4F_State2C,lobby\unk_780580.c,0.247,switch-case,votes=1 trusted-switch; graph 4/6
+1067bbc0,Npc4F_StateA9,lobby\unk_780580.c,0.253,switch-case,votes=1 trusted-switch; graph 2/5
+1067bcd0,Npc4F_State54,lobby\unk_780580.c,0.299,switch-case,votes=1 trusted-switch; graph 3/4
+1067c250,Npc4F_State55,lobby\unk_780580.c,0.635,constants,shared=7 weight=23.2 margin=0.35; graph 3/3
+1067c320,Npc4F_State5E,lobby\unk_780580.c,0.265,switch-case,votes=1 trusted-switch; graph 2/3
+1067c4a0,Npc4F_State56,lobby\unk_780580.c,0.178,switch-case,votes=1 trusted-switch; graph 2/5
+1067c980,Npc4F_StateAF,lobby\unk_780580.c,0.168,switch-case,votes=1 trusted-switch; graph 2/5
+1067cb30,Npc4F_State57,lobby\unk_780580.c,0.273,switch-case,votes=1 trusted-switch; graph 4/6
+1067cd50,Npc4F_State58,lobby\unk_780580.c,0.307,switch-case,votes=1 trusted-switch; graph 5/6
+1067d530,Npc4F_State5C,lobby\unk_780580.c,0.226,switch-case,votes=1 trusted-switch; graph 5/6
+1067d7c0,Npc_PickIdleMotion,lobby\unk_780580.c,0.575,constants,shared=5 weight=28.0 margin=0.30; graph 1/3
+1067d8e0,Npc4F_State5D,lobby\unk_780580.c,0.331,callee-intersection,"5 matched callees, 1 candidates; graph 6/6"
+1067dc10,Npc4F_StateAB,lobby\unk_780580.c,0.140,switch-case,votes=1 trusted-switch; graph 1/2
+1067e750,Npc4F_StateAC,lobby\unk_780580.c,0.269,switch-case,votes=1 trusted-switch; graph 4/5
+1067eac0,Npc4F_RunState,lobby\unk_780580.c,0.412,callee-intersection,"2 matched callees, 1 candidates; graph 15/15"
+10681e70,Meal_ApplyEffects,lobby\unk_6B9160.c,0.474,constants,shared=9 weight=29.4 margin=0.23; graph 2/3
+106820a0,MealScene_Update,lobby\unk_6B9160.c,0.351,constants+layout,weight=28.5 margin=0.05; graph 5/5
+106957d0,PoogieMenu_Update,lobby\unk_6CB690.c,0.484,constants,shared=21 weight=70.9 margin=0.16; graph 13/13
+106961b0,Menu31_Open,lobby\unk_6CB690.c,0.585,constants,shared=6 weight=23.0 margin=0.16; graph 3/5
+106962f0,Menu31_Update,lobby\unk_6CB690.c,0.557,constants,shared=16 weight=44.8 margin=0.15; graph 10/10
+106968b0,PoogieMenu_OpenCare,lobby\unk_6CB690.c,0.679,constants,shared=4 weight=17.1 margin=0.28; graph 2/3
+10696980,PoogieMenu_UpdateCare,lobby\unk_6CB690.c,0.496,callee-intersection,"6 matched callees, 1 candidates; graph 10/10"
+10696fa0,Menu13_Open,lobby\unk_6CB690.c,0.646,window:lobby\unk_6CB690.c,cluster 106957d0-106990b0; graph 2/3
+10697550,Poogie_UpdatePettingDebug,lobby\unk_6CB690.c,0.466,layout:lobby\unk_6CB690.c,between Menu13_Open and PoogieMenu_RowsOnPage; graph 4/7
+10697be0,Cook_Reset,lobby\unk_6CB690.c,0.203,call-sandwich,in PoogieMenu_UpdateCare between matched calls; graph 3/4
+10697c10,PoogieMenu_CheckOutfits,lobby\unk_6CB690.c,0.427,layout:lobby\unk_6CB690.c,between Cook_Reset and PoogieMenu_MotionDone; graph 1/1
+10697dd0,PoogieMenu_BuildItemList,lobby\unk_6CB690.c,0.206,call-sandwich,in Menu31_Update between matched calls; graph 3/3
+10698280,PoogieMenu_MotionDone,lobby\unk_6CB690.c,0.324,switch-case,votes=1 trusted-switch; graph 3/3
+106990b0,Village_AreaKind,lobby\unk_6CB690.c,0.693,constants,shared=3 weight=14.0 margin=0.37; graph 0/1
+106a3320,Win_Draw,lobby\unk_790EC0.c,0.953,constants,shared=10 weight=55.9 margin=0.75; graph 0/0
+106a4a10,Talk_Check1E,lobby\unk_7A8690.c,0.441,caseset:lobby\unk_7A8690.c,"label-set similarity 1.18, 1 candidates; graph 0/2"
+106a82d0,Actor_SetMotion,lobby\unk_793C40.c,0.121,callcount-vote,votes=11 next=2 round=0; graph 82/84
+106a8390,Actor_SetMotionOnLayer,lobby\unk_793C40.c,0.141,callcount-vote,votes=3 next=0 round=0; graph 40/61
+106a8af0,Actor_SetIdle,lobby\unk_7949D0.c,0.078,callcount-vote,votes=5 next=1 round=0; graph 20/20
+106a9670,Actor_StartMoveTo,lobby\unk_7949D0.c,0.197,switch-case,votes=1 trusted-switch; graph 2/3
+106aafa0,Actor_SetState,lobby\unk_7949D0.c,0.174,callcount-vote,votes=10 next=0 round=0; graph 91/94
+106acc20,TownPc_IsFree,lobby\unk_7949D0.c,0.594,constants,shared=12 weight=35.3 margin=0.27; graph 1/1
+106ace30,Actor_TurnToTarget,lobby\unk_7949D0.c,0.357,constants+layout,weight=54.6 margin=0.04; graph 0/0
+106acfd0,TownPc_UnwindAngle76E,lobby\unk_7949D0.c,0.418,constants+layout,weight=10.6 margin=0.07; graph 0/0
+106ad020,TownPc_State01,lobby\unk_7949D0.c,0.361,switch-case,votes=1 trusted-switch; graph 3/3
+106aedb0,TownPc_State03,lobby\unk_7949D0.c,0.565,constants,shared=8 weight=23.1 margin=0.20; graph 3/3
+106af020,TownPc_State04,lobby\unk_7949D0.c,0.156,switch-case,votes=1 trusted-switch; graph 1/1
+106af300,TownPc_State06,lobby\unk_7949D0.c,0.227,switch-case,votes=1 trusted-switch; graph 4/4
+106af390,TownPc_State0A,lobby\unk_7949D0.c,0.120,switch-case,votes=1 trusted-switch; graph 1/1
+106af4b0,TownPc_State0B,lobby\unk_7949D0.c,0.151,switch-case,votes=1 trusted-switch; graph 3/3
+106af720,TownPc_State0E,lobby\unk_7949D0.c,0.136,switch-case,votes=1 trusted-switch; graph 2/2
+106af790,TownPc_LoopMotion1AB,lobby\unk_7949D0.c,0.266,callcount-vote,votes=2 next=0 round=0; graph 3/4
+106af8c0,TownPc_State0F,lobby\unk_7949D0.c,0.179,switch-case,votes=1 trusted-switch; graph 3/3
+106af940,TownPc_State10,lobby\unk_7949D0.c,0.156,switch-case,votes=1 trusted-switch; graph 3/3
+106afa90,TownPc_State12,lobby\unk_7949D0.c,0.221,switch-case,votes=1 trusted-switch; graph 3/3
+106afb50,TownPc_State13,lobby\unk_7949D0.c,0.176,switch-case,votes=1 trusted-switch; graph 2/2
+106afbf0,TownPc_IsSeatedState,lobby\unk_7949D0.c,0.900,window:lobby\unk_7949D0.c,cluster 106aafa0-106b1930; graph 0/0
+106afec0,TownPc_State14,lobby\unk_7949D0.c,0.290,switch-case,votes=2 trusted-switch; graph 3/3
+106b0430,TownPc_State17,lobby\unk_7949D0.c,0.314,switch-case,votes=1 trusted-switch; graph 4/4
+106b04e0,TownPc_State19,lobby\unk_7949D0.c,0.461,switch-case,votes=2 trusted-switch; graph 6/7
+106b0b10,TownPc_State1B,lobby\unk_7949D0.c,0.260,switch-case,votes=1 trusted-switch; graph 3/3
+106b0c00,TownPc_State1C,lobby\unk_7949D0.c,0.169,switch-case,votes=1 trusted-switch; graph 3/3
+106b0ce0,TownPc_State09,lobby\unk_7949D0.c,0.215,switch-case,votes=1 trusted-switch; graph 3/3
+106b0d40,TownPc_State1D,lobby\unk_7949D0.c,0.349,switch-case,votes=1 trusted-switch; graph 3/3
+106b0e40,TownPc_State1E,lobby\unk_7949D0.c,0.251,switch-case,votes=1 trusted-switch; graph 3/3
+106b1070,TownPc_State21,lobby\unk_7949D0.c,0.150,switch-case,votes=1 trusted-switch; graph 3/3
+106b1100,TownPc_State22,lobby\unk_7949D0.c,0.198,switch-case,votes=1 trusted-switch; graph 3/3
+106b1170,TownPc_State16,lobby\unk_7949D0.c,0.193,switch-case,votes=1 trusted-switch; graph 3/3
+106b11e0,TownPc_State24,lobby\unk_7949D0.c,0.211,switch-case,votes=1 trusted-switch; graph 3/3
+106b1290,TownPc_State26,lobby\unk_7949D0.c,0.164,switch-case,votes=1 trusted-switch; graph 3/3
+106b1330,TownPc_State07,lobby\unk_7949D0.c,0.210,switch-case,votes=1 trusted-switch; graph 3/3
+106b13a0,TownPc_State27,lobby\unk_7949D0.c,0.159,switch-case,votes=2 trusted-switch; graph 4/4
+106b14d0,TownPc_State28,lobby\unk_7949D0.c,0.156,switch-case,votes=1 trusted-switch; graph 3/3
+106b1570,TownPc_State08,lobby\unk_7949D0.c,0.207,switch-case,votes=1 trusted-switch; graph 3/3
+106b15e0,TownPc_State29,lobby\unk_7949D0.c,0.137,switch-case,votes=1 trusted-switch; graph 2/2
+106b17a0,TownPc_State2A,lobby\unk_7949D0.c,0.252,switch-case,votes=1 trusted-switch; graph 4/4
+106b1850,TownPc_State2B,lobby\unk_7949D0.c,0.168,switch-case,votes=1 trusted-switch; graph 3/3
+106b1930,Contest_TakeSeat,lobby\unk_7949D0.c,0.451,constants,shared=7 weight=24.4 margin=0.28; graph 2/2
+106b20b0,TownPc_State62,lobby\unk_79AB50.c,0.144,switch-case,votes=1 trusted-switch; graph 2/2
+106b2430,TownPc_State64,lobby\unk_79AB50.c,0.145,switch-case,votes=2 trusted-switch; graph 3/4
+106b2670,TownPc_State70,lobby\unk_79AB50.c,0.482,constants,shared=8 weight=32.6 margin=0.28; graph 3/3
+106b2770,TownPc_State6F,lobby\unk_79AB50.c,0.156,switch-case,votes=1 trusted-switch; graph 2/2
+106b27d0,TownPc_State75,lobby\unk_79AB50.c,0.248,switch-case,votes=1 trusted-switch; graph 3/3
+106b2910,TownPc_State74,lobby\unk_79AB50.c,0.288,switch-case,votes=1 trusted-switch; graph 3/3
+106b2a10,TownPc_State80,lobby\unk_79AB50.c,0.246,switch-case,votes=1 trusted-switch; graph 4/4
+106b2b90,TownPc_State8D,lobby\unk_79AB50.c,0.192,switch-case,votes=1 trusted-switch; graph 3/3
+106b2c00,TownPc_State90,lobby\unk_79AB50.c,0.382,switch-case,votes=1 trusted-switch; graph 3/3
+106b2c90,TownPc_State91,lobby\unk_79AB50.c,0.472,constants,shared=4 weight=21.0 margin=0.24; graph 3/3
+106b2d10,TownPc_State9C,lobby\unk_79AB50.c,0.187,switch-case,votes=1 trusted-switch; graph 3/5
+106b39a0,TownPc_RunGroup0,lobby\unk_79AB50.c,0.580,constants,shared=54 weight=160.9 margin=0.25; graph 42/43
+106b4ea0,Town_AreaEventPending,lobby\unk_79C310.c,0.299,switch-case,votes=1 trusted-switch; graph 2/3
+106bb8a0,PlaceInfo_Input,lobby\unk_6BE8E0.c,0.320,callcount-vote,votes=2 next=0 round=0; graph 1/1
+106bdf20,LobbyLevel0_LeaveCountdown,lobby\unk_7C6A40.c,0.499,constants,shared=8 weight=24.5 margin=0.13; graph 1/2
+106f0120,TownMsg_Send21,lobby\unk_7A06D0.c,0.753,layout-edge:lobby\unk_7A06D0.c,before matched block; graph 1/2
+106f0360,TownMsg_Send12,lobby\unk_7A06D0.c,0.228,call-sandwich,in TownPc_State0B between matched calls; graph 2/2
+106f5020,Shop_StartBuy,lobby\unk_7A1120.c,0.556,constants,shared=12 weight=35.1 margin=0.25; graph 0/0
+106f80e0,Shop_Buy,lobby\unk_7A1120.c,0.510,constants,shared=4 weight=25.9 margin=0.29; graph 1/3
+10711af0,LobbySe_Play,lobby\unk_756FD0.c,0.156,call-sandwich,in DrinkContest_Update between matched calls; graph 10/25
+10714fe0,Town_PlaceLocalPlayer,lobby\unk_7A44D0.c,0.433,callee-intersection,"3 matched callees, 1 candidates; graph 3/3"
+10717e90,Actor_HeadingDiff,lobby\unk_7A6470.c,0.601,callee-of:Npc_State2C,margin=0.41 round=0; graph 9/22
+10718140,Menu_WrapUpDown,lobby\unk_7A6470.c,0.753,callee-of:PoogieMenu_Update,margin=0.54 round=0; graph 7/9
+10718220,Menu_WrapUpDownPad,lobby\unk_7A6470.c,0.753,layout:lobby\unk_7A6470.c,between Menu_WrapUpDown and Menu_WrapLeftRight; graph 0/1
+10718290,Menu_WrapUpDownSe,lobby\unk_7A6470.c,0.722,layout:lobby\unk_7A6470.c,between Menu_WrapUpDown and Menu_WrapLeftRight; graph 0/1
+107182e0,Menu_WrapLeftRight,lobby\unk_7A6470.c,0.753,callee-of:PoogieMenu_Update,margin=0.54 round=0; graph 6/8
+10718340,Menu_WrapLeftRightSe,lobby\unk_7A6470.c,0.722,layout-edge:lobby\unk_7A6470.c,after matched block; graph 0/1
+107183b0,Menu_WrapLeftRightPad,lobby\unk_7A6470.c,0.753,layout-edge:lobby\unk_7A6470.c,after matched block; graph 0/1
+10719e20,Menu_PushNoticeOnce,lobby\unk_7A7560.c,0.478,switch-case,votes=2; graph 3/4
+10720a20,Talk_Check0B,lobby\unk_7A8690.c,0.597,constants,shared=2 weight=12.5 margin=0.21; graph 2/2
+10720c30,Talk_Check10,lobby\unk_7A8690.c,0.926,constants,shared=21 weight=80.0 margin=0.52; graph 2/2
+10720e70,Talk_Check12,lobby\unk_7A8690.c,0.843,constants,shared=11 weight=43.5 margin=0.43; graph 4/4
+10720fb0,Talk_Check13,lobby\unk_7A8690.c,0.675,constants,shared=8 weight=31.7 margin=0.41; graph 2/2
+10721110,Talk_Check15,lobby\unk_7A8690.c,0.711,constants,shared=4 weight=23.5 margin=0.44; graph 1/1
+107212a0,Talk_Check1A,lobby\unk_7A8690.c,0.548,constants,shared=2 weight=12.1 margin=0.10; graph 2/2
+10721b00,Talk_Check37,lobby\unk_7A8690.c,0.715,constants,shared=7 weight=31.8 margin=0.34; graph 3/4
+10721c60,Talk_Check38,lobby\unk_7A8690.c,0.387,numbered-table,"Talk_CheckNN at index 1 (offset 55, 2 agreeing); graph 1/2"
+10721d50,Talk_Check39,lobby\unk_7A8690.c,0.713,constants,shared=7 weight=30.2 margin=0.33; graph 1/2
+10721e90,Talk_Check3B,lobby\unk_7A8690.c,0.273,numbered-table,"Talk_CheckNN at index 4 (offset 55, 2 agreeing); graph 0/1"
+10721ee0,Talk_Check3C,lobby\unk_7A8690.c,0.229,numbered-table,"Talk_CheckNN at index 5 (offset 55, 2 agreeing); graph 0/1"
+10722140,Talk_Check41,lobby\unk_7A8690.c,0.568,constants,shared=3 weight=17.5 margin=0.22; graph 1/1
+10722540,Talk_Check49,lobby\unk_7A8690.c,0.585,constants,shared=3 weight=17.4 margin=0.24; graph 1/1
+10722650,Talk_Check4D,lobby\unk_7A8690.c,0.555,constants,shared=4 weight=19.9 margin=0.20; graph 1/1
+10722750,Talk_Check4E,lobby\unk_7A8690.c,0.624,numbered-table,"Talk_CheckNN at index 5 (offset 73, 2 agreeing); graph 1/2"
+10722900,Talk_Check4F,lobby\unk_7A8690.c,0.208,numbered-table,"Talk_CheckNN at index 6 (offset 73, 2 agreeing); graph 1/2"
+10722ad0,Talk_Check50,lobby\unk_7A8690.c,0.224,numbered-table,"Talk_CheckNN at index 7 (offset 73, 2 agreeing); graph 0/1"
+10722b30,Talk_Check55,lobby\unk_7A8690.c,0.271,numbered-table,"Talk_CheckNN at index 12 (offset 73, 2 agreeing); graph 1/1"
+10722cc0,Talk_Check56,lobby\unk_7A8690.c,0.241,numbered-table,"Talk_CheckNN at index 13 (offset 73, 2 agreeing); graph 0/2"
+10722d20,Talk_Check58,lobby\unk_7A8690.c,0.125,numbered-table,"Talk_CheckNN at index 15 (offset 73, 2 agreeing); graph 0/1"
+10722d80,Talk_Check69,lobby\unk_7A8690.c,0.713,constants,shared=10 weight=40.2 margin=0.38; graph 2/2
+10722ec0,Talk_Check6B,lobby\unk_7A8690.c,0.495,constants,shared=3 weight=18.0 margin=0.12; graph 1/2
+107235a0,Talk_Check2E,lobby\unk_7A8690.c,0.559,window:lobby\unk_7A8690.c,cluster 10720a20-10722ec0; graph 1/2
+10723a00,Cook_InBestWindow,lobby\unk_6CB690.c,0.542,window:lobby\unk_6CB690.c,cluster 1072a9f0-1072bb60; graph 0/2
+10723c30,Talk_Check40,lobby\unk_7A8690.c,0.416,caseset:lobby\unk_7A8690.c,"label-set similarity 1.11, 2 candidates; graph 0/2"
+10726de0,Talk_Update,lobby\unk_7AEF10.c,0.370,caller-intersection,"2 matched callers, 1 candidates; graph 3/4"
+1072a9f0,Dojo_AllCleared10001,lobby\unk_6CB690.c,0.384,switch-case,votes=1 trusted-switch; graph 1/2
+1072aa70,Dojo_AllCleared10101,lobby\unk_6CB690.c,0.393,switch-case,votes=1 trusted-switch; graph 1/2
+1072bb60,DojoMenu_QuestAvailable,lobby\unk_6CB690.c,0.799,constants,shared=25 weight=167.0 margin=0.50; graph 3/4
+107746b0,PriceInfo_DrawRate,lobby\unk_7115D0.c,0.493,constants,shared=6 weight=43.4 margin=0.28; graph 0/0
+1079dc50,Records_SetTitlePage,lobby\unk_6B0570.c,0.151,call-sandwich,in Records_TitlesInput between matched calls; graph 1/1
+107a1420,LobbyMenu_Init,lobby\unk_7BC3A0.c,0.656,callseq-of:LobbyLevel0_LeaveCountdown,support=1 round=0; graph 2/2
+107a16a0,Debug_IsOn,sub_main\unk_363550.c,0.525,switch-case,votes=1 trusted-switch; graph 1/2
+107a1aa0,LobbyScreen_ClearRequests,lobby\unk_7BC3A0.c,0.478,layout:lobby\unk_7BC3A0.c,between LobbyMenu_Init and LobbyExit_Run; graph 0/0
+107a1c20,LobbyLevel2_Entry,lobby\unk_7BC3A0.c,0.463,layout:lobby\unk_7BC3A0.c,between LobbyMenu_Init and LobbyExit_Run; graph 0/0
+107a20b0,LobbyExit_Run,lobby\unk_7BC3A0.c,0.691,layout-edge:lobby\unk_7BC3A0.c,after matched block; graph 0/0
+107aef50,Player_State5_00,game\unk_70A290.c,0.141,switch-case,votes=1 trusted-switch; graph 1/1
+107af360,Player_State5_07,game\unk_70A290.c,0.082,switch-case,votes=2; graph 1/1
+107af940,Player_RunGroup5,game\unk_70A290.c,0.743,window:game\unk_70A290.c,cluster 107b17c0-107ceaa0; graph 2/2
+107b3100,EmScript_Op25,game\unk_70A290.c,0.463,layout:game\unk_70A290.c,between EmScript_Op24 and EmScript_Op2D; graph 0/1
+107b4990,EmScript_Op26,game\unk_70A290.c,0.463,layout:game\unk_70A290.c,between EmScript_Op24 and EmScript_Op2D; graph 0/1
+107b55c0,Player_PouchHasSelectable,game\unk_70A290.c,0.730,window:game\unk_70A290.c,cluster 107b7fa0-107ceaa0; graph 0/0
+107b5cd0,EmScript_Op2D,game\unk_70A290.c,0.691,window:game\unk_70A290.c,cluster 107b7fa0-107ceaa0; graph 0/1
+107bcf50,Player_CheckPointMessages,game\unk_70A290.c,0.665,window:game\unk_70A290.c,cluster 107bde00-107ceaa0; graph 0/1
+107c7050,LobbyArea_StartEvent,lobby\unk_7B91F0.c,0.513,constants,shared=23 weight=85.4 margin=0.25; graph 3/6
+107c8080,LobbyScreen_Start,lobby\unk_7B91F0.c,0.609,layout-edge:lobby\unk_7B91F0.c,after matched block; graph 2/2
+107ceaa0,Player_State0_14,game\unk_70A290.c,0.349,constants+layout,weight=18.6 margin=0.03; graph 0/0
+10816ea0,Stream_PlayMusicVol,main\unk_1937A0.c,0.662,constants,shared=1 weight=8.2 margin=0.16; graph 2/2
+108270e0,CamFocus_Start,sub_main\unk_31C7E0.c,0.141,callcount-vote,votes=2 next=0 round=0; graph 3/3
+108292e0,CamFocus_Update,sub_main\unk_31C7E0.c,0.309,callee-intersection,"2 matched callees, 1 candidates; graph 2/2"
+1082a480,CamReq_Set,sub_main\unk_31DF70.c,0.094,callcount-vote,votes=2 next=0 round=0; graph 9/9
+1082a500,CamCtl_PadAllowed,sub_main\unk_31E190.c,0.198,callcount-vote,votes=2 next=0 round=0; graph 1/1
+1082aae0,CamScript_ObjMtx,sub_main\unk_31E190.c,0.180,callcount-vote,votes=2 next=0 round=0; graph 2/2
+1082abb0,CamScript_EyePoint,sub_main\unk_31E190.c,0.382,switch-case,votes=1; graph 2/2
+1082ad20,CamScript_AtPoint,sub_main\unk_31E190.c,0.363,switch-case,votes=1; graph 2/2
+1082ae70,CamScript_CopyToEnd,sub_main\unk_31E190.c,0.198,switch-case,votes=1 trusted-switch; graph 1/1
+1082bea0,CamScript_Step,sub_main\unk_31E190.c,0.660,caseset:sub_main\unk_31E190.c,"label-set similarity 1.17, 1 candidates; graph 3/3"
+1082cb20,CamArea_IsEnabled,sub_main\unk_31E190.c,0.560,window:sub_main\unk_31E190.c,cluster 1082a500-10832300; graph 0/2
+1082cfb0,CamReq_Started,sub_main\unk_31DF70.c,0.683,layout-edge:sub_main\unk_31DF70.c,after matched block; graph 0/0
+1082d750,CamCtl_IsRailMode,sub_main\unk_31E190.c,0.525,layout:sub_main\unk_31E190.c,between CamScript_Step and CamShake_SetA; graph 0/1
+1082d7b0,CamShake_SetA,sub_main\unk_31E190.c,0.478,switch-case,votes=1; graph 1/1
+1082d800,CamShake_SetAEverywhere,sub_main\unk_31E190.c,0.753,layout:sub_main\unk_31E190.c,between CamShake_SetA and Player_LocalAreaOk_Unk; graph 0/0
+1082db70,Cross2,sub_main\unk_31E190.c,0.447,layout:sub_main\unk_31E190.c,between CamArea_IsEnabled and Player_LocalAreaOk_Unk; graph 0/0
+1082e2d0,Cam_PlayerFree,sub_main\unk_31E190.c,0.452,layout:sub_main\unk_31E190.c,between CamArea_IsEnabled and Player_LocalAreaOk_Unk; graph 0/0
+1082e700,CamCtl_ReadPad,sub_main\unk_31E190.c,0.502,layout:sub_main\unk_31E190.c,between CamShake_SetA and Player_LocalAreaOk_Unk; graph 1/1
+1082f1c0,Cam_CopyDefaults,sub_main\unk_31E190.c,0.478,layout:sub_main\unk_31E190.c,between CamShake_SetA and Player_LocalAreaOk_Unk; graph 0/0
+1082fbc0,Player_LocalActionInCamRange_Unk,sub_main\unk_31E190.c,0.455,layout:sub_main\unk_31E190.c,between CamShake_SetA and Player_LocalAreaOk_Unk; graph 0/1
+10830040,Player_LocalAreaOk_Unk,sub_main\unk_31E190.c,0.379,constants+layout,weight=11.8 margin=0.11; graph 0/0
+10830430,PathPos_PlaceOnSeg,sub_main\unk_31E190.c,0.613,layout-edge:sub_main\unk_31E190.c,after matched block; graph 0/1
+108304e0,TownPc_State9A,lobby\unk_7949D0.c,0.502,constants,shared=2 weight=14.5 margin=0.23; graph 0/2
+10831160,Actor_ClearFlag,lobby\unk_7949D0.c,0.051,callcount-vote,votes=2 next=0 round=1; graph 0/0
+10832050,PathPos_Build,sub_main\unk_31E190.c,0.586,layout-edge:sub_main\unk_31E190.c,after matched block; graph 0/2
+10832300,PathPos_PlaceNear,sub_main\unk_31E190.c,0.777,layout-edge:sub_main\unk_31E190.c,after matched block; graph 0/2
+10833df0,CamReq_Mode0A,sub_main\unk_323C90.c,0.730,layout-edge:sub_main\unk_323C90.c,before matched block; graph 1/2
+10833e30,CamReq_AreaIntro,sub_main\unk_323C90.c,0.460,callee-intersection,"2 matched callees, 1 candidates; graph 2/2"
+10833ec0,CamReq_Mode05,sub_main\unk_323C90.c,0.675,layout-edge:sub_main\unk_323C90.c,before matched block; graph 1/1
+10833f00,CamReq_LobbyEvent,sub_main\unk_323C90.c,0.675,callee-of:LobbyArea_StartEvent,margin=0.53 round=0; graph 2/2
+10833f40,CamReq_TownPc,sub_main\unk_323C90.c,0.675,layout:sub_main\unk_323C90.c,between CamReq_LobbyEvent and CamReq_Lobby44; graph 1/1
+10834020,CamReq_Minigame,sub_main\unk_323C90.c,0.135,callcount-vote,votes=2 next=0 round=0; graph 2/2
+10834130,CamReq_HairMenu,sub_main\unk_323C90.c,0.675,layout:sub_main\unk_323C90.c,between CamReq_LobbyEvent and CamReq_Lobby44; graph 1/1
+108341b0,CamReq_FromTable,sub_main\unk_323C90.c,0.431,layout:sub_main\unk_323C90.c,between CamReq_LobbyEvent and CamReq_Lobby44; graph 1/1
+108343f0,CamReq_Lobby44,sub_main\unk_323C90.c,0.125,callcount-vote,votes=2 next=0 round=0; graph 2/2
+10834430,CamArea_TestObj,sub_main\unk_31E190.c,0.633,window:sub_main\unk_31E190.c,cluster 1082a500-10832300; graph 0/1
+108346b0,MovieSfd_Start,sub_main\movie.c,0.484,constants,shared=1 weight=10.1 margin=0.48; graph 0/1
+10835c70,Path_NearestSeg,sub_main\unk_31E190.c,0.691,window:sub_main\unk_31E190.c,cluster 1082a500-10832300; graph 0/2
+10835f30,Movie_Play,sub_main\movie.c,0.525,layout-edge:sub_main\movie.c,after matched block; graph 0/1
+10838ea0,Player_WeaponAttackInput,game\unk_70A290.c,0.830,window:game\unk_70A290.c,cluster 1083bda0-1088c9c0; graph 0/0
+10841650,Em_SetStatus2Timer,game\unk_70A290.c,0.094,switch-case,votes=2 trusted-switch; graph 7/7
+10844e50,Em_AngleSector,game\unk_701810.c,0.525,window:game\unk_701810.c,cluster 108489a0-10856a10; graph 0/0
+108480d0,Em_ResetPartHp,sub_main\unk_3DDBA0.c,0.103,switch-case,votes=2 trusted-switch; graph 2/2
+10848420,Em_BonePos,sub_main\unk_3DDBA0.c,0.156,call-sandwich,in NpcSetB_MotionFx between matched calls; graph 21/21
+1084cd00,EmSlot_FindKind,sub_main\unk_3E0EC0.c,0.649,callee-of:StageObj_K14_Draw,margin=0.45 round=0; graph 2/2
+1084fb80,Em_SetRow638,game\unk_6FF630.c,0.015,callcount-vote,votes=5 next=0 round=0; graph 16/16
+1084fe60,Em_SetMotion,game\unk_6FF630.c,0.794,callseq-of:EmBlangonga_State4_02,support=9 round=0; graph 301/314
+10850120,Em_SetLayerMotion,game\unk_701810.c,0.203,callcount-vote,votes=5 next=0 round=0; graph 12/13
+10850190,Em_TurnToward,game\unk_701810.c,0.431,constants+layout,weight=19.1 margin=0.12; graph 0/0
+10850b80,Em_StartGoalAction,game\unk_701810.c,0.178,switch-case,votes=3; graph 8/8
+10850d70,Em_SetStateSync,game\unk_701810.c,0.388,switch-case,votes=1; graph 60/62
+10850e50,Em_MotionDelta,game\unk_701810.c,0.161,callcount-vote,votes=2 next=0 round=1; graph 3/4
+10851d70,Em_StartRage,game\unk_701810.c,0.056,switch-case,votes=5; graph 7/7
+10852120,Em_StartPendingRage,game\unk_701810.c,0.144,switch-case,votes=1 trusted-switch; graph 8/8
+10853540,Em_PlayerActionKind,game\unk_701810.c,0.791,constants,shared=3 weight=29.1 margin=0.51; graph 1/1
+108535c0,Em_AddAlertBuildup,game\unk_701810.c,0.378,callee-intersection,"3 matched callees, 1 candidates; graph 3/3"
+10853780,Em_LoadReactionSet,game\unk_701810.c,0.209,callcount-vote,votes=2 next=0 round=0; graph 66/66
+108538b0,Em_ComputeGoal,game\unk_701810.c,0.408,callcount-vote,votes=2 next=0 round=0; graph 23/23
+108542c0,Em_ComputeGoal2,game\unk_701810.c,0.422,callcount-vote,votes=2 next=0 round=0; graph 14/14
+10855470,Em_SetRequest,game\unk_701810.c,0.117,callcount-vote,votes=2 next=0 round=0; graph 1/1
+108554e0,Em_ScriptFlagsFrom,game\unk_701810.c,0.234,callcount-vote,votes=2 next=0 round=0; graph 4/5
+10855540,Em_TypeSetup,game\unk_701810.c,0.427,caller-intersection,"2 matched callers, 1 candidates; graph 7/7"
+10855830,Math_AngleXZ,game\unk_701810.c,0.826,callseq-of:EmBulldrome_State1_07,support=3 round=0; graph 61/64
+10855bd0,Em_PickRequest,game\unk_701810.c,0.377,constants+layout,weight=20.3 margin=0.07; graph 3/3
+10856300,Em_SyncState,game\unk_701810.c,0.177,switch-case,votes=2; graph 2/3
+10856a10,Em_SenseObjects,game\unk_701810.c,0.418,call-sandwich,in EmVelociprey_Update between matched calls; graph 2/3
+10857140,Em_BeginStatus2,game\unk_7077A0.c,0.218,switch-case,votes=8; graph 20/20
+10857200,Em_BeginStatus1,game\unk_7077A0.c,0.201,switch-case,votes=6; graph 18/18
+10857380,Em_EndStatus1,game\unk_7077A0.c,0.103,switch-case,votes=8 trusted-switch; graph 21/21
+10857440,Em_BeginStatus4,game\unk_7077A0.c,0.234,switch-case,votes=5 trusted-switch; graph 10/13
+10857460,Em_EndStatus4,game\unk_7077A0.c,0.103,switch-case,votes=12 trusted-switch; graph 26/26
+10857520,Em_EndAllStatus,game\unk_7077A0.c,0.303,switch-case,votes=6 trusted-switch; graph 13/13
+10857590,Em_BeginStatus5,game\unk_7077A0.c,0.269,switch-case,votes=3 trusted-switch; graph 10/12
+108575b0,Em_EndStatus5,game\unk_7077A0.c,0.113,switch-case,votes=9 trusted-switch; graph 25/25
+10857720,Em_FindAreaEntry,game\unk_7077A0.c,0.346,callcount-vote,votes=2 next=0 round=0; graph 6/6
+108577b0,Em_AreaEntryValue,game\unk_7077A0.c,0.317,switch-case,votes=2; graph 6/6
+108578a0,Em_FindLink,game\unk_7077A0.c,0.621,window:game\unk_7077A0.c,cluster 10857140-10857fa0; graph 1/1
+10857d10,Em_Refill7F4,game\unk_7077A0.c,0.203,switch-case,votes=6; graph 10/10
+10857d50,Em_ResetNotice,game\unk_7077A0.c,0.047,switch-case,votes=6; graph 10/11
+10857fa0,Em_SpawnEffect06Periodic,game\unk_7077A0.c,0.121,switch-case,votes=10 trusted-switch; graph 16/18
+10858c80,Em_UpdateCombatTimer,game\unk_708850.c,0.588,callee-of:EmRathalos_Update,margin=0.35 round=0; graph 8/8
+1085b6a0,EmCephadrome_SetFinMode,game\em_cephadrome.c,0.094,switch-case,votes=3 trusted-switch; graph 1/1
+1085b7b0,EmList_AnyBelowHalfHp,game\unk_708850.c,0.192,switch-case,votes=1 trusted-switch; graph 1/1
+1085c080,Em_SetMotionRow,game\unk_708850.c,0.479,layout:game\unk_708850.c,between Em_UpdateCombatTimer and Em_SetAreaValue89E; graph 7/8
+1085c170,Em_SetAreaValue89E,game\unk_708850.c,0.515,constants+layout,weight=6.3 margin=0.09; graph 1/1
+1085c280,Em_TypeUsesK14,game\unk_708850.c,1.000,window:game\unk_708850.c,cluster 10858c80-1085d1b0; graph 3/3
+1085c910,Em_PlaySe6AtBoneInFrames,game\unk_708850.c,0.172,callcount-vote,votes=6 next=0 round=0; graph 7/9
+1085cbd0,Em_PlaySeAtBone,game\unk_708850.c,0.156,call-sandwich,in EmPlesioth_State6_00_Captured between matched calls; graph 7/13
+1085cce0,Em_PlaySeAtBoneOnFrame,game\unk_708850.c,0.838,callseq-of:EmRemobra_MotionSounds,support=4 round=0; graph 21/24
+1085cd60,Em_PlaySe6AtBoneOnFrame,game\unk_708850.c,0.180,switch-case,votes=70 trusted-switch; graph 5/6
+1085cf50,Em_PlaySeAtBoneOnFrame2,game\unk_708850.c,0.180,callcount-vote,votes=4 next=0 round=0; graph 5/6
+1085d0b0,Em_PlaySe1AtBoneOnFrame,game\unk_708850.c,0.203,callcount-vote,votes=5 next=0 round=0; graph 5/5
+1085d1b0,Em_PlaySeAtBoneVolOnFrame,game\unk_708850.c,0.478,callcount-vote,votes=6 next=0 round=0; graph 9/10
+1085d410,Em_UpdateFlight,game\unk_70A290.c,0.197,switch-case,votes=3; graph 11/13
+1085dcc0,Em_SetTargetAngle,game\unk_70A290.c,0.164,switch-case,votes=4 trusted-switch; graph 6/6
+10860340,Em_StartScript,game\unk_70A290.c,0.250,switch-case,votes=1 trusted-switch; graph 2/2
+10860430,func_0083B8F0,game\em_kushala.c,0.203,callcount-vote,votes=2 next=0 round=0; graph 0/0
+10860730,EmScript_NextCmd,game\unk_70A290.c,0.741,caseset:game\unk_70A290.c,"label-set similarity 0.99, 1 candidates; graph 41/41"
+10860dc0,EmScript_Op01,game\unk_70A290.c,0.150,switch-case,votes=1 trusted-switch; graph 2/2
+10860e70,EmScript_Op02,game\unk_70A290.c,0.163,switch-case,votes=1 trusted-switch; graph 2/2
+10860ef0,EmScript_Op03,game\unk_70A290.c,0.148,switch-case,votes=1 trusted-switch; graph 3/3
+108611f0,EmScript_Op0C,game\unk_70A290.c,0.263,switch-case,votes=1 trusted-switch; graph 1/1
+108612f0,EmScript_Op0D,game\unk_70A290.c,0.258,switch-case,votes=1 trusted-switch; graph 1/1
+10861400,EmScript_Op0E,game\unk_70A290.c,0.127,switch-case,votes=1 trusted-switch; graph 2/2
+10861660,EmScript_Op10,game\unk_70A290.c,0.175,switch-case,votes=1 trusted-switch; graph 1/1
+108617c0,EmScript_Op11,game\unk_70A290.c,0.227,switch-case,votes=1 trusted-switch; graph 1/1
+10861830,EmScript_Op12,game\unk_70A290.c,0.227,switch-case,votes=1 trusted-switch; graph 1/1
+108618b0,EmScript_Op13,game\unk_70A290.c,0.227,switch-case,votes=1 trusted-switch; graph 1/1
+108618f0,EmScript_Op14,game\unk_70A290.c,0.150,switch-case,votes=1 trusted-switch; graph 3/3
+10861bb0,EmScript_Op15,game\unk_70A290.c,0.138,switch-case,votes=1 trusted-switch; graph 3/3
+10861d30,EmScript_Op17,game\unk_70A290.c,0.234,switch-case,votes=1 trusted-switch; graph 1/1
+10862010,EmScript_Op18,game\unk_70A290.c,0.141,switch-case,votes=1 trusted-switch; graph 1/2
+10862120,EmScript_Op1B,game\unk_70A290.c,0.133,switch-case,votes=1 trusted-switch; graph 2/2
+10862210,EmScript_Op1C,game\unk_70A290.c,0.428,switch-case,votes=1; graph 2/2
+108622d0,EmScript_Op1D,game\unk_70A290.c,0.148,switch-case,votes=1 trusted-switch; graph 2/2
+108623a0,EmScript_Op20,game\unk_70A290.c,0.150,switch-case,votes=1 trusted-switch; graph 3/3
+108625b0,EmScript_Op22,game\unk_70A290.c,0.213,switch-case,votes=1 trusted-switch; graph 2/2
+10862700,EmScript_Op36,game\unk_70A290.c,0.273,switch-case,votes=1 trusted-switch; graph 2/3
+108627c0,EmScript_Op23,game\unk_70A290.c,0.142,switch-case,votes=1 trusted-switch; graph 2/2
+10862960,EmScript_Op27,game\unk_70A290.c,0.148,switch-case,votes=1 trusted-switch; graph 2/2
+10862a30,EmScript_Op75,game\unk_70A290.c,0.148,switch-case,votes=1 trusted-switch; graph 2/2
+10862b00,EmScript_Op76,game\unk_70A290.c,0.122,switch-case,votes=1 trusted-switch; graph 2/2
+10862c00,EmScript_Op7A,game\unk_70A290.c,0.122,switch-case,votes=1 trusted-switch; graph 2/2
+10863040,EmScript_Op2B,game\unk_70A290.c,0.138,switch-case,votes=1 trusted-switch; graph 2/2
+10863180,EmScript_Op2C,game\unk_70A290.c,0.129,switch-case,votes=1 trusted-switch; graph 2/2
+10863220,EmScript_Op70,game\unk_70A290.c,0.148,switch-case,votes=1 trusted-switch; graph 2/2
+108632f0,EmScript_Op2F,game\unk_70A290.c,0.122,switch-case,votes=1 trusted-switch; graph 2/2
+108633b0,EmScript_Op30,game\unk_70A290.c,0.227,switch-case,votes=1 trusted-switch; graph 1/1
+10863480,EmScript_Op33,game\unk_70A290.c,0.150,switch-case,votes=1 trusted-switch; graph 2/2
+10863620,EmScript_Op37,game\unk_70A290.c,0.334,switch-case,votes=1 trusted-switch; graph 2/2
+10863970,EmScript_Op3D,game\unk_70A290.c,0.141,switch-case,votes=1 trusted-switch; graph 2/2
+10863a40,EmScript_Op3E,game\unk_70A290.c,0.148,switch-case,votes=1 trusted-switch; graph 2/2
+10863b20,EmScript_Op3F,game\unk_70A290.c,0.227,switch-case,votes=1 trusted-switch; graph 2/2
+10863f40,EmScript_Op41,game\unk_70A290.c,0.122,switch-case,votes=1 trusted-switch; graph 2/2
+10864170,EmScript_Op69,game\unk_70A290.c,0.242,switch-case,votes=1 trusted-switch; graph 4/4
+10864370,EmScript_Op45,game\unk_70A290.c,0.249,switch-case,votes=1 trusted-switch; graph 2/2
+10864930,EmScript_Op4F,game\unk_70A290.c,0.156,switch-case,votes=1 trusted-switch; graph 1/1
+10864a30,EmScript_Op52,game\unk_70A290.c,0.174,switch-case,votes=1 trusted-switch; graph 2/3
+10865860,EmBlangonga_State1_03,game\em_blangonga.c,0.591,window:game\em_blangonga.c,cluster 10869350-1087c840; graph 0/1
+10865910,EmScript_Op57,game\unk_70A290.c,0.148,switch-case,votes=1 trusted-switch; graph 2/2
+10865ae0,EmScript_Op5A,game\unk_70A290.c,0.156,switch-case,votes=1 trusted-switch; graph 2/2
+10865bc0,EmScript_Op5B,game\unk_70A290.c,0.180,switch-case,votes=1 trusted-switch; graph 1/1
+10865c20,EmScript_Op5C,game\unk_70A290.c,0.131,switch-case,votes=1 trusted-switch; graph 2/2
+10865cf0,EmScript_Op5D,game\unk_70A290.c,0.217,switch-case,votes=1 trusted-switch; graph 3/3
+10865f30,EmScript_Op5F,game\unk_70A290.c,0.143,switch-case,votes=1 trusted-switch; graph 1/1
+10866440,EmScript_Op62,game\unk_70A290.c,0.484,switch-case,votes=1; graph 2/2
+10866570,EmScript_Op63,game\unk_70A290.c,0.397,switch-case,votes=1; graph 2/2
+10866ae0,EmScript_Op78,game\unk_70A290.c,0.190,switch-case,votes=1 trusted-switch; graph 3/3
+10866c60,EmScript_Op64,game\unk_70A290.c,0.186,switch-case,votes=1 trusted-switch; graph 2/2
+10866d00,EmScript_Op66,game\unk_70A290.c,0.298,switch-case,votes=1 trusted-switch; graph 2/2
+10867460,EmScript_Op83,game\unk_70A290.c,0.175,switch-case,votes=1 trusted-switch; graph 2/3
+108675a0,EmScript_OpFF,game\unk_70A290.c,0.429,constants+layout,weight=64.8 margin=0.14; graph 7/8
+10868210,EmScript_Op90,game\unk_70A290.c,0.250,switch-case,votes=1 trusted-switch; graph 1/1
+10868270,EmScript_Op91,game\unk_70A290.c,0.250,switch-case,votes=1 trusted-switch; graph 2/2
+108682b0,EmScript_Op94,game\unk_70A290.c,0.148,switch-case,votes=1 trusted-switch; graph 2/2
+10868380,EmScript_Op71,game\unk_70A290.c,0.322,switch-case,votes=1 trusted-switch; graph 2/2
+108684b0,EmScript_Op73,game\unk_70A290.c,0.232,switch-case,votes=1 trusted-switch; graph 2/2
+10868590,EmScript_Op74,game\unk_70A290.c,0.222,switch-case,votes=1 trusted-switch; graph 3/4
+108689d0,Em_PickRoutePoint,game\unk_70A290.c,0.193,call-sandwich,in Em_ComputeGoal between matched calls; graph 1/3
+10869120,Em_AreaExitPoint,game\unk_70A290.c,0.236,call-sandwich,in EmKushala_State2_08 between matched calls; graph 6/8
+10869350,EmShenGaoren_ChangeState,game\em_blangonga.c,0.032,callcount-vote,votes=2 next=0 round=1; graph 1/3
+108693e0,Em_SetCombat,game\unk_733EA0.c,0.120,switch-case,votes=1 trusted-switch; graph 7/8
+108695f0,Em_CanEnterArea,game\unk_733EA0.c,0.477,caller-intersection,"2 matched callers, 1 candidates; graph 3/3"
+108696d0,EmScript_Run,game\unk_70A290.c,0.734,caseset:game\unk_70A290.c,"label-set similarity 1.11, 3 candidates; graph 60/69"
+10875840,EmScript_Op49,game\unk_70A290.c,0.599,window:game\unk_70A290.c,cluster 1087d1e0-108853e0; graph 0/1
+1087b5c0,Em_RaiseTrigger80,game\unk_7077A0.c,0.575,window:game\unk_7077A0.c,cluster 10857140-1087cd60; graph 0/2
+1087c840,EmBlangonga_IsRajang,game\em_blangonga.c,0.105,callcount-vote,votes=2 next=0 round=0; graph 1/1
+1087cde0,EmKushala_SetWind,game\em_blangonga.c,0.072,switch-case,votes=3 trusted-switch; graph 1/2
+1087ecb0,ScEvent_Init,game\unk_70A290.c,0.838,constants,shared=37 weight=225.9 margin=0.50; graph 2/2
+1087f0e0,ScEvent_Set,game\unk_70A290.c,0.195,switch-case,votes=22; graph 3/3
+1087f5c0,ScEvent_LoadCamera,game\unk_70A290.c,0.495,layout:game\unk_70A290.c,between ScEvent_Set and ScEvent_RunA; graph 2/2
+1087ffb0,ScEvent_RunA,game\unk_70A290.c,0.494,constants+layout,weight=42.7 margin=0.04; graph 2/3
+10880180,ScEvent_RunB,game\unk_70A290.c,0.373,constants+layout,weight=23.3 margin=0.18; graph 1/3
+10880910,EmScript_Op58,game\unk_70A290.c,0.525,layout:game\unk_70A290.c,between EmScript_Op49 and EmScript_PickWeighted; graph 0/1
+10883790,Em_SetAreaValue8A0,game\unk_708850.c,0.148,callcount-vote,votes=2 next=0 round=0; graph 1/2
+108837f0,EmScript_Op61,game\unk_70A290.c,0.455,layout:game\unk_70A290.c,between EmScript_Op49 and EmScript_PickWeighted; graph 1/2
+10884220,Player_RunWeaponState,game\unk_70A290.c,0.559,window:game\unk_70A290.c,cluster 10838bc0-1088c9c0; graph 0/1
+10884400,EmScript_Op80,game\unk_70A290.c,0.654,layout:game\unk_70A290.c,between EmScript_Op49 and EmScript_PickWeighted; graph 0/1
+10884d10,EmScript_Op81,game\unk_70A290.c,0.463,layout:game\unk_70A290.c,between EmScript_Op49 and EmScript_PickWeighted; graph 0/1
+10884d80,EmScript_Op82,game\unk_70A290.c,0.463,layout:game\unk_70A290.c,between EmScript_Op49 and EmScript_PickWeighted; graph 0/1
+108853e0,EmScript_PickWeighted,game\unk_70A290.c,0.659,window:game\unk_70A290.c,cluster 1087ecb0-1087f0e0; graph 0/1
+10886ce0,SeqA_GetState,sub_main\unk_3240E0.c,0.250,callcount-vote,votes=2 next=0 round=0; graph 3/3
+108870f0,SeqA_Start,sub_main\unk_3240E0.c,0.203,callcount-vote,votes=2 next=0 round=0; graph 4/4
+1088b090,Em_ApplyFlash,game\unk_70A290.c,0.666,window:game\unk_70A290.c,cluster 1087d1e0-108853e0; graph 0/1
+108a37c0,Save_AddMoney,sub_main\unk_3B4C80.c,0.380,constants+layout,weight=10.1 margin=0.15; graph 0/2
+108a7c90,Quest_SelectedText,lobby\unk_75E3B0.c,0.453,constants,shared=1 weight=8.7 margin=0.11; graph 0/2
+108a9680,Vec_WithinDist,sub_main\unk_3BE060.c,0.525,layout-edge:sub_main\unk_3BE060.c,before matched block; graph 0/0
+108a9920,Sphere_Touch,sub_main\unk_3BE060.c,0.455,layout:sub_main\unk_3BE060.c,between Vec_WithinDist and Capsule_SphereContactOnSphere; graph 0/0
+108ae110,Seg_PointDistance,sub_main\unk_3BE060.c,0.753,layout-edge:sub_main\unk_3BE060.c,before matched block; graph 0/1
+108ae1c0,Cyl_Contains,sub_main\unk_3BE060.c,0.800,layout-edge:sub_main\unk_3BE060.c,before matched block; graph 0/2
+108ae290,Slab_Contains,sub_main\unk_3BE060.c,0.756,layout-edge:sub_main\unk_3BE060.c,before matched block; graph 0/0
+108ae710,Seg_ClipPlane,sub_main\unk_3BE060.c,0.753,callee-of:SoundObj_Run,margin=0.31 round=0; graph 1/1
+108cb120,Area_ContainsPos,sub_main\unk_328CD0.c,0.180,switch-case,votes=3; graph 6/7
+108cb1b0,Em_GetFloorYAbove,sub_main\unk_328CD0.c,0.694,window:sub_main\unk_328CD0.c,cluster 108cb120-108cbe30; graph 0/1
+108cba40,Seg_HitPlane,sub_main\unk_328CD0.c,0.770,layout:sub_main\unk_328CD0.c,between Area_ContainsPos and AreaGrid2_GetFloorY; graph 0/0
+108cbbd0,Tri_ContainsPoint,sub_main\unk_328CD0.c,0.477,layout:sub_main\unk_328CD0.c,between Area_ContainsPos and AreaGrid2_GetFloorY; graph 0/0
+108cbe30,AreaGrid2_GetFloorY,sub_main\unk_328CD0.c,0.204,callcount-vote,votes=2 next=0 round=0; graph 2/2
+108dfe70,Tex_IsIdSlot,sub_main\unk_335040.c,0.691,window:sub_main\unk_335040.c,cluster 108e41f0-108e5630; graph 0/0
+108e41f0,Tex_LoadById,sub_main\unk_335040.c,0.698,layout-edge:sub_main\unk_335040.c,before matched block; graph 0/0
+108e4800,Tex_FindById,sub_main\unk_335040.c,0.698,layout-edge:sub_main\unk_335040.c,before matched block; graph 0/0
+108e4830,Mtx_FromAnglesXYZ,sub_main\unk_335040.c,0.208,callcount-vote,votes=2 next=0 round=1; graph 23/24
+108e4910,Em_MoveRotatedAccel,game\unk_701810.c,0.172,callcount-vote,votes=2 next=0 round=1; graph 28/29
+108e4a40,Vec_Heading,sub_main\unk_335040.c,0.258,callcount-vote,votes=2 next=0 round=0; graph 1/1
+108e4e30,Mtx_BillboardScaled,sub_main\unk_335040.c,0.753,layout-edge:sub_main\unk_335040.c,after matched block; graph 1/1
+108e4ed0,Vec_Resize,sub_main\unk_335040.c,0.447,layout:sub_main\unk_335040.c,between Mtx_BillboardScaled and Tri_Normal; graph 1/1
+108e5220,Tri_Side2D,sub_main\unk_335040.c,0.742,window:sub_main\unk_335040.c,cluster 108e41f0-108e5630; graph 0/0
+108e55d0,FxBlock_Clear,sub_main\unk_335040.c,0.659,window:sub_main\unk_335040.c,cluster 108ddc80-108e5630; graph 0/0
+108f19c0,ColorEdit_Draw,main\unk_18DA50.c,0.615,constants,shared=21 weight=120.5 margin=0.29; graph 1/2
+108f4670,Font_MaxPageEnd,sub_main\unk_2E3940.c,0.753,window:sub_main\unk_2E3940.c,cluster 108f99b0-108ff840; graph 0/0
+108f50c0,Model_Setup,sub_main\unk_2E3940.c,0.735,window:sub_main\unk_2E3940.c,cluster 108f99b0-108ff840; graph 0/1
+108f7f40,Gallery_ResetWork,lobby\unk_70CC10.c,0.659,constants,shared=1 weight=8.1 margin=0.34; graph 0/0
+108f99b0,Model_BuildPartPackets,sub_main\unk_2E3940.c,0.659,window:sub_main\unk_2E3940.c,cluster 108fd910-108ff7a0; graph 0/1
+108fd4d0,Quat_Set,sub_main\unk_2E3940.c,0.706,window:sub_main\unk_2E3940.c,cluster 108f99b0-108ff840; graph 0/0
+108fd910,Player_BeginLayerMotion,sub_main\unk_2E3940.c,0.146,callcount-vote,votes=2 next=0 round=1; graph 3/3
+108ff5c0,Motion_PassedFrame,sub_main\unk_2E3940.c,0.223,call-sandwich,in Npc_State9D between matched calls; graph 10/12
+108ff650,Player_PassedFrameScaled,sub_main\unk_2E3940.c,0.119,callcount-vote,votes=2 next=1 round=0; graph 73/77
+108ff7a0,Motion_ReachedFrame,sub_main\unk_2E3940.c,0.211,callcount-vote,votes=2 next=0 round=0; graph 9/17
+108ff840,EmMotion_InFrameRange,sub_main\unk_2E3940.c,0.117,switch-case,votes=9 trusted-switch; graph 5/11
+109124f0,CardLoad_Wait,sub_main\unk_3D54B0.c,0.644,window:sub_main\unk_3D54B0.c,cluster 109168a0-1091dcd0; graph 0/0
+109168a0,SaveMenu_FreeCharSlots,sub_main\unk_3D54B0.c,0.589,window:sub_main\unk_3D54B0.c,cluster 1091db00-1091dcd0; graph 0/0
+1091db00,SaveFile_Decrypt,sub_main\unk_3D54B0.c,0.567,constants,shared=6 weight=19.8 margin=0.36; graph 0/0
+1091dc70,CardMenu_InitBuffers,sub_main\unk_3D54B0.c,0.404,constants+layout,weight=25.0 margin=0.21; graph 0/0
+1091dcd0,NetMenu_Open,sub_main\unk_3D54B0.c,0.554,constants,shared=6 weight=14.3 margin=0.29; graph 0/0
+10933270,FieldMenu_Close,sub_main\unk_33E620.c,0.206,call-sandwich,in InfoMenu_Update between matched calls; graph 2/2
+10933ae0,StatusMenu_Draw,sub_main\unk_33E620.c,0.499,constants,shared=2 weight=15.6 margin=0.22; graph 0/0
+10933d20,InfoMenu_Update,sub_main\unk_33E620.c,0.531,layout:sub_main\unk_33E620.c,between StatusMenu_Draw and Menu_DrawEntryPicture; graph 7/7
+10933f90,LocationInfo_Update,sub_main\unk_33E620.c,0.227,switch-case,votes=1 trusted-switch; graph 2/2
+109341d0,CombineList_Update,sub_main\unk_33E620.c,0.216,switch-case,votes=1 trusted-switch; graph 3/3
+10935700,MonsterList_Update,sub_main\unk_33E620.c,0.361,switch-case,votes=1; graph 4/4
+10936480,Menu_DrawEntryPicture,sub_main\unk_33E620.c,0.523,constants,shared=14 weight=105.1 margin=0.29; graph 1/1
+109367a0,Hud_DrawRoundGauge,sub_main\unk_33E620.c,0.515,constants,shared=10 weight=83.5 margin=0.27; graph 0/2
+10936d80,SizeRecord_DrawLarge,sub_main\unk_33E620.c,0.470,layout:sub_main\unk_33E620.c,between Hud_DrawRoundGauge and PauseMenu_Update; graph 0/1
+109372f0,QuestMenu_Update,sub_main\unk_33E620.c,0.175,switch-case,votes=1 trusted-switch; graph 3/4
+1093b3c0,NetMenu_StartCardRead,sub_main\unk_3D54B0.c,0.691,window:sub_main\unk_3D54B0.c,cluster 109124f0-1093b600; graph 0/0
+1093b600,NetMenu_Draw,sub_main\unk_3D54B0.c,0.321,caseset:sub_main\unk_3D54B0.c,"label-set similarity 0.92, 1 candidates; graph 0/2"
+1093d7d0,PauseMenu_Update,sub_main\unk_33E620.c,0.800,constants,shared=2 weight=12.8 margin=0.59; graph 1/1
+10941a30,CombineMenu_CheckFirst,sub_main\unk_33E620.c,0.231,callcount-vote,votes=2 next=0 round=0; graph 1/1
+10942350,Pouch_GiveItems,sub_main\unk_33E620.c,0.440,switch-case,votes=1; graph 1/2
+10942d40,CombineMenu_Input,sub_main\unk_33E620.c,0.424,layout:sub_main\unk_33E620.c,between PauseMenu_Update and Hud_HealthColor; graph 5/6
+10946060,Player_GetEquipBySlot,sub_main\unk_33E620.c,0.470,layout:sub_main\unk_33E620.c,between PauseMenu_Update and Hud_HealthColor; graph 0/0
+10949e10,EquipStatus_Open,sub_main\unk_33E620.c,0.463,layout:sub_main\unk_33E620.c,between PauseMenu_Update and Hud_HealthColor; graph 0/0
+10949e30,Player_GatherAtSpot,game\unk_70A290.c,0.384,constants+layout,weight=14.2 margin=0.08; graph 0/3
+1094a080,PouchDrop_Update,sub_main\unk_33E620.c,0.488,layout:sub_main\unk_33E620.c,between PauseMenu_Update and Hud_HealthColor; graph 4/5
+1094a920,PouchDrop_UpdateSave,sub_main\unk_33E620.c,0.525,layout:sub_main\unk_33E620.c,between PauseMenu_Update and Hud_HealthColor; graph 1/1
+10952230,Hud_StartMapPing,sub_main\unk_33E620.c,0.431,layout:sub_main\unk_33E620.c,between PauseMenu_Update and Hud_HealthColor; graph 0/0
+1095aad0,PouchMenu_Back,sub_main\unk_33E620.c,0.722,window:sub_main\unk_33E620.c,cluster 10933270-10969da0; graph 0/1
+1095b770,Hud_HealthColor,sub_main\unk_33E620.c,0.364,constants+layout,weight=42.6 margin=0.08; graph 0/1
+1095ba60,Hud_HealthBarColor,sub_main\unk_33E620.c,0.366,constants+layout,weight=29.7 margin=0.13; graph 0/0
+10963bc0,Pause_DrawWindow,sub_main\unk_33E620.c,0.496,constants+layout,weight=7.3 margin=0.12; graph 1/1
+10969670,QuestMenu_DrawParTime,sub_main\unk_33E620.c,0.303,switch-case,votes=1 trusted-switch; graph 3/3
+10969a70,QuestMenu_DrawBestRecord,sub_main\unk_33E620.c,0.295,switch-case,votes=1 trusted-switch; graph 4/4
+10969da0,QuestMenu_DrawInfo,sub_main\unk_33E620.c,0.413,constants+layout,weight=22.6 margin=0.16; graph 4/5
+1096d2f0,Game_Resume,sub_main\unk_3549F0.c,0.117,callcount-vote,votes=2 next=0 round=0; graph 3/3
+1096d3e0,Menu_CursorUpDown,sub_main\unk_3549F0.c,0.619,window:sub_main\unk_3549F0.c,cluster 1096d2f0-1096e230; graph 3/3
+1096d440,Menu_CursorLeftRight,sub_main\unk_3549F0.c,0.678,constants,shared=2 weight=13.7 margin=0.14; graph 2/2
+1096d4e0,Menu_GridCursor,sub_main\unk_3549F0.c,0.519,layout:sub_main\unk_3549F0.c,between Menu_CursorLeftRight and YesNo_Toggle; graph 2/2
+1096e230,YesNo_Toggle,sub_main\unk_3549F0.c,0.692,constants,shared=2 weight=14.8 margin=0.26; graph 2/2
+109702e0,Players_UpdatePresent,sub_main\unk_356380.c,0.609,window:sub_main\unk_356380.c,cluster 10971d20-10980870; graph 0/0
+10971d20,Window_DrawText,sub_main\unk_356380.c,0.359,callcount-vote,votes=2 next=0 round=0; graph 1/2
+10972360,Window_DrawTextAlpha,sub_main\unk_356380.c,0.429,constants+layout,weight=22.4 margin=0.13; graph 2/3
+10973090,BladeData_StatusValue,sub_main\unk_356380.c,0.463,layout:sub_main\unk_356380.c,between Players_UpdatePresent and Equip_Code; graph 0/0
+109804d0,Equip_Code,sub_main\unk_356380.c,0.473,constants,shared=3 weight=11.6 margin=0.20; graph 1/1
+10980870,Equip_LevelMark,sub_main\unk_356380.c,0.617,caller-of:Equip_Code,margin=0.45 round=0; graph 1/1
+109908c0,Shake_Update,sub_main\unk_361570.c,0.154,callcount-vote,votes=2 next=0 round=0; graph 6/6
+109e5ac0,SpitMeat_Kind,game\unk_70A290.c,0.837,constants,shared=20 weight=68.9 margin=0.41; graph 0/0
+109ec150,Player_State0_73,game\unk_70A290.c,0.538,constants,shared=10 weight=61.7 margin=0.14; graph 4/4
+10a6c0b0,Player_GetHpSkillBonus,sub_main\unk_399F70.c,0.506,constants,shared=6 weight=22.1 margin=0.21; graph 1/1
+10a6fe70,Player_State2_11,game\unk_70A290.c,0.353,constants+layout,weight=11.7 margin=0.14; graph 0/0
+10a7ce90,Player_CheckAreaMsgEvent,sub_main\unk_39C290.c,0.672,caseset:sub_main\unk_39C290.c,"label-set similarity 1.14, 1 candidates; graph 1/1"
+10a7ff00,Em_SetState,game\unk_701810.c,0.062,callcount-vote,votes=2 next=0 round=0; graph 2/2
+10a81210,EmBlangonga_PartFlagUnset,game\em_blangonga.c,0.077,callcount-vote,votes=2 next=0 round=0; graph 1/1
+10a81540,Player_SetIdle,sub_main\unk_3A1070.c,0.551,constants,shared=12 weight=57.5 margin=0.11; graph 1/1
+10a82820,Player_AddResists,sub_main\unk_3AC9C0.c,0.112,callcount-vote,votes=2 next=0 round=1; graph 1/1
+10a86170,Player_CalcDefense,sub_main\unk_3AC9C0.c,0.163,switch-case,votes=1 trusted-switch; graph 2/2
+10a88110,Player_CalcResists,sub_main\unk_3AC9C0.c,0.321,callcount-vote,votes=2 next=0 round=0; graph 2/2
+10a8c390,Player_CanGuard,sub_main\unk_3AC9C0.c,0.581,window:sub_main\unk_3AC9C0.c,cluster 10a82820-10a94cb0; graph 0/0
+10a96d50,Pouch_Add,sub_main\pouch.c,0.423,switch-case,votes=2; graph 2/4
+10a96db0,Pouch_CursorCount,sub_main\pouch.c,0.463,layout:sub_main\pouch.c,between Pouch_Add and Player_GetSkillAmmoMask; graph 0/0
+10a983b0,Player_GetAreaAmbModel,sub_main\pouch.c,0.494,layout:sub_main\pouch.c,between Pouch_Add and Player_GetSkillAmmoMask; graph 0/0
+10a99290,Player_GetSkillAmmoMask,sub_main\pouch.c,0.512,constants,shared=13 weight=50.1 margin=0.29; graph 1/1
+10a99a90,Player_ClearMealEffects,sub_main\unk_39C290.c,0.644,window:sub_main\unk_39C290.c,cluster 10aa17c0-10aa2840; graph 0/0
+10a99d10,Player_AddMaxStamina,sub_main\pouch.c,0.356,constants+layout,weight=20.8 margin=0.05; graph 0/2
+10a9d5a0,Side_ItemUseKind,sub_main\unk_3B4C80.c,0.595,constants,shared=10 weight=57.8 margin=0.11; graph 0/1
+10a9dc60,Player_NameTagRaise,sub_main\unk_3B4C80.c,0.850,constants,shared=26 weight=103.0 margin=0.64; graph 0/0
+10aa0ce0,Em_AddHp,game\unk_708850.c,0.156,callcount-vote,votes=4 next=0 round=0; graph 11/11
+10aa17c0,Quest_IsVersus,sub_main\unk_39C290.c,0.664,layout-edge:sub_main\unk_39C290.c,before matched block; graph 1/3
+10aa19a0,Versus_ApplyTeamBits,sub_main\unk_39C290.c,0.513,constants,shared=41 weight=176.7 margin=0.23; graph 1/1
+10aa22f0,Versus_AddGauge,sub_main\unk_39C290.c,0.552,layout-edge:sub_main\unk_39C290.c,after matched block; graph 1/1
+10aa2840,Versus_MarkDefeat,sub_main\unk_39C290.c,0.215,switch-case,votes=3 trusted-switch; graph 8/8
+10aa28e0,Quest_IsTraining,sub_main\unk_39C290.c,0.549,window:sub_main\unk_39C290.c,cluster 10aa17c0-10aa2840; graph 2/2
+10aa42b0,Stage_GetDataPoint,sub_main\unk_3E3D00.c,0.075,callcount-vote,votes=2 next=0 round=0; graph 1/1
+10aa44d0,Stage_GetAreaRecord,sub_main\stage_data.c,0.227,call-sandwich,in Em_ComputeGoal2 between matched calls; graph 5/10
+10aa4520,Stage_GetActionSpots,sub_main\stage_data.c,0.169,callcount-vote,votes=2 next=0 round=0; graph 2/2
+10aa6aa0,QuestEm_CanAppear,sub_main\unk_3A1070.c,0.192,switch-case,votes=3; graph 20/21
+10aa6b00,QuestEm_Appear,sub_main\unk_3A1070.c,0.235,switch-case,votes=2; graph 15/16
+10aa7330,Em_RunAppearHook,sub_main\unk_3A1070.c,0.431,layout:sub_main\unk_3A1070.c,between QuestEm_Appear and Quest_SeedRandom; graph 0/1
+10aa8510,Em_BreakPart,sub_main\unk_3A1070.c,0.139,switch-case,votes=2 trusted-switch; graph 10/10
+10aa9dc0,Quest_SeedRandom,sub_main\unk_3A1070.c,0.369,constants+layout,weight=9.5 margin=0.09; graph 0/0
+10aa9e20,Quest_Random,sub_main\unk_3A1070.c,0.665,callseq-of:Versus_ApplyTeamBits,support=1 round=0; graph 1/1
+10aaa020,Quest_TargetMessage,sub_main\unk_3A1070.c,0.224,switch-case,votes=1 trusted-switch; graph 1/1
+10aac410,QuestInfo_Get,sub_main\unk_3A1070.c,0.102,callcount-vote,votes=2 next=0 round=0; graph 3/4
+10aadc10,Quest_SetDelivered,sub_main\unk_3A1070.c,0.445,layout:sub_main\unk_3A1070.c,between QuestInfo_Get and MinePoint_RemoveOldest; graph 0/0
+10aaf1c0,MinePoint_RemoveOldest,sub_main\unk_3A1070.c,0.683,window:sub_main\unk_3A1070.c,cluster 10aa6aa0-10aac410; graph 1/1
+10aaf4d0,MinePoint_Remove,sub_main\unk_3A1070.c,0.062,callcount-vote,votes=2 next=0 round=0; graph 2/2
+10ab02b0,EmMine_CreateTimed0,sub_main\unk_3A1070.c,0.063,callcount-vote,votes=2 next=1 round=0; graph 9/10
+10ab15e0,QuestStats_Tally,sub_main\unk_3A1070.c,0.429,layout:sub_main\unk_3A1070.c,between MinePoint_RemoveOldest and QuestGoal_IsClearTarget; graph 1/2
+10ab39c0,QuestGoal_Add,sub_main\unk_3A1070.c,0.222,switch-case,votes=1 trusted-switch; graph 1/1
+10ab3a40,QuestGoal_CompleteIfRunning,sub_main\unk_3A1070.c,0.010,callcount-vote,votes=4 next=0 round=0; graph 4/4
+10ab3ee0,Quest_CheckClear,sub_main\unk_3A1070.c,0.464,layout:sub_main\unk_3A1070.c,between MinePoint_RemoveOldest and QuestGoal_IsClearTarget; graph 1/2
+10ab41e0,Quest_CheckSubClear,sub_main\unk_3A1070.c,0.326,switch-case,votes=1 trusted-switch; graph 1/1
+10ab4380,QuestGoal_IsDone,sub_main\unk_3A1070.c,0.553,layout:sub_main\unk_3A1070.c,between MinePoint_RemoveOldest and QuestGoal_IsClearTarget; graph 0/2
+10ab43c0,QuestGoal_IsClearTarget,sub_main\unk_3A1070.c,0.631,window:sub_main\unk_3A1070.c,cluster 10aa6aa0-10aac410; graph 0/0
+10ab4440,QuestGoal_HuntCountFor,sub_main\unk_3A1070.c,0.349,switch-case,votes=2 trusted-switch; graph 1/1
+10ab4a00,QuestGoal_OnCapture,sub_main\unk_3A1070.c,0.450,layout:sub_main\unk_3A1070.c,between QuestGoal_IsClearTarget and QuestGoal_HasFlag100; graph 1/1
+10ab4ab0,QuestGoal_HasFlag100,sub_main\unk_3A1070.c,0.565,window:sub_main\unk_3A1070.c,cluster 10aa6aa0-10ab4df0; graph 1/1
+10ab4af0,QuestGoal_OnPartBroken,sub_main\unk_3A1070.c,0.419,constants+layout,weight=16.3 margin=0.26; graph 2/2
+10ab4b90,QuestGoal_OnKill,sub_main\unk_3A1070.c,0.361,constants+layout,weight=22.1 margin=0.10; graph 1/1
+10ab4df0,Quest_StepScript,sub_main\unk_3A1070.c,0.412,caseset:sub_main\unk_3A1070.c,"label-set similarity 1.06, 1 candidates; graph 13/14"
+10b42ef0,Sound_PlaySeFlat,main\unk_194830.c,0.180,callcount-vote,votes=8 next=2 round=0; graph 14/16
+10b430f0,Sound_RandomSe,main\unk_194830.c,0.632,callseq-of:EmRemobra_MotionSounds,support=8 round=0; graph 21/23
+10b43820,Sound_PlayEmSe,main\unk_194830.c,0.190,call-sandwich,in Em_PlaySe1AtBoneOnFrame between matched calls; graph 1/1
+10b4c0a0,Area_MonsterState,sub_main\unk_376C00.c,0.208,switch-case,votes=1 trusted-switch; graph 4/4
+10b4c410,Area_DayId,sub_main\unk_376C00.c,0.084,callcount-vote,votes=4 next=2 round=0; graph 22/27
+10b4c650,Map_AreaIndex,sub_main\unk_376C00.c,0.203,callcount-vote,votes=2 next=0 round=1; graph 2/2
+10b4caf0,Area_UpdateAmbientSounds,sub_main\unk_379EC0.c,0.461,constants,shared=29 weight=101.4 margin=0.23; graph 2/2
+10b6b7a0,Jingle_Play,sub_main\unk_363550.c,0.627,callee-of:PoogieMenu_Update,margin=0.39 round=0; graph 8/15
+10b6ba40,func_00367690,sub_main\unk_363550.c,0.468,layout:sub_main\unk_363550.c,between Jingle_Play and func_003676D0; graph 0/0
+10b6ba70,func_003676D0,sub_main\unk_363550.c,0.873,window:sub_main\unk_363550.c,cluster 10b6b7a0-10b6be80; graph 0/0
+10b6bb60,Bgm_IsEventTune,sub_main\unk_363550.c,0.572,window:sub_main\unk_363550.c,cluster 10b6b7a0-10b6be80; graph 0/1
+10b6be80,Bgm_StopEventFade,sub_main\unk_363550.c,0.469,constants,shared=8 weight=27.8 margin=0.16; graph 2/2
+10b6f910,Text_AddBox,sub_main\unk_368F10.c,0.675,window:sub_main\unk_368F10.c,cluster 10b705e0-10b72d50; graph 0/0
+10b6f980,Bgm_Play,sub_main\unk_363550.c,0.203,switch-case,votes=3; graph 2/2
+10b702c0,Text_DrawAllPages,sub_main\unk_368F10.c,0.478,layout:sub_main\unk_368F10.c,between Text_AddBox and Text_DrawColored; graph 0/0
+10b703d0,Rand_Next,sub_main\rand.c,0.800,callee-of:EmFxSpark_Move,margin=0.41 round=0; graph 73/98
+10b705e0,Gfx_SetBlend,sub_main\unk_368F10.c,0.203,callcount-vote,votes=3 next=0 round=0; graph 5/9
+10b70660,Text_Init,sub_main\unk_368F10.c,0.478,layout:sub_main\unk_368F10.c,between Gfx_SetBlend and Text_PrintfColored; graph 0/0
+10b70760,Text_DrawPage,sub_main\unk_368F10.c,0.431,layout:sub_main\unk_368F10.c,between Gfx_SetBlend and Text_PrintfColored; graph 0/1
+10b70790,Text_Disable,sub_main\unk_368F10.c,0.431,layout:sub_main\unk_368F10.c,between Text_AddBox and Text_DrawColored; graph 0/0
+10b70cf0,Text_PrintfColored,sub_main\unk_368F10.c,0.203,switch-case,votes=4; graph 3/3
+10b710e0,Chat_SetColor,sub_main\unk_363550.c,0.667,window:sub_main\unk_363550.c,cluster 10b6b7a0-10b6be80; graph 0/0
+10b72d50,Text_DrawColored,sub_main\unk_368F10.c,0.206,callcount-vote,votes=2 next=0 round=0; graph 2/2
+10b72ff0,Options_Apply,sub_main\unk_368F10.c,0.697,window:sub_main\unk_368F10.c,cluster 10b705e0-10b72d50; graph 0/0
+10b74080,Pad_GetCursorButtons,sub_main\unk_36B5B0.c,0.602,constants+layout,weight=7.0 margin=0.04; graph 0/0
+10b74240,Quest_IsDrill,sub_main\unk_36B5B0.c,0.306,callcount-vote,votes=2 next=0 round=0; graph 2/2
+10b742a0,Scene_InField,sub_main\unk_36B5B0.c,0.525,layout:sub_main\unk_36B5B0.c,between Pad_GetCursorButtons and Quest_PhaseIsOver; graph 0/0
+10b75310,ObjAttach_InitPool,sub_main\unk_363550.c,0.730,window:sub_main\unk_363550.c,cluster 10b6b7a0-10b8f6f0; graph 0/0
+10b76c10,Player_PartFlags,sub_main\unk_36E1D0.c,0.691,window:sub_main\unk_36E1D0.c,cluster 10b7ce90-10b7e850; graph 0/0
+10b7ce90,Player_MotionPhase,sub_main\unk_36E1D0.c,0.356,constants+layout,weight=268.1 margin=0.08; graph 1/1
+10b7e4e0,Player_DrawPartLit,sub_main\unk_36E1D0.c,0.563,layout:sub_main\unk_36E1D0.c,between Player_MotionPhase and Player_HeldPartForMotion; graph 0/1
+10b7e850,Player_HeldPartForMotion,sub_main\unk_36E1D0.c,0.514,callee-intersection,"2 matched callees, 2 candidates; graph 2/2"
+10b8f510,DrawSlot_Alloc,sub_main\unk_376C00.c,0.191,switch-case,votes=2; graph 16/16
+10b8f620,DrawSlot_Free,sub_main\unk_376C00.c,0.172,callcount-vote,votes=4 next=2 round=0; graph 5/9
+10b8f680,DrawSlotB_Free,sub_main\unk_376C00.c,0.180,callcount-vote,votes=2 next=0 round=0; graph 2/2
+10b8f6f0,ObjBuf_MarkFree,sub_main\unk_363550.c,0.094,callcount-vote,votes=2 next=0 round=1; graph 1/1
+10b8f8d0,Bgm_IsBattleState,sub_main\unk_363550.c,0.745,window:sub_main\unk_363550.c,cluster 10b6b7a0-10b8f6f0; graph 0/0
+10b92890,AreaObj_K09_DrawType4,game\unk_6EC680.c,0.613,window:game\unk_6EC680.c,cluster 10b98180-10b98eb0; graph 0/1
+10b94500,Bgm_PlayField,sub_main\unk_363550.c,0.613,window:sub_main\unk_363550.c,cluster 10b6b7a0-10b8f6f0; graph 0/1
+10b98180,MsgEvent_Init,game\unk_6EC680.c,0.538,constants,shared=15 weight=78.1 margin=0.33; graph 0/0
+10b988c0,Bgm_StopEvent,sub_main\unk_363550.c,0.625,window:sub_main\unk_363550.c,cluster 10b6b7a0-10b94500; graph 0/2
+10b98eb0,MsgEvent_ListInput,game\unk_6EC680.c,0.357,callee-intersection,"2 matched callees, 1 candidates; graph 4/4"
+10b9a390,MsgEvent_Check,game\unk_6EC680.c,0.528,window:game\unk_6EC680.c,cluster 10b98180-10b98eb0; graph 5/7
+10b9a660,MsgEvent_CheckList,game\unk_6EC680.c,0.148,callcount-vote,votes=2 next=0 round=0; graph 1/2
+10b9a750,MsgEvent_CheckDay,game\unk_6EC680.c,0.172,switch-case,votes=1 trusted-switch; graph 1/2
+10b9a7b0,MsgEvent_CheckStageIntro,game\unk_6EC680.c,0.148,switch-case,votes=1 trusted-switch; graph 1/2
+10ba2dc0,Save_TestEventFlag,sub_main\unk_3B4C80.c,0.234,callcount-vote,votes=11 next=0 round=0; graph 27/46
+10ba3f00,Bits_Pack,sub_main\unk_3B4C80.c,0.722,window:sub_main\unk_3B4C80.c,cluster 10ba2dc0-10bac2d0; graph 0/0
+10ba4000,Weapon_Element2Value,sub_main\unk_3B4C80.c,0.189,callcount-vote,votes=2 next=0 round=0; graph 1/1
+10ba42e0,Player_GetWeaponStat,sub_main\unk_3B4C80.c,0.318,callcount-vote,votes=2 next=0 round=0; graph 2/2
+10ba5db0,EquipView_GetStat,sub_main\unk_3B4C80.c,0.603,window:sub_main\unk_3B4C80.c,cluster 10ba2dc0-10bac2d0; graph 2/2
+10ba68e0,Save_TestListBit,sub_main\unk_3B4C80.c,0.141,callcount-vote,votes=2 next=0 round=0; graph 2/6
+10ba7160,Equip_EquipSlot,sub_main\unk_3B4C80.c,0.469,layout:sub_main\unk_3B4C80.c,between Bits_Pack and Record_AddHunted; graph 0/0
+10ba86b0,List6_Contains,sub_main\unk_3B4C80.c,0.739,layout:sub_main\unk_3B4C80.c,between Bits_Pack and Record_AddHunted; graph 0/0
+10ba8740,Equip_IsSlotEquipped,sub_main\unk_3B4C80.c,0.666,layout:sub_main\unk_3B4C80.c,between Bits_Pack and Record_AddHunted; graph 0/0
+10ba8810,Forge_CheckCondition,sub_main\unk_3B4C80.c,0.510,layout:sub_main\unk_3B4C80.c,between Bits_Pack and Record_AddHunted; graph 2/2
+10ba9290,Box_GetGunLevel,sub_main\unk_3B4C80.c,0.460,layout:sub_main\unk_3B4C80.c,between Bits_Pack and Record_AddHunted; graph 0/0
+10ba92e0,Box_TestGunOption,sub_main\unk_3B4C80.c,0.451,layout:sub_main\unk_3B4C80.c,between Bits_Pack and Record_AddHunted; graph 0/0
+10ba94e0,Equip_GetWearMask,sub_main\unk_3B4C80.c,0.549,layout:sub_main\unk_3B4C80.c,between Bits_Pack and Record_AddHunted; graph 0/0
+10ba95c0,Record_AddHunted,sub_main\unk_3B4C80.c,0.706,constants+layout,weight=6.6 margin=0.09; graph 0/0
+10ba9690,Records_HuntedTotal,sub_main\unk_3B4C80.c,0.477,layout:sub_main\unk_3B4C80.c,between Record_AddHunted and Box_GetPageCount; graph 0/0
+10ba9700,Record_GroupCaptured,sub_main\unk_3B4C80.c,0.399,switch-case,votes=1; graph 1/2
+10ba9870,Box_GetPageCount,sub_main\unk_3B4C80.c,0.332,constants+layout,weight=7.5 margin=0.05; graph 0/2
+10ba9ad0,Box_GetCapacity,sub_main\unk_3B4C80.c,0.159,callcount-vote,votes=2 next=0 round=0; graph 1/2
+10ba9c00,Box_WrapIndex,sub_main\unk_3B4C80.c,0.738,window:sub_main\unk_3B4C80.c,cluster 10ba2dc0-10bac2d0; graph 0/1
+10ba9ce0,Player_CheckRequirement,sub_main\unk_3B4C80.c,0.538,window:sub_main\unk_3B4C80.c,cluster 10ba2dc0-10bac2d0; graph 3/3
+10baad90,Armor_GetDefense,sub_main\unk_3B4C80.c,0.195,switch-case,votes=1 trusted-switch; graph 2/2
+10bacaf0,Box_HasEquip,sub_main\unk_3B4C80.c,0.227,switch-case,votes=1 trusted-switch; graph 2/2
+10badde0,LongSword_GaugeAtLeast,sub_main\unk_3B4C80.c,0.800,window:sub_main\unk_3B4C80.c,cluster 10ba2dc0-10bac2d0; graph 0/0
+10bc40c0,ObjListA70_Remove,sub_main\unk_376C00.c,0.203,call-sandwich,in EmVelociprey_ChangeState between matched calls; graph 3/3
+10bc49c0,Eff01_Create,game\unk_6BB9D0.c,0.434,switch-case,votes=3; graph 0/0
+10bcaf50,EmRathalos_State0_0A,game\em_rathalos.c,0.249,switch-case,votes=1 trusted-switch; graph 4/4
+10bcb2e0,EmRathalos_State0_0E,game\em_rathalos.c,0.165,switch-case,votes=1 trusted-switch; graph 10/10
+10bcb870,EmRathalos_State0_13,game\em_rathalos.c,0.122,switch-case,votes=1 trusted-switch; graph 6/6
+10bcb910,EmRathalos_State0_28,game\em_rathalos.c,0.441,switch-case,votes=1; graph 5/5
+10bcb970,EmRathalos_State0_14,game\em_rathalos.c,0.317,switch-case,votes=1 trusted-switch; graph 4/4
+10bcba30,EmRathalos_State0_15,game\em_rathalos.c,0.351,switch-case,votes=1; graph 4/4
+10bcbbc0,EmRathalos_State0_17,game\em_rathalos.c,0.210,switch-case,votes=1 trusted-switch; graph 5/5
+10bcbd30,EmRathalos_State0_1A,game\em_rathalos.c,0.154,switch-case,votes=1 trusted-switch; graph 6/6
+10bcbe20,EmRathalos_State0_1B,game\em_rathalos.c,0.317,switch-case,votes=1 trusted-switch; graph 4/4
+10bcbee0,EmRathalos_State0_1D,game\em_rathalos.c,0.236,switch-case,votes=1 trusted-switch; graph 6/6
+10bcbfd0,EmRathalos_State0_1F,game\em_rathalos.c,0.235,switch-case,votes=1 trusted-switch; graph 6/6
+10bcc2f0,EmRathalos_EndState,game\em_rathalos.c,0.227,callcount-vote,votes=2 next=0 round=0; graph 10/11
+10bce8b0,EmRathalos_State3_10,game\em_rathalos.c,0.160,callcount-vote,votes=2 next=0 round=0; graph 5/7
+10bda4d0,EmRathalos_State4_04,game\em_rathalos.c,0.153,switch-case,votes=1 trusted-switch; graph 4/4
+10bda5f0,EmRathalos_State4_05,game\em_rathalos.c,0.374,switch-case,votes=1; graph 3/3
+10bda6b0,EmRathalos_State4_08,game\em_rathalos.c,0.276,switch-case,votes=1 trusted-switch; graph 4/4
+10bda910,EmRathalos_State4_09,game\em_rathalos.c,0.272,switch-case,votes=1 trusted-switch; graph 4/4
+10bdabe0,EmRathalos_State4_0B,game\em_rathalos.c,0.169,switch-case,votes=1 trusted-switch; graph 3/3
+10bdacd0,EmRathalos_State4_0C,game\em_rathalos.c,0.134,switch-case,votes=1 trusted-switch; graph 3/3
+10bdada0,EmRathalos_State4_0D,game\em_rathalos.c,0.215,switch-case,votes=1 trusted-switch; graph 3/3
+10bdafb0,EmRathalos_State4_10,game\em_rathalos.c,0.374,switch-case,votes=1; graph 3/3
+10bdb3f0,EmRathalos_State4_17,game\em_rathalos.c,0.287,switch-case,votes=1 trusted-switch; graph 3/3
+10bdc620,EmPlesioth_State6_00_Captured,game\em_plesioth.c,0.491,constants,shared=5 weight=18.6 margin=0.26; graph 5/6
+10bdda40,EmRathalos_RunGroup0,game\em_rathalos.c,0.420,layout:game\em_rathalos.c,between EmRathalos_State4_10 and EmRathalos_RunGroup3; graph 12/14
+10bddc20,EmRathalos_RunGroup1,game\em_rathalos.c,0.403,switch-case,votes=1 trusted-switch; graph 1/1
+10bddcc0,EmRathalos_RunGroup3,game\em_rathalos.c,0.877,window:game\em_rathalos.c,cluster 10bde780-10bfa420; graph 2/2
+10bde3e0,EmRathalos_RunGroup4,game\em_rathalos.c,0.429,layout:game\em_rathalos.c,between EmRathalos_RunGroup3 and EmRathalos_RunGroup6; graph 10/10
+10bde580,EmRathalos_RunGroup5,game\em_rathalos.c,0.287,call-sandwich,in EmRathalos_RunState between matched calls; graph 1/1
+10bde5d0,EmRathalos_RunGroup6,game\em_rathalos.c,0.765,window:game\em_rathalos.c,cluster 10bde780-10bfa420; graph 1/1
+10bde630,EmRathalos_RunGroup8,game\em_rathalos.c,0.486,layout:game\em_rathalos.c,between EmRathalos_RunGroup6 and EmRathalos_Update; graph 1/1
+10bde780,EmRathalos_Update,game\em_rathalos.c,0.477,constants,shared=27 weight=75.7 margin=0.29; graph 6/7
+10bdf130,EmRathalos_RunState,game\em_rathalos.c,0.352,callee-intersection,"4 matched callees, 1 candidates; graph 8/8"
+10bdf390,EmLaoshan_RequestOnFrame,game\em_laoshan.c,0.478,callcount-vote,votes=2 next=0 round=0; graph 2/2
+10be5ec0,EmRathalos_SetGroup0State,game\em_rathalos.c,0.663,window:game\em_rathalos.c,cluster 10bde780-10bfa420; graph 10/10
+10be6080,EmRathalos_SetGroup1State,game\em_rathalos.c,0.433,layout:game\em_rathalos.c,between EmRathalos_SetGroup0State and EmRathalos_ChangeState; graph 4/4
+10be63e0,EmRathalos_SetGroup2State,game\em_rathalos.c,0.381,switch-case,votes=1 trusted-switch; graph 5/6
+10be66e0,EmRathalos_SetGroup3State,game\em_rathalos.c,0.337,switch-case,votes=1 trusted-switch; graph 4/4
+10be6ec0,EmRathalos_ChangeState,game\em_rathalos.c,0.528,switch-case,votes=9 trusted-switch; graph 32/36
+10be7c50,EmFatalis_MotionSounds,game\em_rathalos.c,0.885,constants,shared=183 weight=782.0 margin=0.32; graph 2/2
+10be9e30,EmFatalis_SpawnK1COrK11,game\em_rathalos.c,0.321,callee-intersection,"2 matched callees, 1 candidates; graph 2/2"
+10bfa2f0,EmFatalis_RunGroup3,game\em_rathalos.c,0.354,caseset:game\em_rathalos.c,"label-set similarity 1.02, 1 candidates; graph 0/0"
+10bfa420,EmFatalis_SpawnK1CInMotions,game\em_rathalos.c,0.766,constants,shared=20 weight=114.1 margin=0.32; graph 1/1
+10c05370,EmFatalis_RunGroup4,game\em_rathalos.c,0.555,window:game\em_rathalos.c,cluster 10bc4aa0-10c06c70; graph 0/0
+10c073a0,EmAnteka_MotionSounds,game\em_khezu.c,0.916,window:game\em_khezu.c,cluster 10c09b80-10c13a40; graph 3/3
+10c07dc0,EmAnteka_Start,game\em_khezu.c,0.478,layout:game\em_khezu.c,between EmAnteka_MotionSounds and EmAnteka_SetMotion; graph 1/1
+10c087a0,EmAnteka_RunGroup0,game\em_khezu.c,0.483,layout:game\em_khezu.c,between EmAnteka_MotionSounds and EmAnteka_SetMotion; graph 0/0
+10c08f50,EmAnteka_RunGroup1,game\em_khezu.c,0.739,layout:game\em_khezu.c,between EmAnteka_MotionSounds and EmAnteka_SetMotion; graph 0/0
+10c09160,EmAnteka_RunGroup3,game\em_khezu.c,0.423,layout:game\em_khezu.c,between EmAnteka_MotionSounds and EmAnteka_SetMotion; graph 0/0
+10c091f0,EmAnteka_State4_00,game\em_khezu.c,0.125,switch-case,votes=1 trusted-switch; graph 2/3
+10c09280,EmAnteka_State4_02,game\em_khezu.c,0.195,callcount-vote,votes=2 next=0 round=0; graph 4/4
+10c09510,EmAnteka_State4_03,game\em_khezu.c,0.146,switch-case,votes=1 trusted-switch; graph 3/4
+10c095b0,EmAnteka_State4_04,game\em_khezu.c,0.128,switch-case,votes=1 trusted-switch; graph 3/3
+10c09630,EmAnteka_RunGroup4,game\em_khezu.c,0.657,layout:game\em_khezu.c,between EmAnteka_MotionSounds and EmAnteka_SetMotion; graph 5/5
+10c09b80,EmAnteka_SetMotion,game\em_khezu.c,0.899,constants,shared=14 weight=95.6 margin=0.51; graph 6/6
+10c09c30,EmAnteka_MotionEffects,game\em_khezu.c,0.389,callee-intersection,"4 matched callees, 1 candidates; graph 5/5"
+10c0f700,EmMosswine_Start,game\em_khezu.c,0.478,layout:game\em_khezu.c,between EmAnteka_SetMotion and EmLaoshan_MotionSounds; graph 1/1
+10c0f720,EmMosswine_ChangeState,game\em_khezu.c,0.468,layout:game\em_khezu.c,between EmAnteka_SetMotion and EmLaoshan_MotionSounds; graph 9/10
+10c0f950,EmMosswine_EndState,game\em_khezu.c,0.156,call-sandwich,in EmMosswine_State0_04 between matched calls; graph 4/11
+10c0f980,EmMosswine_State0_01,game\em_khezu.c,0.183,switch-case,votes=1 trusted-switch; graph 2/3
+10c0f9e0,EmMosswine_State0_02,game\em_khezu.c,0.404,switch-case,votes=1 trusted-switch; graph 3/3
+10c0fa60,EmMosswine_State0_03,game\em_khezu.c,0.150,switch-case,votes=1 trusted-switch; graph 2/3
+10c0faf0,EmMosswine_State0_04,game\em_khezu.c,0.235,callcount-vote,votes=2 next=0 round=0; graph 5/5
+10c0fbc0,EmMosswine_State0_05,game\em_khezu.c,0.213,switch-case,votes=1 trusted-switch; graph 2/3
+10c0fc20,EmMosswine_State0_06,game\em_khezu.c,0.252,switch-case,votes=1 trusted-switch; graph 2/3
+10c0fc80,EmMosswine_State0_0A,game\em_khezu.c,0.192,switch-case,votes=1 trusted-switch; graph 5/5
+10c0fd00,EmMosswine_State0_0B,game\em_khezu.c,0.291,switch-case,votes=1 trusted-switch; graph 3/3
+10c0fd60,EmMosswine_State0_09,game\em_khezu.c,0.203,switch-case,votes=1 trusted-switch; graph 2/3
+10c0fdc0,EmMosswine_State0_0C,game\em_khezu.c,0.254,switch-case,votes=1 trusted-switch; graph 2/3
+10c0fe20,EmMosswine_State0_0D,game\em_khezu.c,0.178,switch-case,votes=1 trusted-switch; graph 2/3
+10c0fea0,EmMosswine_RunGroup0,game\em_khezu.c,0.492,layout:game\em_khezu.c,between EmAnteka_SetMotion and EmLaoshan_MotionSounds; graph 12/12
+10c106a0,EmMosswine_State3_00_Charge,game\em_khezu.c,0.298,callcount-vote,votes=2 next=0 round=0; graph 6/7
+10c10bf0,EmMosswine_RunGroup3,game\em_khezu.c,0.657,layout:game\em_khezu.c,between EmAnteka_SetMotion and EmLaoshan_MotionSounds; graph 2/2
+10c11470,EmLaoshan_RunGroup3,game\em_laoshan.c,0.657,window:game\em_laoshan.c,cluster 10c18dd0-10c1c010; graph 0/0
+10c11db0,EmMosswine_RunState,game\em_khezu.c,0.597,layout:game\em_khezu.c,between EmAnteka_SetMotion and EmLaoshan_MotionSounds; graph 2/2
+10c13a40,EmLaoshan_MotionSounds,game\em_khezu.c,0.944,constants,shared=223 weight=1034.7 margin=0.45; graph 3/3
+10c15e10,EmLaoshan_Init,game\em_laoshan.c,0.435,caseset:game\em_laoshan.c,"label-set similarity 1.13, 1 candidates; graph 2/2"
+10c18cb0,EmKhezu_RunGroup4,game\em_khezu.c,0.326,caseset:game\em_khezu.c,"label-set similarity 0.94, 1 candidates; graph 0/0"
+10c18dd0,EmLaoshan_MotionEffects,game\em_laoshan.c,0.508,constants,shared=101 weight=480.5 margin=0.10; graph 9/9
+10c1baa0,EmLaoshan_SetGroup1State,game\em_laoshan.c,0.428,layout:game\em_laoshan.c,between EmLaoshan_MotionEffects and EmCephadrome_MotionSounds; graph 3/3
+10c1bf70,EmLaoshan_ChangeState,game\em_laoshan.c,0.466,layout:game\em_laoshan.c,between EmLaoshan_MotionEffects and EmCephadrome_MotionSounds; graph 2/2
+10c1c010,EmCephadrome_MotionSounds,game\em_laoshan.c,0.846,callee-intersection,"4 matched callees, 1 candidates; graph 5/5"
+10c1d440,EmCephadrome_SpawnEffect21,game\em_cephadrome.c,0.227,call-sandwich,in EmCephadrome_MotionEffects between matched calls; graph 1/1
+10c1dc00,EmCephadrome_EndState,game\em_cephadrome.c,0.115,callcount-vote,votes=6 next=0 round=0; graph 6/7
+10c1dcb0,EmCephadrome_State0_00,game\em_cephadrome.c,0.396,switch-case,votes=1; graph 2/2
+10c1dd40,EmCephadrome_State0_01,game\em_cephadrome.c,0.372,switch-case,votes=1; graph 3/3
+10c1ddf0,EmCephadrome_State0_02,game\em_cephadrome.c,0.390,switch-case,votes=1; graph 3/3
+10c1de60,EmCephadrome_State0_03,game\em_cephadrome.c,0.167,call-sandwich,in EmCephadrome_RunGroup0 between matched calls; graph 9/9
+10c1e150,EmCephadrome_State0_04,game\em_cephadrome.c,0.513,switch-case,votes=2; graph 3/3
+10c1e220,EmCephadrome_State0_05,game\em_cephadrome.c,0.306,switch-case,votes=2; graph 3/4
+10c1e320,EmCephadrome_State0_06,game\em_cephadrome.c,0.234,switch-case,votes=1 trusted-switch; graph 3/4
+10c1e3e0,EmCephadrome_State0_0E,game\em_cephadrome.c,0.259,switch-case,votes=1 trusted-switch; graph 3/6
+10c1e4e0,EmCephadrome_State0_0F,game\em_cephadrome.c,0.228,switch-case,votes=1 trusted-switch; graph 3/4
+10c1e5a0,EmCephadrome_State0_10,game\em_cephadrome.c,0.256,switch-case,votes=1 trusted-switch; graph 3/6
+10c1e6a0,EmCephadrome_State0_12,game\em_cephadrome.c,0.300,switch-case,votes=1 trusted-switch; graph 3/4
+10c1e7a0,EmCephadrome_State0_13,game\em_cephadrome.c,0.228,switch-case,votes=1 trusted-switch; graph 3/4
+10c1e860,EmCephadrome_State0_14,game\em_cephadrome.c,0.128,switch-case,votes=1 trusted-switch; graph 5/6
+10c1ebf0,EmCephadrome_State2_00,game\em_cephadrome.c,0.240,switch-case,votes=1 trusted-switch; graph 2/2
+10c1ec90,EmCephadrome_State2_02,game\em_cephadrome.c,0.211,switch-case,votes=1 trusted-switch; graph 2/2
+10c1ee20,EmCephadrome_State2_03,game\em_cephadrome.c,0.150,switch-case,votes=2; graph 1/1
+10c1eea0,EmCephadrome_State2_04,game\em_cephadrome.c,0.199,call-sandwich,in EmCephadrome_RunGroup2 between matched calls; graph 2/2
+10c1f1b0,EmCephadrome_State2_05,game\em_cephadrome.c,0.177,switch-case,votes=2; graph 2/2
+10c1f3d0,EmCephadrome_State2_06,game\em_cephadrome.c,0.157,switch-case,votes=1 trusted-switch; graph 2/2
+10c1f460,EmCephadrome_State2_07,game\em_cephadrome.c,0.164,switch-case,votes=1 trusted-switch; graph 3/3
+10c1f690,EmCephadrome_State2_08,game\em_cephadrome.c,0.178,switch-case,votes=1 trusted-switch; graph 3/3
+10c1f940,EmCephadrome_State2_0A,game\em_cephadrome.c,0.175,switch-case,votes=1 trusted-switch; graph 5/5
+10c1fc20,EmCephadrome_State2_0B,game\em_cephadrome.c,0.170,switch-case,votes=1 trusted-switch; graph 5/5
+10c1ff10,EmCephadrome_State2_0C,game\em_cephadrome.c,0.207,switch-case,votes=1 trusted-switch; graph 2/2
+10c200b0,EmCephadrome_State2_0D,game\em_cephadrome.c,0.172,switch-case,votes=1 trusted-switch; graph 2/2
+10c20250,EmCephadrome_State2_0E,game\em_cephadrome.c,0.212,switch-case,votes=1 trusted-switch; graph 3/4
+10c205b0,EmCephadrome_State2_0F,game\em_cephadrome.c,0.158,switch-case,votes=1 trusted-switch; graph 3/3
+10c20660,EmCephadrome_State2_10,game\em_cephadrome.c,0.247,switch-case,votes=1 trusted-switch; graph 3/4
+10c20ba0,EmCephadrome_State2_11,game\em_cephadrome.c,0.257,switch-case,votes=1 trusted-switch; graph 3/4
+10c23a90,EmCephadrome_State4_05,game\em_cephadrome.c,0.236,callcount-vote,votes=2 next=0 round=0; graph 3/4
+10c23c90,EmCephadrome_State4_06,game\em_cephadrome.c,0.124,switch-case,votes=1 trusted-switch; graph 3/4
+10c23fc0,EmCephadrome_State4_09,game\em_cephadrome.c,0.123,switch-case,votes=1 trusted-switch; graph 3/4
+10c24250,EmCephadrome_State4_0B,game\em_cephadrome.c,0.174,switch-case,votes=1 trusted-switch; graph 2/3
+10c24460,EmCephadrome_State4_11,game\em_cephadrome.c,0.264,switch-case,votes=2 trusted-switch; graph 5/5
+10c24910,EmCephadrome_State4_15,game\em_cephadrome.c,0.306,switch-case,votes=1 trusted-switch; graph 2/3
+10c26310,EmCephadrome_RunGroup0,game\em_cephadrome.c,0.674,window:game\em_cephadrome.c,cluster 10c1d440-10c2a380; graph 14/14
+10c26450,EmCephadrome_RunGroup1,game\em_cephadrome.c,0.356,switch-case,votes=1 trusted-switch; graph 1/1
+10c26490,EmCephadrome_RunGroup2,game\em_cephadrome.c,0.371,switch-case,votes=1 trusted-switch; graph 17/17
+10c26650,EmCephadrome_RunGroup3,game\em_cephadrome.c,0.254,switch-case,votes=1 trusted-switch; graph 1/1
+10c26750,EmCephadrome_RunGroup4,game\em_cephadrome.c,0.375,switch-case,votes=1 trusted-switch; graph 7/7
+10c268d0,EmCephadrome_RunGroup5,game\em_cephadrome.c,0.292,switch-case,votes=1 trusted-switch; graph 1/1
+10c26960,EmCephadrome_RunGroup6,game\em_cephadrome.c,0.094,callcount-vote,votes=2 next=0 round=0; graph 1/1
+10c269a0,EmCephadrome_RunState,game\em_cephadrome.c,0.572,layout:game\em_cephadrome.c,between EmCephadrome_RunGroup0 and EmCephadrome_MotionEffects; graph 7/7
+10c27a80,EmMelynx_State5_02,game\em_cephadrome.c,0.662,window:game\em_cephadrome.c,cluster 10c1d440-10c2a380; graph 0/1
+10c27b00,EmCephadrome_MotionEffects,game\em_cephadrome.c,0.494,callee-intersection,"4 matched callees, 16 candidates; graph 9/9"
+10c294a0,EmCephadrome_SetGroup0State,game\em_cephadrome.c,0.689,window:game\em_cephadrome.c,cluster 10c1d440-10c2a380; graph 10/10
+10c29700,EmCephadrome_SetGroup2State,game\em_cephadrome.c,0.301,switch-case,votes=1 trusted-switch; graph 7/7
+10c29b60,EmCephadrome_ChangeState,game\em_cephadrome.c,0.578,window:game\em_cephadrome.c,cluster 10c1d440-10c2a380; graph 13/30
+10c2a180,EmCephadrome_StepRouteIndex,game\em_cephadrome.c,0.428,layout:game\em_cephadrome.c,between EmCephadrome_ChangeState and EmMelynx_RunGroup0; graph 4/4
+10c2a380,EmMelynx_MotionEffects,game\em_cephadrome.c,0.607,constants,shared=38 weight=220.7 margin=0.13; graph 1/3
+10c304f0,EmMelynx_State1_01,game\em_cephadrome.c,0.354,switch-case,votes=1; graph 3/3
+10c34c90,EmApceros_RunGroup0,game\em_plesioth.c,0.577,window:game\em_plesioth.c,cluster 10c35fb0-10c3b310; graph 0/1
+10c34df0,EmMelynx_RunGroup1,game\em_cephadrome.c,0.897,caseset:game\em_cephadrome.c,"label-set similarity 1.16, 4 candidates; graph 1/1"
+10c34ec0,EmMelynx_RunGroup0,game\em_cephadrome.c,0.732,window:game\em_cephadrome.c,cluster 10c1d440-10c34df0; graph 0/0
+10c35fb0,EmKind0A_MotionSounds,game\em_plesioth.c,0.911,constants,shared=79 weight=288.6 margin=0.44; graph 3/3
+10c39b10,EmKind0A_SetMessage,game\em_plesioth.c,0.203,callcount-vote,votes=2 next=0 round=0; graph 2/2
+10c39c00,EmKind0A_ShowMessage,game\em_plesioth.c,0.438,layout:game\em_plesioth.c,between EmKind0A_MotionSounds and EmKind0A_ToIdle; graph 2/2
+10c39ce0,EmKind0A_GiveRandomItem,game\em_plesioth.c,0.473,layout:game\em_plesioth.c,between EmKind0A_MotionSounds and EmKind0A_ToIdle; graph 3/3
+10c39f70,EmKind0A_Trade,game\em_plesioth.c,0.486,layout:game\em_plesioth.c,between EmKind0A_MotionSounds and EmKind0A_ToIdle; graph 5/5
+10c3b230,EmKind0A_ToIdle,game\em_plesioth.c,0.434,constants+layout,weight=22.9 margin=0.06; graph 1/1
+10c3b310,EmKind0A_TurnToYaw,game\em_plesioth.c,0.518,constants,shared=3 weight=17.0 margin=0.20; graph 0/0
+10c9f260,Player_SetAimLayers,game\unk_70A290.c,0.538,constants,shared=3 weight=20.3 margin=0.19; graph 0/0
+10ca1ff0,Player_State6_04,game\unk_70A290.c,0.126,switch-case,votes=1 trusted-switch; graph 1/1
+10ca35c0,Player_State6_09,game\unk_70A290.c,0.087,callcount-vote,votes=2 next=0 round=0; graph 1/1
+10ca8f60,Player_RunGroup6,game\unk_70A290.c,0.694,window:game\unk_70A290.c,cluster 10c9f260-10ca9410; graph 2/2
+10cd4f00,EmKutku_StepPitch,game\em_kutku.c,0.411,constants+layout,weight=13.0 margin=0.06; graph 0/1
+10d25100,EmApceros_State0_0D,game\em_plesioth.c,0.706,window:game\em_plesioth.c,cluster 10d25290-10d29020; graph 0/2
+10d25290,EmApceros_PlaySeOnFrame,game\em_plesioth.c,0.201,callcount-vote,votes=2 next=0 round=0; graph 2/2
+10d25350,EmApceros_MotionSounds,game\em_plesioth.c,0.945,constants+layout,weight=436.2 margin=0.04; graph 2/2
+10d26010,EmApceros_Start,game\em_plesioth.c,0.478,layout:game\em_plesioth.c,between EmApceros_MotionSounds and EmApceros_State5_00_Hunted; graph 1/1
+10d26030,EmApceros_ChangeState,game\em_plesioth.c,0.255,call-sandwich,in EmApceros_State5_00_Hunted between matched calls; graph 5/5
+10d27e30,EmApceros_State5_00_Hunted,game\em_plesioth.c,0.393,constants+layout,weight=51.2 margin=0.19; graph 8/8
+10d28bb0,EmApceros_MotionEffects,game\em_plesioth.c,0.360,callee-intersection,"4 matched callees, 1 candidates; graph 7/7"
+10d29020,EmApceros_ScriptQuery,game\em_plesioth.c,0.672,constants,shared=25 weight=95.1 margin=0.10; graph 1/1
+10d592f0,Player_SetState,sub_main\unk_3A1070.c,0.140,switch-case,votes=2; graph 1/2
+10d5cc80,Player_ReactToHit,game\unk_733EA0.c,0.360,constants+layout,weight=85.7 margin=0.13; graph 1/8
+10dfe740,EmDiablos_MotionSounds,game\em_plesioth.c,0.832,constants,shared=190 weight=851.0 margin=0.21; graph 1/5
+10e01670,EmDiablos_State0_00,game\em_diablos.c,0.435,switch-case,votes=1; graph 2/2
+10e01710,EmDiablos_State0_01,game\em_diablos.c,0.133,switch-case,votes=1 trusted-switch; graph 3/3
+10e01760,EmDiablos_State0_02,game\em_diablos.c,0.256,switch-case,votes=1 trusted-switch; graph 4/4
+10e01960,EmDiablos_State0_03,game\em_diablos.c,0.392,switch-case,votes=1; graph 3/3
+10e019b0,EmDiablos_State0_04,game\em_diablos.c,0.121,switch-case,votes=1 trusted-switch; graph 3/3
+10e01a40,EmDiablos_State0_05,game\em_diablos.c,0.319,switch-case,votes=1 trusted-switch; graph 5/5
+10e01b00,EmDiablos_State0_06,game\em_diablos.c,0.159,switch-case,votes=1 trusted-switch; graph 4/4
+10e01bb0,EmDiablos_State0_07,game\em_diablos.c,0.170,switch-case,votes=1 trusted-switch; graph 3/3
+10e01c40,EmDiablos_State0_09,game\em_diablos.c,0.359,switch-case,votes=1; graph 3/3
+10e01ca0,EmDiablos_State0_0A,game\em_diablos.c,0.259,switch-case,votes=1 trusted-switch; graph 4/4
+10e01d60,EmDiablos_State0_0B,game\em_diablos.c,0.145,switch-case,votes=1 trusted-switch; graph 4/4
+10e01e10,EmDiablos_State0_0D,game\em_diablos.c,0.138,switch-case,votes=1 trusted-switch; graph 4/4
+10e01ec0,EmDiablos_State0_0F,game\em_diablos.c,0.425,switch-case,votes=1; graph 3/3
+10e01f60,EmDiablos_State0_10,game\em_diablos.c,0.425,switch-case,votes=1; graph 3/3
+10e02000,EmDiablos_State0_11,game\em_diablos.c,0.231,switch-case,votes=1 trusted-switch; graph 3/3
+10e02060,EmDiablos_State0_12,game\em_diablos.c,0.292,switch-case,votes=1 trusted-switch; graph 4/5
+10e02190,EmDiablos_State0_14,game\em_diablos.c,0.325,switch-case,votes=1 trusted-switch; graph 3/4
+10e02270,EmDiablos_State0_15,game\em_diablos.c,0.349,switch-case,votes=1 trusted-switch; graph 4/5
+10e023a0,EmDiablos_State0_16,game\em_diablos.c,0.288,switch-case,votes=1 trusted-switch; graph 3/3
+10e023f0,EmDiablos_State0_17,game\em_diablos.c,0.258,switch-case,votes=1 trusted-switch; graph 3/4
+10e024c0,EmDiablos_State0_18,game\em_diablos.c,0.261,switch-case,votes=1 trusted-switch; graph 3/4
+10e02590,EmDiablos_State0_19,game\em_diablos.c,0.369,switch-case,votes=1; graph 3/3
+10e025d0,EmDiablos_State0_1B,game\em_diablos.c,0.326,switch-case,votes=1 trusted-switch; graph 3/4
+10e026b0,EmDiablos_State0_1D,game\em_diablos.c,0.347,constants+layout,weight=25.4 margin=0.06; graph 7/7
+10e0a280,EmDiablos_RunGroup0,game\em_diablos.c,0.737,layout:game\em_diablos.c,between EmDiablos_State0_1D and EmDiablos_MotionEffects; graph 24/24
+10e0a430,EmDiablos_RunGroup2,game\em_diablos.c,0.490,layout:game\em_diablos.c,between EmDiablos_State0_1D and EmDiablos_MotionEffects; graph 0/0
+10e0a9e0,EmDiablos_RunGroup5,game\em_diablos.c,0.449,layout:game\em_diablos.c,between EmDiablos_State0_1D and EmDiablos_MotionEffects; graph 0/0
+10e0b9a0,EmDiablos_MotionEffects,game\em_diablos.c,0.314,callee-intersection,"5 matched callees, 1 candidates; graph 11/11"
+10e0fc20,EmDiablos_EndState,game\em_diablos.c,0.203,callcount-vote,votes=8 next=0 round=0; graph 17/17
+10e104b0,EmDiablos_RunGroup4,game\em_diablos.c,0.545,window:game\em_diablos.c,cluster 10e01670-10e0b9a0; graph 0/0
+10e23450,EmRathalos_State0_12,game\em_rathalos.c,0.502,constants,shared=4 weight=21.0 margin=0.15; graph 1/4
+10e25880,EmRathalos_UpdateCurves,game\em_rathalos.c,0.226,callcount-vote,votes=2 next=0 round=0; graph 3/4
+10e25bc0,EmRathalos_State2_00,game\em_rathalos.c,0.131,numbered-table,"EmRathalos_State2_NN at index 0 (offset 0, 2 agreeing); graph 2/3"
+10e26810,EmRathalos_State2_06,game\em_rathalos.c,0.172,numbered-table,"EmRathalos_State2_NN at index 6 (offset 0, 2 agreeing); graph 3/4"
+10e26d90,EmRathalos_State2_08,game\em_rathalos.c,0.429,numbered-table,"EmRathalos_State2_NN at index 8 (offset 0, 2 agreeing); graph 5/7"
+10e27530,EmRathalos_State2_0A,game\em_rathalos.c,0.445,constants+layout,weight=14.5 margin=0.07; graph 4/5
+10e27830,EmRathalos_State2_0B,game\em_rathalos.c,0.175,numbered-table,"EmRathalos_State2_NN at index 11 (offset 0, 2 agreeing); graph 2/4"
+10e27d00,EmRathalos_State2_0D,game\em_rathalos.c,0.457,layout:game\em_rathalos.c,between EmRathalos_State2_0A and EmRathalos_State3_0B; graph 7/9
+10e28260,EmRathalos_State2_0E,game\em_rathalos.c,0.078,numbered-table,"EmRathalos_State2_NN at index 14 (offset 0, 2 agreeing); graph 0/1"
+10e282e0,EmRathalos_State2_0F,game\em_rathalos.c,0.092,numbered-table,"EmRathalos_State2_NN at index 15 (offset 0, 2 agreeing); graph 0/1"
+10e28fd0,EmRathalos_State2_17,game\em_rathalos.c,0.461,layout:game\em_rathalos.c,between EmRathalos_State2_0A and EmRathalos_State3_0B; graph 2/3
+10eb4530,EmGravios_SetGroup1State,game\em_gravios.c,0.309,caseset:game\em_gravios.c,"label-set similarity 1.00, 1 candidates; graph 1/1"
+10ec1680,EmDiablos_SetGroup0State,game\em_diablos.c,0.655,window:game\em_diablos.c,cluster 10ec3250-10ec3740; graph 11/11
+10ec17d0,EmDiablos_SetGroup1State,game\em_diablos.c,0.361,switch-case,votes=1 trusted-switch; graph 2/2
+10ec1f10,EmDiablos_SetGroup2State,game\em_diablos.c,0.284,switch-case,votes=1 trusted-switch; graph 3/4
+10ec24f0,EmDiablos_SetGroup3State,game\em_diablos.c,0.294,switch-case,votes=1 trusted-switch; graph 3/3
+10ec2a40,EmDiablos_ChangeState,game\em_diablos.c,0.488,layout:game\em_diablos.c,between EmDiablos_SetGroup0State and EmDiablos_InMotion448To44A; graph 18/24
+10ec3250,EmDiablos_InMotion448To44A,game\em_diablos.c,0.536,constants,shared=2 weight=10.8 margin=0.20; graph 1/1
+10ec3740,EmKhezu_MotionSounds,game\em_diablos.c,0.751,constants,shared=183 weight=810.1 margin=0.17; graph 0/1
+10ec5ce0,EmKhezu_EndState,game\em_khezu.c,0.203,call-sandwich,in EmKhezu_State6_00 between matched calls; graph 7/11
+10ec5da0,EmKhezu_State0_00,game\em_khezu.c,0.232,switch-case,votes=1 trusted-switch; graph 3/3
+10ec5ec0,EmKhezu_State0_02,game\em_khezu.c,0.210,switch-case,votes=1 trusted-switch; graph 2/3
+10ec5f70,EmKhezu_State0_03,game\em_khezu.c,0.172,switch-case,votes=1 trusted-switch; graph 2/3
+10ec6090,EmKhezu_State0_05,game\em_khezu.c,0.307,switch-case,votes=1 trusted-switch; graph 3/4
+10ec61d0,EmKhezu_State0_07,game\em_khezu.c,0.219,switch-case,votes=1 trusted-switch; graph 2/3
+10ec6250,EmKhezu_State0_08,game\em_khezu.c,0.312,switch-case,votes=1 trusted-switch; graph 2/3
+10ec62d0,EmKhezu_State0_0A,game\em_khezu.c,0.259,switch-case,votes=1 trusted-switch; graph 4/4
+10ec6390,EmKhezu_State0_0D,game\em_khezu.c,0.349,switch-case,votes=1 trusted-switch; graph 3/5
+10ec64a0,EmKhezu_State0_0E,game\em_khezu.c,0.173,switch-case,votes=1 trusted-switch; graph 8/9
+10ec6800,EmKhezu_State0_13,game\em_khezu.c,0.180,switch-case,votes=1 trusted-switch; graph 5/6
+10ec68f0,EmKhezu_State0_28,game\em_khezu.c,0.441,layout:game\em_khezu.c,between EmKhezu_EndState and EmKhezu_State6_00; graph 5/5
+10ec6950,EmKhezu_State0_12,game\em_khezu.c,0.325,switch-case,votes=1 trusted-switch; graph 3/4
+10ec6a60,EmKhezu_State0_14,game\em_khezu.c,0.351,switch-case,votes=1; graph 3/4
+10ec6b30,EmKhezu_State0_15,game\em_khezu.c,0.378,switch-case,votes=1; graph 3/4
+10ec6c30,EmKhezu_State0_17,game\em_khezu.c,0.278,switch-case,votes=1 trusted-switch; graph 3/4
+10ec6cc0,EmKhezu_State0_18,game\em_khezu.c,0.282,switch-case,votes=1 trusted-switch; graph 3/4
+10ec6d50,EmKhezu_State0_1A,game\em_khezu.c,0.154,switch-case,votes=1 trusted-switch; graph 6/6
+10ec6e50,EmKhezu_State0_1B,game\em_khezu.c,0.352,switch-case,votes=1; graph 3/4
+10ec6f20,EmKhezu_State0_1D,game\em_khezu.c,0.245,switch-case,votes=1 trusted-switch; graph 4/6
+10ec7040,EmKhezu_State0_1F,game\em_khezu.c,0.243,switch-case,votes=1 trusted-switch; graph 4/6
+10ecea90,EmKhezu_State6_00,game\em_khezu.c,0.308,callee-intersection,"5 matched callees, 1 candidates; graph 7/7"
+10ecedc0,EmKhezu_State6_01_Captured,game\em_khezu.c,0.491,layout:game\em_khezu.c,between EmKhezu_State6_00 and EmKhezu_RunGroup0; graph 4/6
+10ed0070,EmKhezu_RunGroup0,game\em_khezu.c,0.650,window:game\em_khezu.c,cluster 10ec5ce0-10ef2cb0; graph 20/20
+10ed0220,EmVelociprey_RunGroup5,game\em_khezu.c,0.798,window:game\em_khezu.c,cluster 10ec5ce0-10ef2cb0; graph 0/2
+10ed6f40,EmKhezu_RunGroup2,game\em_khezu.c,0.582,window:game\em_khezu.c,cluster 10ec5ce0-10ef2cb0; graph 0/0
+10ee9b00,EmKhezu_SetGroup0State,game\em_khezu.c,0.615,window:game\em_khezu.c,cluster 10eeb0e0-10ef2cb0; graph 12/12
+10ee9c60,EmKhezu_SetGroup1State,game\em_khezu.c,0.189,switch-case,votes=1 trusted-switch; graph 2/2
+10ee9f40,EmKhezu_SetGroup2State,game\em_khezu.c,0.482,layout:game\em_khezu.c,between EmKhezu_SetGroup0State and EmVelociprey_MotionSounds; graph 8/9
+10eea410,EmKhezu_SetGroup3State,game\em_khezu.c,0.176,switch-case,votes=1 trusted-switch; graph 2/2
+10eea7b0,EmKhezu_ChangeState,game\em_khezu.c,0.509,layout:game\em_khezu.c,between EmKhezu_SetGroup0State and EmVelociprey_MotionSounds; graph 18/30
+10eeab60,EmKhezu_StartCurves,game\em_khezu.c,0.511,layout:game\em_khezu.c,between EmKhezu_SetGroup0State and EmVelociprey_MotionSounds; graph 1/1
+10eeae30,EmKhezu_UpdateCurves,game\em_khezu.c,0.226,call-sandwich,in EmKhezu_State6_00 between matched calls; graph 2/2
+10eeaf90,EmKhezu_NextAreaPoint,game\em_khezu.c,0.250,switch-case,votes=1 trusted-switch; graph 2/2
+10eeb0e0,EmVelociprey_MotionSounds,game\em_khezu.c,0.860,constants,shared=90 weight=354.6 margin=0.19; graph 2/2
+10eeb740,EmVelociprey_Init,game\em_khezu.c,0.389,callee-intersection,"3 matched callees, 1 candidates; graph 3/3"
+10eebc70,EmVelociprey_EndState,game\em_khezu.c,0.498,layout:game\em_khezu.c,between EmVelociprey_MotionSounds and EmVelociprey_State3_03; graph 15/15
+10eebf40,EmVelociprey_State0_07,game\em_khezu.c,0.343,callee-intersection,"3 matched callees, 1 candidates; graph 3/4"
+10eec190,EmGravios_RunGroup1,game\em_gravios.c,0.412,caseset:game\em_gravios.c,"label-set similarity 0.99, 1 candidates; graph 0/1"
+10eec8d0,EmVelociprey_State3_00,game\em_khezu.c,0.159,switch-case,votes=1 trusted-switch; graph 5/5
+10eec9f0,EmVelociprey_State3_02,game\em_khezu.c,0.351,switch-case,votes=1; graph 6/6
+10eecdb0,EmVelociprey_State3_03,game\em_khezu.c,0.542,window:game\em_khezu.c,cluster 10eeb0e0-10ef2cb0; graph 5/5
+10eece50,EmVelociprey_State3_04,game\em_khezu.c,0.201,switch-case,votes=2; graph 4/4
+10eecee0,EmVelociprey_State3_05,game\em_khezu.c,0.354,switch-case,votes=1; graph 6/6
+10eed2a0,EmVelociprey_State3_06,game\em_khezu.c,0.354,switch-case,votes=1; graph 6/6
+10eed660,EmVelociprey_State3_07,game\em_khezu.c,0.176,switch-case,votes=1 trusted-switch; graph 5/5
+10eed760,EmVelociprey_State3_08,game\em_khezu.c,0.188,switch-case,votes=1 trusted-switch; graph 6/6
+10eedac0,EmVelociprey_State3_09,game\em_khezu.c,0.223,switch-case,votes=1 trusted-switch; graph 5/5
+10eedb20,EmVelociprey_State3_0A,game\em_khezu.c,0.188,switch-case,votes=1 trusted-switch; graph 6/6
+10eede80,EmVelociprey_State3_0B,game\em_khezu.c,0.188,switch-case,votes=1 trusted-switch; graph 6/6
+10eee1e0,EmVelociprey_State3_0C,game\em_khezu.c,0.154,switch-case,votes=1 trusted-switch; graph 5/5
+10eee2f0,EmVelociprey_State3_0E,game\em_khezu.c,0.199,switch-case,votes=2; graph 4/4
+10eee380,EmVelociprey_RunGroup3,game\em_khezu.c,0.914,window:game\em_khezu.c,cluster 10eeb0e0-10ef2cb0; graph 14/14
+10eef030,EmVelociprey_RunGroup4,game\em_khezu.c,0.484,layout:game\em_khezu.c,between EmVelociprey_RunGroup3 and EmVelociprey_State5_04_Appear; graph 1/1
+10eef390,EmVelociprey_RunGroup1,game\em_khezu.c,0.139,switch-case,votes=1 trusted-switch; graph 0/1
+10eefc60,EmVelociprey_State5_04_Appear,game\em_khezu.c,0.670,constants,shared=26 weight=97.4 margin=0.42; graph 4/5
+10ef0f40,EmVelociprey_State6_00,game\em_khezu.c,0.309,callee-intersection,"4 matched callees, 1 candidates; graph 4/4"
+10ef1640,EmVelociprey_RunGroup6,game\em_khezu.c,0.528,layout:game\em_khezu.c,between EmVelociprey_State5_04_Appear and EmVelociprey_Update; graph 2/2
+10ef2190,EmVelociprey_RunGroup7,game\em_khezu.c,0.338,call-sandwich,in EmVelociprey_RunState between matched calls; graph 1/1
+10ef21e0,EmVelociprey_Update,game\em_khezu.c,0.341,callee-intersection,"2 matched callees, 1 candidates; graph 6/6"
+10ef26d0,EmVelociprey_RunState,game\em_khezu.c,0.349,callcount-vote,votes=2 next=0 round=0; graph 5/8
+10ef2980,EmVelociprey_SetGroup0State,game\em_khezu.c,0.194,switch-case,votes=1 trusted-switch; graph 3/3
+10ef2be0,EmVelociprey_SetGroup3State,game\em_khezu.c,0.470,switch-case,votes=1; graph 2/2
+10ef2cb0,EmVelociprey_ChangeState,game\em_khezu.c,0.626,callseq-of:EmVelociprey_State5_04_Appear,support=1 round=0; graph 11/11
+10efe480,EmGravios_Start,game\em_gravios.c,0.520,window:game\em_gravios.c,cluster 10eec190-10f0fbd0; graph 1/1
+10f00630,EmGravios_State1_07,game\em_gravios.c,0.423,layout:game\em_gravios.c,between EmGravios_Start and EmGravios_State3_04; graph 2/3
+10f02b90,EmGravios_State3_04,game\em_gravios.c,0.608,window:game\em_gravios.c,cluster 10f08c60-10f0fbd0; graph 2/3
+10f08c60,EmGravios_RunGroup2,game\em_gravios.c,0.480,caseset:game\em_gravios.c,"label-set similarity 0.97, 1 candidates; graph 0/0"
+10f0de60,EmGravios_SetGroup0State,game\em_gravios.c,0.607,window:game\em_gravios.c,cluster 10f0f7b0-10f0fbd0; graph 13/13
+10f0ec70,EmGravios_StartCurves,game\em_gravios.c,0.530,window:game\em_gravios.c,cluster 10f0f7b0-10f0fbd0; graph 0/0
+10f0f6d0,EmKind12_State1_00,game\em_gravios.c,0.401,constants+layout,weight=14.6 margin=0.10; graph 3/3
+10f0f740,EmKind12_State1_01,game\em_gravios.c,0.315,call-sandwich,in EmKind12_RunGroup1 between matched calls; graph 2/2
+10f0f7b0,EmKind12_State1_02,game\em_gravios.c,0.470,constants,shared=6 weight=25.2 margin=0.19; graph 3/3
+10f0f910,EmKind12_RunGroup1,game\em_gravios.c,0.320,callee-intersection,"2 matched callees, 1 candidates; graph 3/3"
+10f0fbd0,EmVespoid_MotionSounds,game\em_gravios.c,0.953,constants,shared=49 weight=187.0 margin=0.36; graph 2/2
+10f23040,EmDrome_RunGroup5,game\em_drome.c,0.269,caseset:game\em_drome.c,"label-set similarity 1.05, 1 candidates; graph 0/1"
+10f26f20,EmDrome_RunGroup0,game\em_drome.c,0.731,caseset:game\em_drome.c,"label-set similarity 1.12, 4 candidates; graph 0/0"
+10f2f1b0,EmKutku_SetGroup0State,game\em_kutku.c,0.642,caseset:game\em_kutku.c,"label-set similarity 1.06, 1 candidates; graph 12/12"
+10f2f2f0,EmKutku_SetGroup1State,game\em_kutku.c,0.329,switch-case,votes=1 trusted-switch; graph 2/2
+10f2f940,EmKutku_SetGroup2State,game\em_kutku.c,0.400,switch-case,votes=1 trusted-switch; graph 5/6
+10f2fc50,EmKutku_SetGroup3State,game\em_kutku.c,0.254,switch-case,votes=1 trusted-switch; graph 3/3
+10f301f0,EmKutku_SetGroup4State,game\em_kutku.c,0.485,layout:game\em_kutku.c,between EmKutku_SetGroup0State and EmKutku_ChangeState; graph 9/9
+10f303a0,EmKutku_ChangeState,game\em_kutku.c,0.474,callee-intersection,"6 matched callees, 1 candidates; graph 12/13"
+10f30960,EmKutku_StartCurves,game\em_kutku.c,0.506,caseset:game\em_kutku.c,"label-set similarity 0.95, 2 candidates; graph 0/0"
+10f31160,EmKutku_UpdateCurves,game\em_kutku.c,0.474,layout:game\em_kutku.c,between EmKutku_StartCurves and EmPlesioth_MotionSounds; graph 0/1
+10f311b0,EmPlesioth_MotionSounds,game\em_kutku.c,0.876,constants,shared=162 weight=710.5 margin=0.13; graph 2/3
+10f455b0,EmGaruga_RunGroup0,game\em_garuga.c,0.889,caseset:game\em_garuga.c,"label-set similarity 1.09, 5 candidates; graph 0/1"
+10f45e10,EmPlesioth_Update,game\em_plesioth.c,0.323,callee-intersection,"5 matched callees, 1 candidates; graph 5/5"
+10f481a0,EmPlesioth_RequestOnFrame,game\em_plesioth.c,0.478,layout:game\em_plesioth.c,between EmPlesioth_Update and EmPlesioth_MotionEffects; graph 1/2
+10f48d40,EmPlesioth_MotionEffects,game\em_plesioth.c,0.378,callee-intersection,"5 matched callees, 1 candidates; graph 9/10"
+10f4c0a0,EmPlesioth_SetFinMode,game\em_plesioth.c,0.125,switch-case,votes=8 trusted-switch; graph 1/1
+10f4de10,EmPlesioth_SetGroup0State,game\em_plesioth.c,0.675,window:game\em_plesioth.c,cluster 10f48d40-10f4c0a0; graph 7/7
+10f4e430,EmPlesioth_SetGroup2State,game\em_plesioth.c,0.465,layout:game\em_plesioth.c,between EmPlesioth_SetGroup0State and EmPlesioth_ChangeState; graph 10/10
+10f4e970,EmPlesioth_ChangeState,game\em_plesioth.c,0.518,caseset:game\em_plesioth.c,"label-set similarity 1.01, 3 candidates; graph 17/18"
+10f4f510,EmDrome_MotionSounds,game\unk_733EA0.c,0.718,callee-intersection,"2 matched callees, 5 candidates; graph 2/2"
+10f53000,EmGaruga_RunGroup1,game\em_garuga.c,0.401,caseset:game\em_garuga.c,"label-set similarity 1.12, 1 candidates; graph 0/0"
+10f58ea0,EmDrome_State5_04_Appear,game\em_drome.c,0.402,callee-intersection,"3 matched callees, 1 candidates; graph 4/5"
+10f59a30,EmGaruga_RunGroup5,game\em_garuga.c,0.594,window:game\em_garuga.c,cluster 10f455b0-10f76570; graph 0/0
+10f5a1e0,EmDrome_Update,game\em_drome.c,0.344,constants+layout,weight=64.5 margin=0.06; graph 6/9
+10f5c880,EmDrome_SetGroup0State,game\em_drome.c,0.526,layout:game\em_drome.c,between EmDrome_Update and EmKirin_MotionSounds; graph 9/9
+10f5cc40,EmDrome_SetGroup3State,game\em_drome.c,0.424,layout:game\em_drome.c,between EmDrome_Update and EmKirin_MotionSounds; graph 2/2
+10f5ce40,EmDrome_ChangeState,game\em_drome.c,0.384,callee-intersection,"9 matched callees, 1 candidates; graph 11/12"
+10f5de00,EmKirin_MotionSounds,game\em_drome.c,0.716,window:game\em_drome.c,cluster 10f60470-10f65990; graph 2/2
+10f60150,EmGaruga_RunGroup3,game\em_garuga.c,0.388,caseset:game\em_garuga.c,"label-set similarity 0.95, 1 candidates; graph 0/0"
+10f60470,EmKirin_State1_03,game\em_drome.c,0.482,constants,shared=5 weight=30.8 margin=0.25; graph 4/4
+10f60770,EmKirin_State1_0B,game\em_drome.c,0.477,layout:game\em_drome.c,between EmKirin_State1_03 and EmKirin_EndState; graph 3/3
+10f61420,EmKirin_RunGroup3,game\em_drome.c,0.434,layout:game\em_drome.c,between EmKirin_State1_03 and EmKirin_EndState; graph 0/1
+10f64270,EmKirin_RunState,game\em_drome.c,0.814,layout:game\em_drome.c,between EmKirin_State1_03 and EmKirin_EndState; graph 0/1
+10f649a0,EmKirin_ChangeState,game\em_drome.c,0.370,callcount-vote,votes=2 next=0 round=0; graph 5/5
+10f64d30,EmKirin_EndState,game\em_drome.c,0.203,call-sandwich,in EmKirin_State1_03 between matched calls; graph 3/3
+10f65990,EmGaruga_MotionSounds,game\em_drome.c,0.867,constants,shared=212 weight=955.1 margin=0.22; graph 4/4
+10f688b0,EmGaruga_EndState,game\em_garuga.c,0.156,callcount-vote,votes=2 next=0 round=0; graph 5/6
+10f688f0,EmGaruga_State4_End,game\em_garuga.c,0.156,callcount-vote,votes=2 next=0 round=0; graph 2/3
+10f68b70,EmGravios_State0_0A,game\em_gravios.c,0.198,switch-case,votes=1 trusted-switch; graph 3/3
+10f68f20,EmGravios_State0_12,game\em_gravios.c,0.271,switch-case,votes=1 trusted-switch; graph 4/4
+10f69110,EmGaruga_State0_28,game\em_garuga.c,0.345,callee-intersection,"4 matched callees, 1 candidates; graph 4/5"
+10f69180,EmGravios_State0_14,game\em_gravios.c,0.333,switch-case,votes=1 trusted-switch; graph 3/3
+10f69250,EmGravios_State0_16,game\em_gravios.c,0.263,call-sandwich,in EmGravios_RunGroup0 between matched calls; graph 3/3
+10f693a0,EmGravios_State0_17,game\em_gravios.c,0.240,switch-case,votes=2; graph 3/4
+10f69470,EmGravios_State0_1B,game\em_gravios.c,0.332,switch-case,votes=1 trusted-switch; graph 3/3
+10f695d0,EmGravios_State0_1D,game\em_gravios.c,0.196,switch-case,votes=1 trusted-switch; graph 3/3
+10f696d0,EmGravios_State0_1F,game\em_gravios.c,0.200,switch-case,votes=1 trusted-switch; graph 3/3
+10f6e3c0,EmGaruga_State4_04,game\em_garuga.c,0.151,switch-case,votes=1 trusted-switch; graph 3/4
+10f6e520,EmGaruga_State4_05,game\em_garuga.c,0.374,switch-case,votes=1; graph 3/3
+10f6e5e0,EmGaruga_State4_06,game\em_garuga.c,0.374,switch-case,votes=1; graph 3/3
+10f6e6a0,EmGaruga_State4_07,game\em_garuga.c,0.150,switch-case,votes=1 trusted-switch; graph 3/3
+10f6e840,EmGaruga_State4_08,game\em_garuga.c,0.289,switch-case,votes=1 trusted-switch; graph 4/4
+10f6ea60,EmGaruga_State4_09,game\em_garuga.c,0.272,switch-case,votes=1 trusted-switch; graph 4/4
+10f6ed30,EmGaruga_State4_0B,game\em_garuga.c,0.164,switch-case,votes=1 trusted-switch; graph 2/3
+10f6ee70,EmGaruga_State4_0C,game\em_garuga.c,0.137,switch-case,votes=1 trusted-switch; graph 2/3
+10f6ef80,EmGaruga_State4_0E,game\em_garuga.c,0.202,switch-case,votes=1 trusted-switch; graph 2/3
+10f6f0c0,EmGaruga_State4_10,game\em_garuga.c,0.268,switch-case,votes=1 trusted-switch; graph 5/5
+10f6f200,EmGaruga_State4_0D,game\em_garuga.c,0.233,call-sandwich,in EmGaruga_RunGroup4 between matched calls; graph 2/3
+10f6f410,EmGaruga_State4_15,game\em_garuga.c,0.305,switch-case,votes=1 trusted-switch; graph 2/3
+10f6f6a0,EmGaruga_State4_17,game\em_garuga.c,0.244,switch-case,votes=1 trusted-switch; graph 2/3
+10f6f780,EmGaruga_State4_18,game\em_garuga.c,0.322,switch-case,votes=1 trusted-switch; graph 2/3
+10f713b0,EmGravios_RunGroup0,game\em_gravios.c,0.528,window:game\em_gravios.c,cluster 10f52540-10f71560; graph 8/8
+10f71560,EmGravios_RunGroup3,game\em_gravios.c,0.505,caseset:game\em_gravios.c,"label-set similarity 1.04, 4 candidates; graph 0/1"
+10f715e0,EmGaruga_RunGroup2,game\em_garuga.c,0.755,window:game\em_garuga.c,cluster 10f6e520-10f76570; graph 0/0
+10f71790,EmGaruga_State6_00,game\em_garuga.c,0.331,constants+layout,weight=43.7 margin=0.05; graph 2/9
+10f71880,EmGaruga_RunGroup4,game\em_garuga.c,0.531,layout:game\em_garuga.c,between EmGaruga_State6_00 and EmGaruga_Update; graph 14/14
+10f71a90,EmGaruga_RunGroup8,game\em_garuga.c,0.486,layout:game\em_garuga.c,between EmGaruga_State6_00 and EmGaruga_Update; graph 0/0
+10f71ba0,EmGaruga_Update,game\em_garuga.c,0.339,constants+layout,weight=48.3 margin=0.04; graph 5/6
+10f72d30,EmGaruga_MotionEffects,game\em_garuga.c,0.438,callee-intersection,"5 matched callees, 1 candidates; graph 9/9"
+10f75060,EmGaruga_SetGroup0State,game\em_garuga.c,0.618,layout:game\em_garuga.c,between EmGaruga_MotionEffects and EmHermitaur_MotionSounds; graph 11/11
+10f751b0,EmGaruga_SetGroup1State,game\em_garuga.c,0.364,switch-case,votes=1 trusted-switch; graph 2/2
+10f75630,EmGaruga_SetGroup2State,game\em_garuga.c,0.405,switch-case,votes=1 trusted-switch; graph 5/6
+10f75900,EmGaruga_SetGroup3State,game\em_garuga.c,0.332,switch-case,votes=1 trusted-switch; graph 3/3
+10f75c70,EmGaruga_SetGroup4State,game\em_garuga.c,0.504,layout:game\em_garuga.c,between EmGaruga_MotionEffects and EmHermitaur_MotionSounds; graph 9/9
+10f75ea0,EmGaruga_ChangeState,game\em_garuga.c,0.600,layout:game\em_garuga.c,between EmGaruga_MotionEffects and EmHermitaur_MotionSounds; graph 12/20
+10f76140,EmGaruga_StartCurves,game\em_garuga.c,0.521,layout:game\em_garuga.c,between EmGaruga_MotionEffects and EmHermitaur_MotionSounds; graph 1/1
+10f76570,EmHermitaur_MotionSounds,game\em_garuga.c,0.767,constants,shared=217 weight=958.5 margin=0.17; graph 3/3
+10f7c130,EmHermitaur_AllowHit8,game\em_hermitaur.c,0.522,window:game\em_hermitaur.c,cluster 10f7eb10-10fa7ae0; graph 0/0
+10f7e550,EmHermitaur_State0_02,game\em_hermitaur.c,0.323,switch-case,votes=1 trusted-switch; graph 3/3
+10f7e5a0,EmHermitaur_State0_03,game\em_hermitaur.c,0.137,switch-case,votes=2; graph 5/5
+10f7e720,EmHermitaur_State0_04,game\em_hermitaur.c,0.241,call-sandwich,in EmHermitaur_RunGroup0 between matched calls; graph 2/2
+10f7e780,EmHermitaur_State0_05,game\em_hermitaur.c,0.364,switch-case,votes=1; graph 3/3
+10f7e7e0,EmHermitaur_State0_06,game\em_hermitaur.c,0.295,switch-case,votes=1 trusted-switch; graph 3/3
+10f7e820,EmHermitaur_State0_07,game\em_hermitaur.c,0.342,switch-case,votes=1 trusted-switch; graph 4/4
+10f7e8a0,EmHermitaur_State0_09,game\em_hermitaur.c,0.235,switch-case,votes=1 trusted-switch; graph 3/3
+10f7e8f0,EmHermitaur_State0_13,game\em_hermitaur.c,0.287,switch-case,votes=1 trusted-switch; graph 3/3
+10f7e940,EmHermitaur_State0_14,game\em_hermitaur.c,0.410,switch-case,votes=1; graph 3/3
+10f7e990,EmHermitaur_State0_15,game\em_hermitaur.c,0.203,switch-case,votes=1 trusted-switch; graph 6/6
+10f7ea30,EmHermitaur_State0_16,game\em_hermitaur.c,0.133,switch-case,votes=1 trusted-switch; graph 4/4
+10f7eab0,EmHermitaur_State0_0A,game\em_hermitaur.c,0.253,switch-case,votes=1 trusted-switch; graph 3/3
+10f7eb10,EmHermitaur_RunGroup0,game\em_hermitaur.c,0.486,switch-case,votes=1 trusted-switch; graph 13/13
+10f7eec0,EmHermitaur_State1_00,game\em_hermitaur.c,0.409,switch-case,votes=4 trusted-switch; graph 5/5
+10f7f110,EmHermitaur_State1_01,game\em_hermitaur.c,0.275,callcount-vote,votes=2 next=0 round=0; graph 5/6
+10f7f2a0,EmHermitaur_State1_02,game\em_hermitaur.c,0.363,callcount-vote,votes=2 next=0 round=0; graph 6/7
+10f7f4a0,EmHermitaur_State1_06,game\em_hermitaur.c,0.276,switch-case,votes=4 trusted-switch; graph 5/6
+10f7f6b0,EmHermitaur_State1_14,game\em_hermitaur.c,0.415,switch-case,votes=4 trusted-switch; graph 5/5
+10f7fb20,EmHermitaur_RunGroup1,game\em_hermitaur.c,0.642,switch-case,votes=1 trusted-switch; graph 6/6
+10f7fd20,EmHermitaur_State2_00,game\em_hermitaur.c,0.171,call-sandwich,in EmHermitaur_RunGroup2 between matched calls; graph 3/3
+10f7fdc0,EmHermitaur_State2_01,game\em_hermitaur.c,0.227,switch-case,votes=1 trusted-switch; graph 5/5
+10f7ff20,EmHermitaur_State2_02,game\em_hermitaur.c,0.150,switch-case,votes=2; graph 5/5
+10f804f0,EmHermitaur_State2_05,game\em_hermitaur.c,0.302,switch-case,votes=1 trusted-switch; graph 2/2
+10f80830,EmHermitaur_State2_08,game\em_hermitaur.c,0.155,switch-case,votes=1 trusted-switch; graph 2/2
+10f80920,EmHermitaur_State2_09,game\em_hermitaur.c,0.182,switch-case,votes=1 trusted-switch; graph 4/4
+10f809c0,EmHermitaur_RunGroup2,game\em_hermitaur.c,0.529,switch-case,votes=1 trusted-switch; graph 7/7
+10f80b30,EmHermitaur_State3_00,game\em_hermitaur.c,0.422,layout:game\em_hermitaur.c,between EmHermitaur_RunGroup2 and EmHermitaur_RunGroup3; graph 3/3
+10f80b70,EmHermitaur_State3_01,game\em_hermitaur.c,0.297,switch-case,votes=3; graph 3/3
+10f80c30,EmHermitaur_State3_03,game\em_hermitaur.c,0.169,call-sandwich,in EmHermitaur_RunGroup3 between matched calls; graph 5/6
+10f80f30,EmHermitaur_State3_04,game\em_hermitaur.c,0.228,switch-case,votes=2; graph 3/4
+10f81030,EmHermitaur_State3_05,game\em_hermitaur.c,0.189,switch-case,votes=1 trusted-switch; graph 3/3
+10f810c0,EmHermitaur_State3_07,game\em_hermitaur.c,0.207,switch-case,votes=1 trusted-switch; graph 3/3
+10f81280,EmHermitaur_State3_08,game\em_hermitaur.c,0.232,switch-case,votes=2; graph 5/5
+10f81420,EmHermitaur_State3_09,game\em_hermitaur.c,0.147,switch-case,votes=1 trusted-switch; graph 3/4
+10f814d0,EmHermitaur_State3_0A,game\em_hermitaur.c,0.185,switch-case,votes=3; graph 6/7
+10f817e0,EmHermitaur_State3_0D,game\em_hermitaur.c,0.319,switch-case,votes=2; graph 2/3
+10f81850,EmHermitaur_State3_0F,game\em_hermitaur.c,0.213,switch-case,votes=2; graph 2/3
+10f81930,EmHermitaur_State3_11,game\em_hermitaur.c,0.157,call-sandwich,in EmHermitaur_RunGroup3 between matched calls; graph 3/4
+10f81a30,EmHermitaur_State3_12,game\em_hermitaur.c,0.231,switch-case,votes=3; graph 5/5
+10f82720,EmHermitaur_State3_16,game\em_hermitaur.c,0.182,switch-case,votes=1 trusted-switch; graph 3/4
+10f82910,EmHermitaur_State3_17,game\em_hermitaur.c,0.204,switch-case,votes=1 trusted-switch; graph 5/5
+10f8af60,EmHermitaur_RunGroup3,game\em_hermitaur.c,0.292,switch-case,votes=1 trusted-switch; graph 16/16
+10f8b5a0,EmHermitaur_State4_00,game\em_hermitaur.c,0.275,switch-case,votes=1 trusted-switch; graph 3/3
+10f8b630,EmHermitaur_State4_01,game\em_hermitaur.c,0.253,switch-case,votes=1 trusted-switch; graph 3/3
+10f8b6a0,EmHermitaur_State4_02,game\em_hermitaur.c,0.446,switch-case,votes=2; graph 3/3
+10f8b7b0,EmHermitaur_State4_04,game\em_hermitaur.c,0.192,switch-case,votes=1 trusted-switch; graph 3/3
+10f8b860,EmHermitaur_State4_05,game\em_hermitaur.c,0.227,switch-case,votes=1 trusted-switch; graph 3/4
+10f8b900,EmHermitaur_State4_06,game\em_hermitaur.c,0.280,switch-case,votes=1 trusted-switch; graph 3/3
+10f8b9c0,EmHermitaur_State4_07,game\em_hermitaur.c,0.207,switch-case,votes=1 trusted-switch; graph 3/3
+10f8ba60,EmHermitaur_State4_08,game\em_hermitaur.c,0.301,switch-case,votes=1 trusted-switch; graph 3/3
+10f8bb40,EmHermitaur_State4_09,game\em_hermitaur.c,0.365,switch-case,votes=2; graph 3/3
+10f8bca0,EmHermitaur_State4_0B,game\em_hermitaur.c,0.239,switch-case,votes=1 trusted-switch; graph 3/3
+10f8bd10,EmHermitaur_State4_0C,game\em_hermitaur.c,0.301,switch-case,votes=1 trusted-switch; graph 4/4
+10f8bf70,EmHermitaur_State4_0D,game\em_hermitaur.c,0.231,switch-case,votes=1 trusted-switch; graph 3/4
+10f8c280,EmHermitaur_RunGroup4,game\em_hermitaur.c,0.520,layout-edge:game\em_hermitaur.c,before matched block; graph 13/13
+10f8c570,EmHermitaur_State5_01,game\em_hermitaur.c,0.460,callee-intersection,"2 matched callees, 5 candidates; graph 3/3"
+10f8cfd0,EmHermitaur_RunGroup6,game\em_hermitaur.c,0.296,switch-case,votes=1 trusted-switch; graph 1/1
+10f8d2a0,EmHermitaur_State8_01,game\em_hermitaur.c,0.360,switch-case,votes=1; graph 3/3
+10f8d550,EmHermitaur_RunGroup8,game\em_hermitaur.c,0.439,layout:game\em_hermitaur.c,between EmHermitaur_State5_01 and EmHermitaur_ChangeState; graph 2/2
+10f8d6a0,EmHermitaur_RunState,game\em_hermitaur.c,0.646,layout:game\em_hermitaur.c,between EmHermitaur_State5_01 and EmHermitaur_ChangeState; graph 7/7
+10f8d730,EmHermitaur_ChangeState,game\em_hermitaur.c,0.340,constants+layout,weight=94.3 margin=0.03; graph 35/35
+10f8f120,EmHermitaur_EndState,game\em_hermitaur.c,0.203,callcount-vote,votes=2 next=0 round=0; graph 32/36
+10f8f170,EmHermitaur_EndState2,game\em_hermitaur.c,0.203,callcount-vote,votes=2 next=0 round=0; graph 7/7
+10f97090,EmDrome_RunGroup4,game\em_drome.c,0.371,caseset:game\em_drome.c,"label-set similarity 1.11, 8 candidates; graph 0/0"
+10f97400,EmHermitaur_InSpecialArea,game\em_hermitaur.c,0.882,window:game\em_hermitaur.c,cluster 10f7eb10-10fa7ae0; graph 1/1
+10f97540,EmBlangonga_MotionSounds,game\em_rathalos.c,0.947,constants,shared=196 weight=838.1 margin=0.18; graph 4/4
+10f999c0,EmBlangonga_MotionSoundsCongalala,game\em_rathalos.c,0.889,constants,shared=221 weight=985.2 margin=0.22; graph 4/4
+10f9c280,EmKutku_MotionSounds,game\em_gravios.c,0.562,callee-intersection,"2 matched callees, 8 candidates; graph 2/2"
+10fa9070,EmBlangonga_RunGroup3,game\em_blangonga.c,0.830,window:game\em_blangonga.c,cluster 10fa04a0-10fbd4c0; graph 0/0
+10fb50d0,EmGaruga_RunGroup6,game\em_garuga.c,0.164,switch-case,votes=2; graph 0/1
+10fb7160,EmBlangonga_SpawnK1CInMotions,game\em_blangonga.c,0.732,constants+layout,weight=90.9 margin=0.06; graph 2/2
+10fbd4c0,EmBlangonga_ScriptQuery,game\em_blangonga.c,0.479,constants,shared=21 weight=67.4 margin=0.10; graph 1/2
+10fbe610,EmKushala_MotionSounds,game\em_shengaoren.c,0.802,constants,shared=166 weight=722.6 margin=0.19; graph 4/4
+10fc0ab0,EmKushala_MotionSoundsTesca,game\em_shengaoren.c,0.839,constants,shared=193 weight=825.7 margin=0.18; graph 6/6
+10fc4ed0,EmKushala_EndState,game\em_kushala.c,0.059,callcount-vote,votes=2 next=0 round=0; graph 27/27
+10fc51d0,EmKushala_SpawnEffect29AtBone,game\em_kushala.c,0.476,switch-case,votes=2; graph 1/1
+10fc5220,EmKushala_State0_00,game\em_kushala.c,0.396,switch-case,votes=1; graph 2/2
+10fc52c0,EmKushala_State0_01,game\em_kushala.c,0.128,switch-case,votes=1 trusted-switch; graph 3/3
+10fc5320,EmKushala_State0_02,game\em_kushala.c,0.263,switch-case,votes=1 trusted-switch; graph 3/3
+10fc53f0,EmKushala_State0_04,game\em_kushala.c,0.136,switch-case,votes=2; graph 5/5
+10fc5640,EmKushala_State0_05,game\em_kushala.c,0.216,switch-case,votes=2; graph 4/4
+10fc56c0,EmKushala_State0_06,game\em_kushala.c,0.286,switch-case,votes=1 trusted-switch; graph 3/3
+10fc5710,EmKushala_State0_09,game\em_kushala.c,0.225,switch-case,votes=1 trusted-switch; graph 4/4
+10fc5810,EmKushala_State0_0A,game\em_kushala.c,0.261,switch-case,votes=1 trusted-switch; graph 5/5
+10fc58c0,EmKushala_State0_0B,game\em_kushala.c,0.278,switch-case,votes=1 trusted-switch; graph 4/4
+10fc5970,EmKushala_State0_0D,game\em_kushala.c,0.203,switch-case,votes=1 trusted-switch; graph 5/5
+10fc5a00,EmKushala_State0_0E,game\em_kushala.c,0.265,switch-case,votes=1 trusted-switch; graph 5/5
+10fc5a60,EmKushala_State0_0F,game\em_kushala.c,0.214,switch-case,votes=1 trusted-switch; graph 4/4
+10fc5c20,EmKushala_State0_12,game\em_kushala.c,0.133,switch-case,votes=1 trusted-switch; graph 3/3
+10fc5c70,EmKushala_State0_13,game\em_kushala.c,0.133,switch-case,votes=1 trusted-switch; graph 3/3
+10fc5cc0,EmKushala_State0_15,game\em_kushala.c,0.273,switch-case,votes=1 trusted-switch; graph 4/4
+10fc5d70,EmKushala_State0_0C,game\em_kushala.c,0.421,layout:game\em_kushala.c,between EmKushala_SpawnEffect29AtBone and EmKushala_State3_0F; graph 4/4
+10fc5e50,EmKushala_State0_17,game\em_kushala.c,0.403,switch-case,votes=1; graph 3/3
+10fc5ea0,EmKushala_State0_1B,game\em_kushala.c,0.327,switch-case,votes=1 trusted-switch; graph 4/4
+10fc6310,EmKushala_State1_01,game\em_kushala.c,0.282,switch-case,votes=1 trusted-switch; graph 3/3
+10fc6440,EmKushala_State1_03,game\em_kushala.c,0.161,switch-case,votes=1 trusted-switch; graph 4/5
+10fc6650,EmKushala_State1_04,game\em_kushala.c,0.241,switch-case,votes=1 trusted-switch; graph 3/3
+10fc6740,EmKushala_State1_05,game\em_kushala.c,0.415,switch-case,votes=5; graph 4/4
+10fc70e0,EmKushala_State1_06,game\em_kushala.c,0.350,call-sandwich,in EmKushala_RunGroup1 between matched calls; graph 3/3
+10fc71c0,EmKushala_State1_07,game\em_kushala.c,0.431,layout:game\em_kushala.c,between EmKushala_SpawnEffect29AtBone and EmKushala_State3_0F; graph 3/3
+10fc7490,EmKushala_State1_14,game\em_kushala.c,0.321,switch-case,votes=1 trusted-switch; graph 3/3
+10fc7560,EmKushala_State1_15,game\em_kushala.c,0.194,switch-case,votes=2; graph 4/5
+10fc7750,EmKushala_State1_17,game\em_kushala.c,0.186,switch-case,votes=2; graph 3/3
+10fc7940,EmKushala_State1_18,game\em_kushala.c,0.264,switch-case,votes=1 trusted-switch; graph 6/6
+10fc7bf0,EmKushala_State1_19,game\em_kushala.c,0.165,switch-case,votes=1 trusted-switch; graph 4/4
+10fc7df0,EmKushala_State1_1A,game\em_kushala.c,0.157,switch-case,votes=2; graph 3/3
+10fc7ea0,EmKushala_State1_1B,game\em_kushala.c,0.135,switch-case,votes=1 trusted-switch; graph 3/3
+10fc7fb0,EmKushala_State2_00,game\em_kushala.c,0.342,switch-case,votes=1 trusted-switch; graph 5/5
+10fc80b0,EmKushala_State2_01,game\em_kushala.c,0.169,callcount-vote,votes=2 next=0 round=0; graph 3/3
+10fc83c0,EmKushala_State2_02,game\em_kushala.c,0.194,switch-case,votes=1 trusted-switch; graph 2/2
+10fc8460,EmKushala_State2_03,game\em_kushala.c,0.137,switch-case,votes=1 trusted-switch; graph 2/2
+10fc8530,EmKushala_State2_04,game\em_kushala.c,0.154,switch-case,votes=1 trusted-switch; graph 2/2
+10fc8730,EmKushala_State2_05,game\em_kushala.c,0.180,switch-case,votes=1 trusted-switch; graph 3/4
+10fc89d0,EmKushala_State2_07,game\em_kushala.c,0.218,switch-case,votes=1 trusted-switch; graph 3/3
+10fc8ab0,EmKushala_State2_08,game\em_kushala.c,0.266,switch-case,votes=1 trusted-switch; graph 10/10
+10fc8da0,EmKushala_State2_09,game\em_kushala.c,0.256,switch-case,votes=1 trusted-switch; graph 7/7
+10fc9090,EmKushala_State2_0A,game\em_kushala.c,0.282,switch-case,votes=1 trusted-switch; graph 10/10
+10fc94d0,EmKushala_State2_0B,game\em_kushala.c,0.270,switch-case,votes=1 trusted-switch; graph 7/7
+10fc9750,EmKushala_State2_0C,game\em_kushala.c,0.207,switch-case,votes=1 trusted-switch; graph 4/4
+10fc9860,EmKushala_State2_0D,game\em_kushala.c,0.178,switch-case,votes=1 trusted-switch; graph 5/5
+10fc9b00,EmKushala_State2_0F,game\em_kushala.c,0.153,callcount-vote,votes=2 next=0 round=0; graph 2/3
+10fcbdf0,EmKushala_State3_08,game\em_kushala.c,0.433,layout:game\em_kushala.c,between EmKushala_SpawnEffect29AtBone and EmKushala_State3_0F; graph 2/2
+10fcc420,EmKushala_State3_0F,game\em_kushala.c,0.497,constants,shared=12 weight=53.0 margin=0.31; graph 5/5
+10fd57a0,EmKushala_RunGroup0,game\em_kushala.c,0.748,layout:game\em_kushala.c,between EmKushala_State3_0F and EmKushala_RunGroup1; graph 19/19
+10fd5990,EmKushala_RunGroup1,game\em_kushala.c,0.846,window:game\em_kushala.c,cluster 10fc51d0-10ff7f50; graph 14/14
+10fd5ba0,EmKushala_RunGroup2,game\em_kushala.c,0.750,window:game\em_kushala.c,cluster 10fc51d0-10ff7f50; graph 15/15
+10fd6930,EmKushala_Update,game\em_kushala.c,0.447,layout:game\em_kushala.c,between EmKushala_RunGroup2 and EmKushala_SpawnK1CInMotions; graph 7/7
+10fd7400,EmKushala_RunState,game\em_kushala.c,0.405,callee-intersection,"3 matched callees, 1 candidates; graph 4/4"
+10fd7610,EmKushala_SpawnGroundEffect,game\em_kushala.c,0.147,switch-case,votes=1 trusted-switch; graph 2/2
+10fd77b0,EmKushala_SpawnK1CInMotions,game\em_kushala.c,0.564,window:game\em_kushala.c,cluster 10fc51d0-10ff7f50; graph 2/2
+10fd8530,EmKushala_MotionEffects,game\em_kushala.c,0.319,callee-intersection,"5 matched callees, 1 candidates; graph 12/12"
+10fe0850,EmBlangonga_PickWeightedPart,game\em_blangonga.c,0.628,window:game\em_blangonga.c,cluster 10fe0fd0-10fe2d90; graph 0/0
+10fe0fd0,EmKushala_WindActive,game\em_blangonga.c,0.211,call-sandwich,in EmKushala_MotionEffects between matched calls; graph 3/3
+10fe1040,EmKushala_SetGroup0State,game\em_blangonga.c,0.396,switch-case,votes=1; graph 13/13
+10fe1470,EmKushala_SetGroup1State,game\em_blangonga.c,0.343,call-sandwich,in EmKushala_ChangeState between matched calls; graph 2/2
+10fe1dd0,EmKushala_SetGroup2State,game\em_blangonga.c,0.375,switch-case,votes=1; graph 5/6
+10fe20d0,EmKushala_SetGroup3State,game\em_blangonga.c,0.122,switch-case,votes=1 trusted-switch; graph 2/2
+10fe2440,EmKushala_SetGroup4State,game\em_blangonga.c,0.384,switch-case,votes=1; graph 4/7
+10fe2630,EmKushala_ChangeState,game\em_blangonga.c,0.413,caller-intersection,"2 matched callers, 1 candidates; graph 22/22"
+10fe28b0,EmKushala_StartCurves,game\em_blangonga.c,0.312,call-sandwich,in EmKushala_State2_00 between matched calls; graph 6/6
+10fe2ad0,EmKushala_UpdateCurves,game\em_blangonga.c,0.226,call-sandwich,in EmKushala_State2_09 between matched calls; graph 7/7
+10fe2d50,EmShenGaoren_PlaySeOnFrame,game\em_blangonga.c,0.478,switch-case,votes=21 trusted-switch; graph 2/2
+10fe2d90,EmShenGaoren_MotionSounds,game\em_blangonga.c,0.953,constants,shared=241 weight=1084.2 margin=0.42; graph 6/6
+10fe80a0,EmShenGaoren_Init,game\em_shengaoren.c,0.426,caseset:game\em_shengaoren.c,"label-set similarity 1.12, 1 candidates; graph 2/2"
+10fe84f0,EmShenGaoren_EndState,game\em_shengaoren.c,0.188,callcount-vote,votes=2 next=0 round=0; graph 2/3
+10fe8570,EmShenGaoren_State0_00,game\em_shengaoren.c,0.430,constants+layout,weight=19.5 margin=0.07; graph 1/3
+10fe8670,EmShenGaoren_State0_02,game\em_shengaoren.c,0.506,constants,shared=5 weight=20.3 margin=0.24; graph 2/3
+10fe8f10,EmShenGaoren_RunGroup0,game\em_shengaoren.c,0.424,layout:game\em_shengaoren.c,between EmShenGaoren_State0_02 and func_008261F0; graph 0/2
+10fe9490,EmKind38_RunGroup2,game\em_kushala.c,0.469,layout:game\em_kushala.c,between EmKushala_MotionEffects and EmKind38_ClampVelocity; graph 0/1
+10fea930,func_008261F0,game\em_shengaoren.c,0.489,constants,shared=5 weight=27.1 margin=0.23; graph 1/1
+10feaa60,EmShenGaoren_SpawnGroundEffect,game\em_shengaoren.c,0.626,callee-of:EmShenGaoren_MotionEffects,margin=0.43 round=0; graph 3/3
+10feac20,EmShenGaoren_SpawnFootEffect,game\em_shengaoren.c,0.188,callcount-vote,votes=2 next=0 round=0; graph 2/2
+10feac80,EmShenGaoren_MotionEffects,game\em_shengaoren.c,0.521,constants,shared=56 weight=242.1 margin=0.16; graph 10/10
+10fec3b0,EmChameleos_SetGroup1State,game\em_chameleos.c,0.410,caseset:game\em_chameleos.c,"label-set similarity 1.15, 6 candidates; graph 1/1"
+10fec640,EmShenGaoren_SetGroup4State,game\em_blangonga.c,0.562,caseset:game\em_blangonga.c,"label-set similarity 1.10, 1 candidates; graph 2/3"
+10fec720,EmKind38_RunState,game\em_kushala.c,0.442,layout:game\em_kushala.c,between EmKushala_MotionEffects and EmKind38_ClampVelocity; graph 0/1
+10feebd0,EmShenGaoren_RunGroup3,game\em_shengaoren.c,0.318,caseset:game\em_shengaoren.c,"label-set similarity 0.99, 1 candidates; graph 0/0"
+10fef440,EmKind38_ClampVelocity,game\em_kushala.c,0.644,window:game\em_kushala.c,cluster 10fc51d0-10ff7f50; graph 0/0
+10fef4c0,EmShakalaka_MotionSounds,game\em_kushala.c,0.445,call-sandwich,in EmShakalaka_MotionEffects between matched calls; graph 2/2
+10ff4680,EmShakalaka_State0_02,game\em_kushala.c,0.169,callcount-vote,votes=2 next=0 round=0; graph 1/3
+10ff4790,EmShakalaka_EndState,game\em_kushala.c,0.203,call-sandwich,in EmShakalaka_State1_08 between matched calls; graph 4/10
+10ff47d0,Angle_StepToward,game\em_kushala.c,0.227,call-sandwich,in EmShakalaka_State1_00 between matched calls; graph 3/5
+10ff4810,EmShakalaka_RunGroup2,game\em_kushala.c,0.156,call-sandwich,in EmShakalaka_RunState between matched calls; graph 1/1
+10ff4da0,EmShakalaka_RunGroup0,game\em_kushala.c,0.423,layout:game\em_kushala.c,between EmShakalaka_MotionSounds and EmShakalaka_SpawnGroundEffect; graph 2/2
+10ff4ed0,EmShakalaka_State1_00,game\em_kushala.c,0.238,callcount-vote,votes=2 next=0 round=0; graph 5/7
+10ff5190,EmShakalaka_State1_05,game\em_kushala.c,0.195,switch-case,votes=1 trusted-switch; graph 4/6
+10ff5290,EmShakalaka_State1_06,game\em_kushala.c,0.208,switch-case,votes=2 trusted-switch; graph 5/7
+10ff5380,EmShakalaka_State1_08,game\em_kushala.c,0.260,switch-case,votes=2 trusted-switch; graph 5/6
+10ff5480,EmShakalaka_State1_0D,game\em_kushala.c,0.204,callcount-vote,votes=2 next=0 round=0; graph 6/8
+10ff5630,EmShakalaka_State1_13,game\em_kushala.c,0.234,switch-case,votes=1 trusted-switch; graph 3/3
+10ff5860,EmShakalaka_RunGroup1,game\em_kushala.c,0.572,layout:game\em_kushala.c,between EmShakalaka_MotionSounds and EmShakalaka_SpawnGroundEffect; graph 7/7
+10ff63c0,EmShakalaka_State3_03,game\em_kushala.c,0.210,switch-case,votes=3; graph 5/6
+10ff6660,EmShakalaka_State3_06,game\em_kushala.c,0.179,switch-case,votes=1 trusted-switch; graph 1/3
+10ff66d0,EmShakalaka_RunGroup3,game\em_kushala.c,0.300,switch-case,votes=1 trusted-switch; graph 2/3
+10ff67f0,EmShakalaka_State4_01,game\em_kushala.c,0.429,layout:game\em_kushala.c,between EmShakalaka_MotionSounds and EmShakalaka_SpawnGroundEffect; graph 3/4
+10ff6d90,EmShakalaka_RunGroup4,game\em_kushala.c,0.315,switch-case,votes=1 trusted-switch; graph 2/2
+10ff7480,EmShakalaka_Update,game\em_kushala.c,0.509,layout:game\em_kushala.c,between EmShakalaka_MotionSounds and EmShakalaka_SpawnGroundEffect; graph 3/3
+10ff7670,EmShakalaka_RunState,game\em_kushala.c,0.519,layout:game\em_kushala.c,between EmShakalaka_MotionSounds and EmShakalaka_SpawnGroundEffect; graph 6/6
+10ff7710,EmShakalaka_SpawnGroundEffect,game\em_kushala.c,0.156,switch-case,votes=5 trusted-switch; graph 2/2
+10ff77f0,EmShakalaka_SpawnGroundEffectOffset,game\em_kushala.c,0.172,call-sandwich,in EmShakalaka_MotionEffects between matched calls; graph 3/3
+10ff7930,EmShakalaka_MotionEffects,game\em_kushala.c,0.511,constants,shared=20 weight=83.5 margin=0.26; graph 7/7
+10ff7f50,EmYamaTsukami_MotionSounds,game\em_kushala.c,0.485,callee-intersection,"3 matched callees, 1 candidates; graph 3/3"
+10ffba10,func_00849C20,game\em_yamatsukami.c,0.695,constants,shared=2 weight=12.5 margin=0.51; graph 0/0
+10ffc500,EmShenGaoren_State4_02,game\em_shengaoren.c,0.087,switch-case,votes=2; graph 2/3
+110011f0,EmShenGaoren_RunGroup4,game\em_shengaoren.c,0.404,caseset:game\em_shengaoren.c,"label-set similarity 1.02, 1 candidates; graph 1/1"
+11001c00,EmYamaTsukami_RunGroup3,game\em_yamatsukami.c,0.466,caseset:game\em_yamatsukami.c,"label-set similarity 1.00, 1 candidates; graph 0/0"
+11007030,EmChameleos_RunGroup3,game\em_chameleos.c,0.450,caseset:game\em_chameleos.c,"label-set similarity 1.11, 2 candidates; graph 0/0"
+11007ab0,EmChameleos_MotionSounds,game\em_yamatsukami.c,0.863,constants,shared=193 weight=837.3 margin=0.30; graph 2/2
+11012d30,EmChameleos_SpawnGroundEffectOffset,game\em_chameleos.c,0.172,switch-case,votes=3; graph 3/3
+11012e90,EmChameleos_SpawnGroundEffectNearGround,game\em_chameleos.c,0.148,switch-case,votes=1 trusted-switch; graph 1/1
+11012ed0,EmChameleos_SpawnK1CInMotions,game\em_chameleos.c,0.755,constants,shared=17 weight=93.5 margin=0.45; graph 2/2
+11013260,EmChameleos_MotionEffects,game\em_chameleos.c,0.380,callee-intersection,"4 matched callees, 1 candidates; graph 8/8"
+110142f0,EmChameleos_SetGroup0State,game\em_chameleos.c,0.592,caseset:game\em_chameleos.c,"label-set similarity 1.04, 1 candidates; graph 8/8"
+11015c60,EmRemobra_MotionSounds,game\em_chameleos.c,0.953,constants,shared=112 weight=430.4 margin=0.36; graph 3/3
+110166b0,EmRemobra_Start,game\em_chameleos.c,0.753,window:game\em_chameleos.c,cluster 11012ed0-1101ba80; graph 1/1
+110166e0,EmRemobra_ChangeState,game\em_chameleos.c,0.399,caller-intersection,"3 matched callers, 1 candidates; graph 11/13"
+11016a80,EmRemobra_EndState2,game\em_chameleos.c,0.203,call-sandwich,in EmRemobra_State3_04 between matched calls; graph 11/12
+11016ac0,EmRemobra_State0_01,game\em_chameleos.c,0.429,layout:game\em_chameleos.c,between EmRemobra_Start and EmRemobra_RunGroup2; graph 1/1
+11016b60,EmRemobra_UpdateHop,game\em_chameleos.c,0.151,call-sandwich,in EmRemobra_RunGroup2 between matched calls; graph 1/2
+11016ca0,EmRemobra_State2_00,game\em_chameleos.c,0.171,switch-case,votes=1 trusted-switch; graph 2/3
+11016d80,EmRemobra_State2_01,game\em_chameleos.c,0.133,switch-case,votes=1 trusted-switch; graph 3/3
+11016dc0,EmRemobra_State2_02,game\em_chameleos.c,0.192,switch-case,votes=2 trusted-switch; graph 6/7
+110171b0,EmRemobra_State2_03,game\em_chameleos.c,0.229,callcount-vote,votes=2 next=0 round=0; graph 4/4
+11017490,EmRemobra_State2_07,game\em_chameleos.c,0.132,switch-case,votes=2 trusted-switch; graph 5/5
+110176d0,EmRemobra_State2_09,game\em_chameleos.c,0.172,switch-case,votes=3 trusted-switch; graph 5/5
+11017780,EmRemobra_State2_0A,game\em_chameleos.c,0.285,switch-case,votes=1 trusted-switch; graph 4/4
+110178a0,EmRemobra_State2_0C,game\em_chameleos.c,0.172,call-sandwich,in EmRemobra_RunGroup2 between matched calls; graph 3/3
+110179d0,EmRemobra_State2_0F,game\em_chameleos.c,0.187,switch-case,votes=1 trusted-switch; graph 5/6
+11017c30,EmRemobra_State2_10,game\em_chameleos.c,0.244,switch-case,votes=1 trusted-switch; graph 3/3
+11017d00,EmRemobra_State2_11,game\em_chameleos.c,0.148,switch-case,votes=1 trusted-switch; graph 3/3
+11017e50,EmRemobra_State2_15,game\em_chameleos.c,0.388,callcount-vote,votes=2 next=0 round=0; graph 4/4
+110180a0,EmRemobra_RunGroup2,game\em_chameleos.c,0.828,window:game\em_chameleos.c,cluster 11012ed0-1101ba80; graph 14/14
+11018520,EmRemobra_State3_04,game\em_chameleos.c,0.344,constants+layout,weight=12.8 margin=0.23; graph 3/3
+11018c40,EmRemobra_Update,game\em_chameleos.c,0.491,layout:game\em_chameleos.c,between EmRemobra_State3_04 and EmRemobra_SpawnGroundEffect; graph 4/4
+11018e10,EmRemobra_RunState,game\em_chameleos.c,0.395,callcount-vote,votes=2 next=0 round=0; graph 2/2
+11018ea0,EmRemobra_SpawnGroundEffect,game\em_chameleos.c,0.156,switch-case,votes=2 trusted-switch; graph 2/2
+11018fb0,EmRemobra_MotionEffects,game\em_chameleos.c,0.507,constants,shared=8 weight=40.9 margin=0.16; graph 3/4
+110199c0,EmRemobra_UpdateMotionEffects,game\em_chameleos.c,0.471,layout:game\em_chameleos.c,between EmRemobra_MotionEffects and EmBulldrome_EndState; graph 0/1
+1101aef0,EmBulldrome_EndState,game\em_chameleos.c,0.125,callcount-vote,votes=2 next=0 round=0; graph 11/11
+1101af50,EmBulldrome_State0_01,game\em_chameleos.c,0.267,switch-case,votes=1 trusted-switch; graph 3/3
+1101af90,EmBulldrome_State0_03,game\em_chameleos.c,0.171,switch-case,votes=1 trusted-switch; graph 3/3
+1101b000,EmBulldrome_State0_04,game\em_chameleos.c,0.204,switch-case,votes=3; graph 3/3
+1101b0e0,EmBulldrome_State0_06,game\em_chameleos.c,0.380,switch-case,votes=1; graph 3/3
+1101b120,EmBulldrome_State0_09,game\em_chameleos.c,0.302,call-sandwich,in EmBulldrome_RunGroup0 between matched calls; graph 3/3
+1101b160,EmBulldrome_State0_0B,game\em_chameleos.c,0.253,switch-case,votes=3; graph 3/3
+1101b420,EmBulldrome_RunGroup0,game\em_chameleos.c,0.603,layout:game\em_chameleos.c,between EmBulldrome_EndState and EmBulldrome_State1_07; graph 7/7
+1101b530,EmBulldrome_State1_00,game\em_chameleos.c,0.225,switch-case,votes=2 trusted-switch; graph 3/3
+1101b610,EmBulldrome_State1_01,game\em_chameleos.c,0.147,switch-case,votes=2 trusted-switch; graph 3/3
+1101b6a0,EmBulldrome_State1_05,game\em_chameleos.c,0.256,switch-case,votes=1 trusted-switch; graph 5/5
+1101b780,EmBulldrome_State1_07,game\em_chameleos.c,0.461,constants,shared=7 weight=35.1 margin=0.22; graph 4/4
+1101b870,EmBulldrome_State1_08,game\em_chameleos.c,0.491,constants,shared=5 weight=24.8 margin=0.22; graph 4/4
+1101ba80,EmBulldrome_RunGroup1,game\em_chameleos.c,0.458,callee-intersection,"2 matched callees, 1 candidates; graph 6/6"
+1101e6e0,EmChameleos_RunGroup2,game\em_chameleos.c,0.646,window:game\em_chameleos.c,cluster 11012d30-1101fd30; graph 0/0
+1101e9d0,EmBulldrome_State4_02,game\em_chameleos.c,0.441,layout:game\em_chameleos.c,between EmBulldrome_RunGroup1 and EmBulldrome_RunState; graph 2/2
+1101fd30,EmBulldrome_RunState,game\em_chameleos.c,0.346,callee-intersection,"2 matched callees, 1 candidates; graph 2/2"
+11033690,EmYamaTsukami_RunGroup2,game\em_yamatsukami.c,0.546,caseset:game\em_yamatsukami.c,"label-set similarity 0.98, 1 candidates; graph 0/0"
+110fb270,EmRathalos_State0_00,game\em_rathalos.c,0.652,constants,shared=4 weight=19.5 margin=0.15; graph 1/2
+1117ec90,EmVelociprey_RunGroup0,game\em_khezu.c,0.700,window:game\em_khezu.c,cluster 1117ee50-1117f2f0; graph 0/2
+1117ee50,EmAnteka_State4_01,game\em_khezu.c,0.125,switch-case,votes=1 trusted-switch; graph 2/3
+1117ef60,EmAnteka_ChangeState,game\em_khezu.c,0.309,callcount-vote,votes=3 next=0 round=0; graph 6/6
+1117f2f0,EmAnteka_EndState,game\em_khezu.c,0.203,call-sandwich,in EmAnteka_State4_02 between matched calls; graph 3/5
+111d6fb0,Bow_RunState,game\unk_6BB9D0.c,0.750,layout-edge:game\unk_6BB9D0.c,before matched block; graph 0/1
+111d9e70,Eff00_Run,game\unk_6BB9D0.c,0.418,constants+layout,weight=42.6 margin=0.13; graph 0/0
+111da7c0,Eff01_Update,game\unk_6BB9D0.c,0.855,layout:game\unk_6BB9D0.c,between Eff00_Run and Eff05_Create; graph 0/0
+111db460,Eff02_Create,game\unk_6BB9D0.c,0.214,call-sandwich,in EmMosswine_State3_00_Charge between matched calls; graph 4/4
+111db650,Eff02_Update,game\unk_6BB9D0.c,0.855,layout:game\unk_6BB9D0.c,between Eff00_Run and Eff05_Create; graph 1/1
+111db830,Eff02_Run,game\unk_6BB9D0.c,0.502,layout:game\unk_6BB9D0.c,between Eff00_Run and Eff05_Create; graph 1/1
+111dbec0,Eff03_Update,game\unk_6BB9D0.c,0.875,layout:game\unk_6BB9D0.c,between Eff00_Run and Eff05_Create; graph 0/0
+111e09c0,Eff04_Update,game\unk_6BB9D0.c,0.855,layout:game\unk_6BB9D0.c,between Eff00_Run and Eff05_Create; graph 0/0
+111e1130,Eff05_Create,game\unk_6BB9D0.c,0.191,callcount-vote,votes=2 next=0 round=0; graph 1/1
+111e1220,Eff05_CreateEx,game\unk_6BB9D0.c,0.182,callcount-vote,votes=2 next=0 round=0; graph 1/1
+111e1490,Eff05_Update,game\unk_6BB9D0.c,0.875,layout-edge:game\unk_6BB9D0.c,after matched block; graph 0/0
+111e1790,Bowgun_FireShot,game\unk_6BB9D0.c,0.477,caseset:game\unk_6BB9D0.c,"label-set similarity 0.88, 1 candidates; graph 3/3"
+111e71a0,Eff06_BoneLaunchPos,game\unk_6C7AE0.c,0.087,callcount-vote,votes=2 next=0 round=0; graph 2/3
+1120a540,EffEm11_Create,game\unk_6D3B50.c,0.202,callcount-vote,votes=2 next=0 round=0; graph 1/1
+11214960,Eff12_Update,game\unk_6D3B50.c,0.875,layout-edge:game\unk_6D3B50.c,before matched block; graph 0/0
+11214e20,EffVelociprey13_Create,game\unk_6D3B50.c,0.201,call-sandwich,in EmVelociprey_State3_03 between matched calls; graph 11/11
+1125e2d0,EffDiablos18_Update,game\unk_6D3B50.c,0.875,layout-edge:game\unk_6D3B50.c,before matched block; graph 0/0
+1125edd0,EffDiablos18_Create,game\unk_6D3B50.c,0.202,switch-case,votes=5 trusted-switch; graph 1/1
+1125efa0,EffGravios19_Update,game\unk_6D3B50.c,0.875,layout-edge:game\unk_6D3B50.c,before matched block; graph 0/1
+1125fce0,EffGravios19_Run,game\unk_6D3B50.c,0.436,constants+layout,weight=26.2 margin=0.18; graph 0/1
+1125fe60,EffPlesioth20_Create,game\unk_6D3B50.c,0.194,switch-case,votes=2; graph 1/1
+11260380,EffPlesioth20_Update,game\unk_6D3B50.c,0.875,layout:game\unk_6D3B50.c,between EffGravios19_Run and Eff22_CreateAtSpot; graph 1/1
+11260650,EffPlesioth20_Run,game\unk_6D3B50.c,0.371,switch-case,votes=1; graph 1/1
+11260870,EffCephadrome21_Update,game\unk_6D3B50.c,0.875,layout:game\unk_6D3B50.c,between EffGravios19_Run and Eff22_CreateAtSpot; graph 1/1
+11260a30,EffCephadrome21_Run,game\unk_6D3B50.c,0.569,layout:game\unk_6D3B50.c,between EffGravios19_Run and Eff22_CreateAtSpot; graph 1/1
+112611d0,Eff22_CreateAtSpot,game\unk_6D3B50.c,0.172,callcount-vote,votes=2 next=0 round=0; graph 1/1
+112615c0,Eff22_Update,game\unk_6D3B50.c,0.875,layout:game\unk_6D3B50.c,between Eff22_CreateAtSpot and Eff22_Draw; graph 0/0
+11262a10,Eff22_Draw,game\unk_6D3B50.c,0.347,constants+layout,weight=66.8 margin=0.11; graph 2/3
+11263940,EffCephadrome23_Update,game\unk_6D3B50.c,0.875,layout:game\unk_6D3B50.c,between Eff22_Draw and EffGaruga25_Create; graph 0/0
+11264850,BowgunShot_Update,game\unk_6D3B50.c,0.855,layout:game\unk_6D3B50.c,between Eff22_Draw and EffGaruga25_Create; graph 0/0
+112679d0,Player_WeaponElementFlags,game\unk_6D3B50.c,0.753,layout:game\unk_6D3B50.c,between Eff22_Draw and EffGaruga25_Create; graph 1/1
+11269550,EffGaruga25_Create,game\unk_6D3B50.c,0.210,call-sandwich,in EmGaruga_MotionEffects between matched calls; graph 1/1
+11269720,EffGaruga25_Update,game\unk_6D3B50.c,0.855,layout:game\unk_6D3B50.c,between EffGaruga25_Create and Eff28_Run; graph 0/0
+11269f40,EffHermitaur26_Create,game\unk_6D3B50.c,0.219,call-sandwich,in EmHermitaur_State1_02 between matched calls; graph 5/5
+1126a120,EffHermitaur26_Update,game\unk_6D3B50.c,0.855,layout:game\unk_6D3B50.c,between EffGaruga25_Create and Eff28_Run; graph 1/1
+1126a3e0,EffHermitaur26_Run,game\unk_6D3B50.c,0.417,switch-case,votes=1; graph 2/2
+1126a820,EffBlangonga27_Update,game\unk_6D3B50.c,0.855,layout:game\unk_6D3B50.c,between EffGaruga25_Create and Eff28_Run; graph 0/0
+1126b4e0,Eff28_Update,game\unk_6D3B50.c,0.855,layout:game\unk_6D3B50.c,between EffGaruga25_Create and Eff28_Run; graph 1/1
+1126b830,Eff28_Run,game\unk_6D3B50.c,0.421,constants+layout,weight=32.2 margin=0.08; graph 3/3
+1126ed70,EffKushala30b_Update,game\unk_6EA220.c,0.855,caller-of:EffKushala30b_Run,margin=0.85 round=0; graph 1/1
+1126ef40,EffKushala30b_Run,game\unk_6EA220.c,0.587,constants,shared=14 weight=59.2 margin=0.33; graph 1/1
+11277670,EffKushala30_Update,game\unk_6E0650.c,0.828,layout-edge:game\unk_6E0650.c,before matched block; graph 3/3
+11277710,EffKushala30_Setup,game\unk_6E0650.c,0.138,switch-case,votes=1 trusted-switch; graph 1/1
+11277dc0,EffKushala30_Run,game\unk_6E0650.c,0.098,callcount-vote,votes=2 next=0 round=0; graph 1/1
+11277e90,EffShengaoren31_Create,game\unk_6E0650.c,0.182,callcount-vote,votes=4 next=0 round=0; graph 2/2
+11278b40,EffEm33_Update,game\unk_6E3B00.c,0.862,layout-edge:game\unk_6E3B00.c,before matched block; graph 2/2
+11278c40,EffEm33_InitParts,game\unk_6E3B00.c,0.543,constants,shared=35 weight=143.6 margin=0.29; graph 3/4
+11279870,EffEm33_Setup,game\unk_6E3B00.c,0.315,callee-intersection,"3 matched callees, 1 candidates; graph 6/7"
+11279f80,EffEm33_RunChain,game\unk_6E3B00.c,0.258,switch-case,votes=1 trusted-switch; graph 3/3
+1127a470,EffEm33_Run,game\unk_6E3B00.c,0.446,constants+layout,weight=84.5 margin=0.14; graph 12/12
+1127d720,EffEm33_Impact,game\unk_6E3B00.c,0.388,switch-case,votes=1; graph 3/3
+1127ef90,EffShakalaka34_Create,game\unk_6EA220.c,0.186,switch-case,votes=3 trusted-switch; graph 2/2
+11284400,EffChameleos40_Create,game\unk_6EC680.c,0.133,switch-case,votes=6 trusted-switch; graph 1/1
+11322b70,EffKushala30_End,game\unk_6E0650.c,0.205,switch-case,votes=1 trusted-switch; graph 2/2
+11346580,Side_Match,sub_main\unk_3B4C80.c,0.141,callcount-vote,votes=2 next=0 round=1; graph 1/3
+11354300,AreaObj_K00_Update,game\unk_6EC680.c,0.463,callee-intersection,"2 matched callees, 1 candidates; graph 2/2"
+11354350,AreaObj_K00_Setup,game\unk_6EC680.c,0.863,constants,shared=18 weight=73.4 margin=0.08; graph 3/3
+113545b0,AreaObj_K00_Run,game\unk_6EC680.c,0.655,callee-of:AreaObj_K00_Setup,margin=0.55 round=0; graph 2/2
+11354740,AreaObj_K00_Draw,game\unk_6EC680.c,0.663,window:game\unk_6EC680.c,cluster 11354300-113623c0; graph 3/4
+11355490,Notice_PushItem,sub_main\unk_37B570.c,0.329,callcount-vote,votes=2 next=0 round=0; graph 5/6
+11356ee0,AreaObj_K03_Run,game\unk_6EC680.c,0.437,layout:game\unk_6EC680.c,between AreaObj_K00_Draw and AreaObj_K03_RunA; graph 3/3
+113571e0,AreaObj_K03_RunA,game\unk_6EC680.c,0.396,constants+layout,weight=43.7 margin=0.08; graph 3/4
+11357910,AreaObj_K03_Draw,game\unk_6EC680.c,0.475,constants,shared=21 weight=62.9 margin=0.10; graph 1/2
+11358690,AreaObj_K04_Run,game\unk_6EC680.c,0.528,window:game\unk_6EC680.c,cluster 11354300-113623c0; graph 0/0
+1135b1d0,AreaProp_Start,sub_main\unk_37B570.c,0.658,constants,shared=17 weight=67.1 margin=0.18; graph 3/3
+1135b4e0,AreaProp_Run,sub_main\unk_37B570.c,0.424,layout:sub_main\unk_37B570.c,between AreaProp_Start and AreaProp_Draw; graph 2/2
+1135b8e0,AreaProp_Draw,sub_main\unk_37B570.c,0.419,constants+layout,weight=67.2 margin=0.11; graph 3/5
+1135c640,AreaObj_K07_Update,game\unk_6EC680.c,0.463,layout:game\unk_6EC680.c,between AreaObj_K04_Run and AreaObj_K07_Setup; graph 2/2
+1135c6b0,AreaObj_K07_Setup,game\unk_6EC680.c,0.721,constants,shared=16 weight=52.1 margin=0.26; graph 4/4
+1135cb40,AreaObj_K07_Run,game\unk_6EC680.c,0.430,constants+layout,weight=41.7 margin=0.04; graph 3/3
+1135e5c0,AreaObj_K09_Spawn,game\unk_6EC680.c,0.215,switch-case,votes=2; graph 2/2
+1135e6a0,AreaObj_K09_Update,game\unk_6EC680.c,0.678,caller-of:AreaObj_K09_Run,margin=0.68 round=1; graph 3/3
+1135e6f0,AreaObj_K09_Setup,game\unk_6EC680.c,0.642,callee-of:AreaObj_K09_Update,margin=0.46 round=2; graph 8/8
+1135e800,AreaObj_K09_Run,game\unk_6EC680.c,0.876,caller-of:AreaObj_K09_RunType2,margin=0.88 round=0; graph 9/9
+1135e8c0,AreaObj_K09_End,game\unk_6EC680.c,0.143,switch-case,votes=1 trusted-switch; graph 2/2
+1135e970,AreaObj_K09_Draw,game\unk_6EC680.c,0.569,window:game\unk_6EC680.c,cluster 11354300-113623c0; graph 0/1
+1135eb60,AreaObj_K09_SetupType0,game\unk_6EC680.c,0.284,switch-case,votes=1 trusted-switch; graph 2/2
+1135ef50,AreaObj_K09_RunType0,game\unk_6EC680.c,0.392,switch-case,votes=1 trusted-switch; graph 3/3
+1135f2c0,AreaObj_K09_SetupType1,game\unk_6EC680.c,0.211,switch-case,votes=1 trusted-switch; graph 2/2
+1135fda0,AreaObj_K09_RunType2,game\unk_6EC680.c,0.510,constants,shared=7 weight=18.0 margin=0.15; graph 3/3
+113600d0,AreaObj_K09_SetupType3,game\unk_6EC680.c,0.256,switch-case,votes=1 trusted-switch; graph 2/2
+113603b0,AreaObj_K09_RunType3,game\unk_6EC680.c,0.416,switch-case,votes=1 trusted-switch; graph 3/3
+113609c0,AreaObj_K09_SetupType4,game\unk_6EC680.c,0.171,switch-case,votes=1 trusted-switch; graph 2/2
+11360d00,AreaObj_K09_RunType4,game\unk_6EC680.c,0.498,constants,shared=7 weight=25.3 margin=0.28; graph 3/3
+113611f0,AreaObj_K09_SetupType5,game\unk_6EC680.c,0.213,switch-case,votes=1 trusted-switch; graph 3/3
+113616e0,AreaObj_K09_RunType5,game\unk_6EC680.c,0.374,switch-case,votes=1 trusted-switch; graph 3/3
+113621e0,AreaObj_K09_RunType6,game\unk_6EC680.c,0.203,switch-case,votes=1 trusted-switch; graph 2/2
+113623c0,AreaObj_K09_SetupType7,game\unk_6EC680.c,0.395,switch-case,votes=1; graph 3/3
+113629a0,AreaObj_K09_RunType7,game\unk_6F8A10.c,0.305,switch-case,votes=1 trusted-switch; graph 2/2
+11365200,AreaObj_K09_RunType11,game\unk_6F8A10.c,0.203,switch-case,votes=1 trusted-switch; graph 2/3
+11366050,SoundObj_Run,sub_main\unk_37B570.c,0.642,constants,shared=12 weight=42.4 margin=0.35; graph 2/3
+113664b0,AreaObj_AllocForKind,sub_main\unk_37B570.c,0.446,layout:sub_main\unk_37B570.c,between SoundObj_Run and AmbientSound_Setup; graph 1/1
+11366590,AmbientSound_Spawn,sub_main\unk_37B570.c,0.480,layout:sub_main\unk_37B570.c,between SoundObj_Run and AmbientSound_Setup; graph 1/1
+113665c0,AreaObj_K0E_Update,game\unk_6F8A10.c,0.463,layout:game\unk_6F8A10.c,between AreaObj_K09_RunType11 and AreaObj_K0E_Setup; graph 0/1
+11366610,AmbientSound_Setup,sub_main\unk_37B570.c,0.431,constants+layout,weight=110.9 margin=0.15; graph 6/8
+11366f20,AmbientSound_Update,sub_main\unk_37B570.c,0.414,constants+layout,weight=154.3 margin=0.06; graph 6/7
+1136b110,Area_BoundaryZone,sub_main\unk_386160.c,0.399,call-sandwich,in AmbientSound_Setup between matched calls; graph 2/2
+1136b4c0,AmbientSound_AreaValue10,sub_main\unk_386160.c,0.494,constants,shared=31 weight=111.1 margin=0.16; graph 2/2
+1136bf10,AmbientSound_AreaValue0C,sub_main\unk_386160.c,0.299,call-sandwich,in AmbientSound_Setup between matched calls; graph 2/2
+1136c210,AreaObj_K0E_Setup,game\unk_6F8A10.c,0.459,constants,shared=16 weight=50.7 margin=0.19; graph 4/5
+1136c640,Obj_Free,sub_main\unk_363550.c,0.127,callcount-vote,votes=2 next=0 round=0; graph 2/3
+1136d830,AreaObj_K10_Create,game\unk_6F8A10.c,0.425,constants+layout,weight=14.1 margin=0.13; graph 0/0
+1136ebb0,AreaObj_K13_Run,game\unk_6F8A10.c,0.644,constants,shared=11 weight=43.8 margin=0.34; graph 0/0
+11371db0,ThrownObj_Spawn2,sub_main\unk_386160.c,0.171,callcount-vote,votes=2 next=0 round=0; graph 1/1
+11371ee0,Obj_AreaPosition,sub_main\unk_386160.c,0.397,constants+layout,weight=23.2 margin=0.07; graph 2/2
+113721f0,Obj_AreaAngle,sub_main\unk_386160.c,0.475,constants+layout,weight=36.5 margin=0.07; graph 1/1
+11372430,ThrownObj_AreaModel,sub_main\unk_386160.c,0.505,constants+layout,weight=20.8 margin=0.03; graph 0/0
+11379ef0,Player_SeAtFrame,sub_main\unk_386160.c,0.722,window:sub_main\unk_386160.c,cluster 1136b4c0-11372430; graph 0/1
+113825c0,Versus_End,sub_main\unk_39C290.c,0.172,callcount-vote,votes=2 next=0 round=0; graph 2/2
+113ebdf0,EmFatalis_StartCurves,game\em_bulldrome.c,0.348,caseset:game\em_bulldrome.c,"label-set similarity 0.93, 1 candidates; graph 0/0"
+11405d70,StageObj_K1C_CreateOnEm,game\unk_880D50.c,0.242,callcount-vote,votes=2 next=0 round=0; graph 6/6
+11406040,Key_LerpVec3,sub_main\unk_3240E0.c,0.672,callseq-of:EmFxSpark_Move,support=2 round=0; graph 13/13
+11406190,EmFxTri_End,game\em_bulldrome.c,0.605,window:game\em_bulldrome.c,cluster 1140dd40-1141db90; graph 0/1
+11406240,Key_LerpF32,sub_main\unk_3240E0.c,0.234,switch-case,votes=2 trusted-switch; graph 4/8
+114062c0,Color_EvalKeys,sub_main\unk_3240E0.c,0.234,callcount-vote,votes=2 next=0 round=0; graph 14/14
+114063e0,Mtx_FromScaleRotTrans,sub_main\unk_3240E0.c,0.573,callee-of:StageObj_K12_DrawDefault,margin=0.31 round=0; graph 16/16
+114067e0,Draw_SetBlendFlags,sub_main\unk_3240E0.c,0.664,window:sub_main\unk_3240E0.c,cluster 11406040-11406cf0; graph 1/2
+11406bc0,Effect_KindClass_Unk,sub_main\unk_3240E0.c,0.703,window:sub_main\unk_3240E0.c,cluster 11406040-11406cf0; graph 0/0
+11406ca0,Lure_RandSigned,sub_main\unk_3240E0.c,0.236,callcount-vote,votes=2 next=0 round=0; graph 7/8
+11406cf0,Effect_MapTexId,sub_main\unk_3240E0.c,0.223,switch-case,votes=3 trusted-switch; graph 5/5
+11407170,StageObj_K00_Update,game\em_bulldrome.c,0.678,layout-edge:game\em_bulldrome.c,before matched block; graph 1/1
+11407510,StageObj_K00_Run,game\em_bulldrome.c,0.448,constants+layout,weight=17.1 margin=0.17; graph 1/1
+11407940,Scene_QuestStartTask,sub_main\unk_3240E0.c,0.617,window:sub_main\unk_3240E0.c,cluster 11406040-11406cf0; graph 0/0
+1140d730,EmFxSeg_Update,game\em_bulldrome.c,0.678,layout:game\em_bulldrome.c,between StageObj_K00_Run and EmFxSpark_Update; graph 0/0
+1140dd40,EmFxSpark_Update,game\em_bulldrome.c,0.678,caller-of:EmFxSpark_Move,margin=0.49 round=0; graph 1/1
+1140e540,EmFxSpark_Move,game\em_bulldrome.c,0.461,constants,shared=15 weight=42.5 margin=0.11; graph 5/5
+11411cb0,Effect06_Update,sub_main\unk_3CA790.c,0.678,layout-edge:sub_main\unk_3CA790.c,before matched block; graph 0/1
+11414df0,Effect06_RandomizePart,sub_main\unk_3CA790.c,0.436,layout:sub_main\unk_3CA790.c,between Effect06_Update and Effect06_Run; graph 1/2
+11414fd0,Effect06_PlaySound,sub_main\unk_3CA790.c,0.000,callcount-vote,votes=2 next=0 round=0; graph 1/1
+11415010,Effect06_Run,sub_main\unk_3CA790.c,0.394,constants+layout,weight=82.2 margin=0.06; graph 5/7
+11416d30,Effect06_DrawPart,sub_main\unk_3CA790.c,0.440,layout:sub_main\unk_3CA790.c,between Effect06_Run and Effect06_SpawnAtBone; graph 6/7
+11418330,Effect06_SpawnAtBone,sub_main\unk_3CA790.c,0.242,call-sandwich,in TownPc_State27 between matched calls; graph 3/4
+11419e00,EmFxTri_AreaType,game\em_bulldrome.c,0.890,constants,shared=25 weight=101.7 margin=0.61; graph 1/1
+11419fc0,StageObj_K09_Update,game\em_bulldrome.c,0.678,layout:game\em_bulldrome.c,between EmFxTri_AreaType and StageObj_K0A_Create; graph 0/0
+1141af90,StageObj_K11_Update,game\unk_868110.c,0.678,window:game\unk_868110.c,cluster 114217b0-11431780; graph 0/0
+1141b7d0,StageObj_K09_BoneForKind,game\em_bulldrome.c,0.483,layout:game\em_bulldrome.c,between EmFxTri_AreaType and StageObj_K0A_Create; graph 0/0
+1141d350,StageObj_K0A_Update,game\em_bulldrome.c,0.678,layout:game\em_bulldrome.c,between EmFxTri_AreaType and StageObj_K0A_Create; graph 0/0
+1141db90,StageObj_K0A_Create,game\em_bulldrome.c,0.228,callcount-vote,votes=2 next=0 round=0; graph 1/1
+1141e800,StageObj_K0C_Update,game\em_bulldrome.c,0.678,layout-edge:game\em_bulldrome.c,after matched block; graph 1/3
+1141e9c0,StageObj_K0C_Run,game\em_bulldrome.c,0.530,layout-edge:game\em_bulldrome.c,after matched block; graph 0/1
+114217b0,StageObj_K0C_End,game\unk_868110.c,0.428,switch-case,votes=1; graph 3/3
+11421890,StageObj_K0C_Free,game\unk_868110.c,0.447,layout:game\unk_868110.c,between StageObj_K0C_End and StageObj_K0E_Update; graph 0/1
+114221b0,Effect0D_Update,sub_main\unk_3CD9C0.c,0.678,window:sub_main\unk_3CD9C0.c,cluster 11425420-114267f0; graph 3/3
+11422270,Effect0D_Setup,sub_main\unk_3CD9C0.c,0.483,layout:sub_main\unk_3CD9C0.c,between Effect0D_Update and Effect0D_Run; graph 4/4
+114229f0,Effect0D_Run,sub_main\unk_3CD9C0.c,0.574,window:sub_main\unk_3CD9C0.c,cluster 11425420-114267f0; graph 3/4
+11423490,Effect0D_End,sub_main\unk_3CD9C0.c,0.137,switch-case,votes=1 trusted-switch; graph 1/2
+11423540,Effect0D_DrawPart,sub_main\unk_3CD9C0.c,0.511,layout:sub_main\unk_3CD9C0.c,between Effect0D_Run and Effect0D_InitForEm; graph 3/4
+11424610,Effect0D_Init,sub_main\unk_3CD9C0.c,0.452,layout:sub_main\unk_3CD9C0.c,between Effect0D_Run and Effect0D_InitForEm; graph 0/0
+11424770,Effect0D_PlayerPos,sub_main\unk_3CD9C0.c,0.409,caseset:sub_main\unk_3CD9C0.c,"label-set similarity 1.06, 1 candidates; graph 2/2"
+11425420,Effect0D_InitForEm,sub_main\unk_3CD9C0.c,0.558,layout-edge:sub_main\unk_3CD9C0.c,before matched block; graph 3/3
+11425b40,Effect0D_EmPos,sub_main\unk_3CD9C0.c,0.448,layout:sub_main\unk_3CD9C0.c,between Effect0D_InitForEm and Effect0D_SpawnForEmScaled; graph 5/5
+114264b0,Effect0D_SpawnForEm,sub_main\unk_3CD9C0.c,0.130,callcount-vote,votes=2 next=0 round=0; graph 3/4
+114265d0,Effect0D_SpawnForEmScaled,sub_main\unk_3CD9C0.c,0.180,switch-case,votes=6 trusted-switch; graph 10/10
+114267f0,Effect0D_SpawnAt,sub_main\unk_3CD9C0.c,0.226,call-sandwich,in Npc_MotionSounds between matched calls; graph 8/8
+114274e0,StageObj_K0E_Update,game\unk_868110.c,0.619,layout-edge:game\unk_868110.c,before matched block; graph 0/0
+11428ba0,NetMenu_Update,sub_main\unk_3D54B0.c,0.610,constants,shared=11 weight=23.3 margin=0.20; graph 0/0
+11429870,StageObj_K0F_Update,game\unk_868110.c,0.678,layout:game\unk_868110.c,between StageObj_K0E_RunParts and StageObj_K0F_RestartPart; graph 1/1
+114298c0,StageObj_K0F_Setup,game\unk_868110.c,0.350,switch-case,votes=1; graph 4/4
+1142abb0,StageObj_K0F_RestartPart,game\unk_868110.c,0.499,constants,shared=3 weight=12.4 margin=0.15; graph 1/1
+1142bb80,StageObj_K0F_PlaySound,game\unk_868110.c,0.411,call-sandwich,in StageObj_K0F_Setup between matched calls; graph 1/1
+1142bda0,StageObj_K0F_CreateOnEm,game\unk_868110.c,0.172,call-sandwich,in EmLaoshan_MotionEffects between matched calls; graph 4/4
+1142be00,StageObj_K0F_CreateNoOwner,game\unk_868110.c,0.172,switch-case,votes=3 trusted-switch; graph 1/1
+1142be60,StageObj_K10_Update,game\unk_868110.c,0.678,caller-of:StageObj_K10_Setup,margin=0.68 round=0; graph 3/3
+1142bec0,StageObj_K10_Setup,game\unk_868110.c,0.511,constants,shared=14 weight=38.7 margin=0.10; graph 4/4
+1142c420,StageObj_K10_Run,game\unk_868110.c,0.415,switch-case,votes=1; graph 7/7
+1142d5b0,StageObj_K10_End,game\unk_868110.c,0.137,switch-case,votes=1 trusted-switch; graph 1/2
+1142e270,StageObj_K10_SpinSpeed,game\unk_868110.c,1.000,constants,shared=5 weight=31.4 margin=0.79; graph 1/1
+1142e2c0,StageObj_K10_PlaySound,game\unk_868110.c,0.377,callcount-vote,votes=2 next=0 round=0; graph 2/2
+1142e860,StageObj_K10_CreateOnEmAt,game\unk_868110.c,0.428,layout:game\unk_868110.c,between StageObj_K10_PlaySound and StageObj_K11_DrawDefault; graph 1/2
+11431780,StageObj_K11_DrawDefault,game\unk_868110.c,0.361,constants+layout,weight=89.9 margin=0.06; graph 4/5
+11434fb0,StageObj_K11_CreateAtBone,game\unk_874B90.c,0.139,callcount-vote,votes=2 next=0 round=0; graph 3/4
+11435e70,StageObj_K12_RunDefault,game\unk_874B90.c,0.460,constants,shared=19 weight=41.8 margin=0.23; graph 3/3
+11436850,StageObj_K12_DrawDefault,game\unk_874B90.c,0.476,constants,shared=22 weight=55.5 margin=0.20; graph 4/5
+114387a0,StageObj_K12_CreateOnEm,game\unk_874B90.c,0.198,callcount-vote,votes=2 next=0 round=0; graph 2/2
+11438890,StageObj_K12_CreateGunlanceShell,game\unk_874B90.c,0.706,window:game\unk_874B90.c,cluster 11435e70-1143f3f0; graph 1/1
+114390d0,StageObj_K13_Update,game\unk_874B90.c,0.678,layout:game\unk_874B90.c,between StageObj_K12_CreateGunlanceShell and StageObj_K14_Draw; graph 0/0
+11439130,StageObj_K14_Update,game\unk_874B90.c,0.495,layout:game\unk_874B90.c,between StageObj_K12_CreateGunlanceShell and StageObj_K14_Draw; graph 0/2
+114391a0,StageObj_K14_Setup,game\unk_874B90.c,0.358,callee-intersection,"3 matched callees, 1 candidates; graph 4/5"
+1143a3b0,StageObj_K14_Run,game\unk_874B90.c,0.508,layout:game\unk_874B90.c,between StageObj_K12_CreateGunlanceShell and StageObj_K14_Draw; graph 4/7
+1143b1d0,StageObj_K14_Draw,game\unk_874B90.c,0.506,constants,shared=39 weight=111.5 margin=0.12; graph 6/7
+1143e4f0,StageObj_K14_PlaceAtEm,game\unk_874B90.c,0.445,layout:game\unk_874B90.c,between StageObj_K14_Draw and StageObj_K14_Create; graph 6/6
+1143f3f0,StageObj_K14_Create,game\unk_874B90.c,0.199,switch-case,votes=4 trusted-switch; graph 12/14
+1143ff30,StageObj_K15_Update,game\unk_874B90.c,0.678,layout:game\unk_874B90.c,between StageObj_K14_Create and StageObj_K1B_Setup; graph 0/1
+11441260,StageObj_K1C_RestartStepsA,game\unk_880D50.c,0.628,window:game\unk_880D50.c,cluster 11444660-11459d30; graph 0/1
+11443f30,StageObj_K15_Free,game\unk_874B90.c,0.478,layout:game\unk_874B90.c,between StageObj_K14_Create and StageObj_K1B_Setup; graph 0/1
+11443f70,StageObj_Stun_Update,game\unk_874B90.c,0.678,layout:game\unk_874B90.c,between StageObj_K14_Create and StageObj_K1B_Setup; graph 0/0
+11444660,StageObj_K1C_Update,game\unk_880D50.c,0.678,layout-edge:game\unk_880D50.c,before matched block; graph 0/1
+114455a0,ModelObj_DrawPart,lobby\unk_6B7830.c,0.544,constants,shared=12 weight=37.4 margin=0.20; graph 4/6
+11446920,StageObj_K1B_Update,game\unk_874B90.c,0.678,layout:game\unk_874B90.c,between StageObj_K14_Create and StageObj_K1B_Setup; graph 1/1
+11446980,StageObj_K1B_Setup,game\unk_874B90.c,0.429,constants+layout,weight=39.5 margin=0.10; graph 4/4
+11447af0,StageObj_K1C_SetupSeq,game\unk_880D50.c,0.442,constants+layout,weight=191.3 margin=0.17; graph 8/8
+11449bb0,StageObj_K1C_Run,game\unk_880D50.c,0.628,window:game\unk_880D50.c,cluster 1144e9a0-11454220; graph 1/2
+11449f70,StageObj_K1C_RunSeq,game\unk_880D50.c,0.449,constants+layout,weight=148.4 margin=0.28; graph 16/20
+1144c2e0,StageObj_K1C_DrawSeq,game\unk_880D50.c,0.416,caseset:game\unk_880D50.c,"label-set similarity 1.06, 1 candidates; graph 2/3"
+1144d930,StageObj_K1C_NextStepC,game\unk_880D50.c,0.286,switch-case,votes=1 trusted-switch; graph 3/3
+1144d9f0,StageObj_K1C_InitStepC,game\unk_880D50.c,0.384,constants+layout,weight=19.8 margin=0.16; graph 2/2
+1144dd40,StageObj_K1C_RestartStepsB,game\unk_880D50.c,0.597,window:game\unk_880D50.c,cluster 1144e9a0-11454220; graph 0/2
+1144dd90,StageObj_K1C_NextStepD,game\unk_880D50.c,0.254,switch-case,votes=1 trusted-switch; graph 2/3
+1144e550,StageObj_K1C_NextStepB,game\unk_880D50.c,0.234,call-sandwich,in StageObj_K1C_RunSeq between matched calls; graph 1/2
+1144e630,StageObj_K1C_GetOwnerBone,game\unk_880D50.c,0.479,caller-intersection,"2 matched callers, 8 candidates; graph 3/3"
+1144e8b0,StageObj_K1C_CreateTwoPoint,game\unk_880D50.c,0.172,call-sandwich,in StageObj_K1C_RunSeq between matched calls; graph 2/2
+1144e900,StageObj_K1C_CreateAtYaw,game\unk_880D50.c,0.287,switch-case,votes=1 trusted-switch; graph 4/4
+1144e9a0,StageObj_K1C_CreateOnEmB,game\unk_880D50.c,0.231,switch-case,votes=2; graph 2/2
+11450790,StageObj_AreaFlyer_End,game\unk_880D50.c,0.431,layout:game\unk_880D50.c,between StageObj_K1C_CreateOnEmB and func_0088C890; graph 0/1
+114507b0,StageObj_AreaFlyer_Free,game\unk_880D50.c,0.478,layout:game\unk_880D50.c,between StageObj_K1C_CreateOnEmB and func_0088C890; graph 0/0
+114507d0,StageObj_AreaFlyer_GetCenter,game\unk_880D50.c,0.478,layout:game\unk_880D50.c,between StageObj_K1C_CreateOnEmB and func_0088C890; graph 0/0
+114530e0,StageObj_Gun_Update,game\unk_880D50.c,0.678,layout:game\unk_880D50.c,between StageObj_K1C_CreateOnEmB and func_0088C890; graph 3/3
+11453130,StageObj_Gun_Setup,game\unk_880D50.c,0.336,call-sandwich,in StageObj_Gun_Update between matched calls; graph 5/5
+11454220,func_0088C890,game\unk_880D50.c,0.814,constants,shared=20 weight=111.3 margin=0.52; graph 1/1
+114542e0,StageObj_Gun_Run,game\unk_880D50.c,0.422,switch-case,votes=1; graph 7/7
+11455740,StageObj_Gun_End,game\unk_88E760.c,0.392,switch-case,votes=1; graph 2/2
+11455900,StageObj_Gun_Draw,game\unk_88E760.c,0.473,layout:game\unk_88E760.c,between StageObj_Gun_End and StageObj_K27_Run; graph 6/7
+11456760,VFx_Update,lobby\unk_6B9160.c,0.678,layout-edge:lobby\unk_6B9160.c,before matched block; graph 0/0
+11457ac0,VFx_Draw,lobby\unk_6B9160.c,0.472,constants,shared=5 weight=16.2 margin=0.26; graph 2/2
+11458750,VPart_Update,lobby\unk_6B9160.c,0.678,layout:lobby\unk_6B9160.c,between VFx_Draw and VPart_Draw; graph 0/0
+11459620,VPart_Draw,lobby\unk_6B9160.c,0.395,callee-intersection,"4 matched callees, 1 candidates; graph 4/5"
+11459d30,StageObj_K1C_AllDone,game\unk_880D50.c,0.620,window:game\unk_880D50.c,cluster 1144e9a0-11454220; graph 0/1
+1145a990,StageObj_K27_Update,game\unk_88E760.c,0.678,layout:game\unk_88E760.c,between StageObj_Gun_End and StageObj_K27_Run; graph 1/1
+1145ae40,StageObj_K27_Run,game\unk_88E760.c,0.420,constants+layout,weight=26.4 margin=0.24; graph 2/2
+1145b290,StageObj_K27_Draw,game\unk_88E760.c,0.493,layout:game\unk_88E760.c,between StageObj_K27_Run and StageObj_K29_Update; graph 4/5
+1145c920,StageObj_K29_Update,game\unk_88E760.c,0.678,layout-edge:game\unk_88E760.c,after matched block; graph 3/3
+1145c980,StageObj_K29_Setup,game\unk_88E760.c,0.378,switch-case,votes=1; graph 6/6
+1145d870,StageObj_K29_Run,game\unk_88E760.c,0.372,switch-case,votes=1; graph 8/9
+1145f200,StageObj_K29_End,game\unk_88E760.c,0.188,switch-case,votes=1 trusted-switch; graph 3/3
+1145ff70,StageObj_K29_InitPartB,game\unk_88E760.c,0.548,window:game\unk_88E760.c,cluster 11455740-1145d870; graph 3/3
+11460060,StageObj_K29_Alloc,game\unk_88E760.c,0.525,layout-edge:game\unk_88E760.c,after matched block; graph 0/0
+114604d0,VMuzzle_Run,lobby\unk_6B9160.c,0.652,window:lobby\unk_6B9160.c,cluster 11457ac0-11459620; graph 0/0
+1149cca0,StageObj_K0C_Alloc,game\unk_868110.c,0.554,caseset:game\unk_868110.c,"label-set similarity 1.16, 16 candidates; graph 0/0"
+114d92d0,Stream_Pause,main\unk_1937A0.c,0.180,callcount-vote,votes=2 next=0 round=1; graph 2/4
+114dc9e0,Cse_RequestSe,main\cse.c,0.671,caller-of:CseSe_Request,margin=0.67 round=0; graph 1/1
+114dcc30,Cse_Init,main\cse.c,0.705,window:main\cse.c,cluster 114dc9e0-114de2f0; graph 0/1
+114dcd00,CseSe_Init,main\cse.c,0.691,layout:main\cse.c,between Cse_RequestSe and CseSe_Request; graph 0/1
+114dce00,CseSe_SetTable,main\cse.c,0.478,layout:main\cse.c,between Cse_RequestSe and CseSe_Request; graph 0/0
+114dcf20,CseSe_KeyOn,main\cse.c,0.447,layout:main\cse.c,between Cse_RequestSe and CseSe_Request; graph 1/2
+114dcf90,Cse_KeyOnProgram,main\cse_cmd.c,0.107,callcount-vote,votes=2 next=0 round=0; graph 1/3
+114dd030,Sound_PlaySeAtPos,main\sound.c,0.114,callcount-vote,votes=2 next=0 round=0; graph 0/0
+114ddac0,CseBankFile_GetNumSplits,main\cse_bankfile.c,0.460,constants,shared=3 weight=25.6 margin=0.17; graph 1/2
+114ddb30,CseBankFile_GetTone,main\cse_bankfile.c,0.435,constants+layout,weight=42.0 margin=0.19; graph 1/2
+114de2f0,CseSe_Request,main\cse.c,0.556,constants,shared=13 weight=36.4 margin=0.15; graph 1/2
+114dea50,Font_SetPos,sub_main\unk_2E3940.c,0.109,callcount-vote,votes=2 next=0 round=0; graph 4/8
+11501ef0,TownMsg_Send,lobby\unk_7A06D0.c,0.236,callcount-vote,votes=2 next=0 round=0; graph 1/1
+11552ee0,EffYamatsukami31_Create,game\unk_6E0650.c,0.675,constants,shared=1 weight=8.5 margin=0.42; graph 0/0
+1156f040,Net_ConnectPppStep,sub_main\unk_308BC0.c,0.323,caseset:sub_main\unk_308BC0.c,"label-set similarity 0.86, 1 candidates; graph 0/0"
+11587d30,NetMode_OpenIcon,lobby\unk_7CF8B0.c,0.644,callee-of:LobbyLogin_LeaveWithMsg13,margin=0.50 round=0; graph 1/1
+11587f10,NetMode_SetCursorX,lobby\unk_7CFF40.c,0.522,layout-edge:lobby\unk_7CFF40.c,before matched block; graph 1/1
+11588210,NetMode_DrawScreen,lobby\unk_7CFF40.c,0.428,layout:lobby\unk_7CFF40.c,between NetMode_SetCursorX and NetBox_StepOpen; graph 1/3
+11588870,NetBox_StepOpen,lobby\unk_7CFF40.c,0.588,constants,shared=7 weight=20.5 margin=0.32; graph 1/1
+11588940,LobbyLogin_DrawIcon,lobby\unk_7CFF40.c,0.447,constants+layout,weight=22.6 margin=0.21; graph 0/1
+11588c30,NetMode_DrawPart,lobby\unk_7CFF40.c,0.436,constants+layout,weight=101.0 margin=0.13; graph 5/5
+115896c0,LobbyMsg_DrawPart,lobby\unk_7D2C80.c,0.588,constants,shared=4 weight=13.5 margin=0.33; graph 2/2
+11589810,LobbyMsg_Format,lobby\unk_7D2C80.c,0.256,callcount-vote,votes=2 next=0 round=0; graph 2/2
+11589a20,LobbyMsg_Measure,lobby\unk_7D2C80.c,0.302,callcount-vote,votes=2 next=0 round=0; graph 1/1
+11589b40,LobbyMsg_CenterX,lobby\unk_7D2C80.c,0.339,caller-intersection,"4 matched callers, 1 candidates; graph 5/5"
+11589d80,LobbyMsg_DrawPage,lobby\unk_7D2C80.c,0.641,constants,shared=17 weight=43.4 margin=0.47; graph 3/4
+11589fe0,LobbyMsg_DrawPage4,lobby\unk_7D2C80.c,0.570,layout:lobby\unk_7D2C80.c,between LobbyMsg_DrawPage and LobbyMsg_DrawList; graph 1/1
+1158a090,LobbyMsg_PartCount,lobby\unk_7D2C80.c,0.053,callcount-vote,votes=2 next=0 round=0; graph 1/2
+1158a1b0,LobbyMsg_DrawList,lobby\unk_7D2C80.c,0.349,constants+layout,weight=31.8 margin=0.15; graph 2/2
+1158ad60,LobbyLogin_LeaveWithMsg13,lobby\unk_7D44B0.c,0.506,constants,shared=5 weight=17.8 margin=0.14; graph 1/1
+115903a0,Chat_OpenKbd,sub_main\unk_356380.c,0.576,constants,shared=2 weight=10.9 margin=0.30; graph 0/0
+11597650,NetDev_ClearList,sub_main\unk_308BC0.c,0.644,window:sub_main\unk_308BC0.c,cluster 1159eb80-1159f1d0; graph 0/0
+1159eb80,net_resolve,sub_main\unk_308BC0.c,0.527,constants,shared=4 weight=15.7 margin=0.14; graph 0/0
+1159f1b0,Net_InitSockets,sub_main\unk_308BC0.c,0.423,layout:sub_main\unk_308BC0.c,between net_resolve and NetDev_CallRpc; graph 0/0
+1159f1d0,NetDev_CallRpc,sub_main\unk_308BC0.c,0.582,layout-edge:sub_main\unk_308BC0.c,after matched block; graph 0/0
+115a64b0,NetMsg_Update,sub_main\unk_308BC0.c,0.571,window:sub_main\unk_308BC0.c,cluster 1159eb80-1159f1d0; graph 0/0
+115ac0b0,Net_LockrockObfuscate,sub_main\unk_308BC0.c,0.683,window:sub_main\unk_308BC0.c,cluster 11597650-115a64b0; graph 0/0
+115ade89,CseBankFile_IsHead,main\cse_bankfile.c,0.345,caller-intersection,"2 matched callers, 1 candidates; graph 2/2"
+115cce40,ArmorLevel_Defense,sub_main\unk_3B4C80.c,0.114,callcount-vote,votes=2 next=0 round=0; graph 1/1

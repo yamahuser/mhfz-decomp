@@ -1,0 +1,11 @@
+# never commit Capcom code/data
+decomp/
+*.c
+*.gpr
+*.rep/
+*.dll
+*.exe
+*.pac
+*.bin
+__pycache__/
+*.log
