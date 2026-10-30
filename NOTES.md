@@ -1018,3 +1018,21 @@ export_all.sh exported em001-em176 (169 monster zips in mhfz-engine/out, ~24 GB)
 
 ## 2026-10-23 - static exports
 em118 and em171 exported as static (0-clip) .glb after export_monster learned to skip an empty clip list. All em001-em176 models now have a .glb.
+
+## Wii U build has FULL SYMBOLS (2026-10-29)
+- Source: Wii U MHF-Z update `0005000e1014da00\code\mhfo-wiiu.rpx` (16.7 MB; final Wii U build, ~Aug 2018, so slightly older than PC ZZ). First byte is 0x7E not 0x7F (dump quirk); `tools\rpxinfo.py` tolerates it.
+- `python -I tools\rpxinfo.py <rpx> wiiu\z_update` -> `wiiu\z_update\symbols.tsv` (addr/size/type/name) + decompressed sections in `wiiu\z_update\sections\` (.text @0x02000020 25.7 MB, .rodata @0x10000000, .data @0x10414a00, .rela.* for xrefs).
+- **102,008 FUNC symbols, 75,518 unique names**, ~47k C++-mangled (GHS/EDG cfront style, e.g. `encountBoss__FPC4_PLW` = encountBoss(const _PLW*); `__ct__`/`__dt__` = ctor/dtor; `Q2_6eft...` = nested eft::). Structs named in signatures: _PLW (player work), _EMW (monster work), _flc_motion, CHS_CAM_DATA, ...
+- Families: em* 12.6k (per-monster AI, e.g. em121_MotionSet), shell* 8k, Effect* 6.2k (eft:: classes), lb* (lobby/UI), quest*, cam*, pl* (plAAN* = hunter motion loader: plCreateMotionFromAANSub_SRT, plCreateFcurveDataAAN_Hermite -> AAN motion format, relevant to the hunter-animation thread).
+- Wii U is PPC big-endian (Espresso), compiler GHS: different inlining from PC MSVC, so expect many-to-one. Ghidra: load as PowerPC:BE:32:default (Gekko/Broadway variant fine) at the section addrs, apply symbols.tsv.
+- DO NOT publish anything from wiiu\ (binary, symbols, sections) to the public mhfz-decomp repo.
+- NEXT: cross-match Wii U -> PC to transfer real names onto mhfo-hd.dll: anchors = unique string xrefs (.rela.text gives exact string refs on Wii U; PC via capstone/Ghidra refs), then call-graph propagation like tools\mh2match.py. Output analysis\wiiu_names.jsonl, merge as top tier above "mh2" in tools\merge_names.py.
+
+### Wii U -> PC name transfer (2026-10-29)
+- `python -I tools\wiiumatch.py` (features cached in wiiu\features.pkl; delete it after changing feature code) -> analysis\wiiu_matches.csv (pc_addr, wiiu_addr, raw symbol, demangled name, method, score, sizes) + analysis\wiiu_names.jsonl. `tools\merge_names.py` now puts tier "wiiu" on top. Pre-merge copy: wiiu\merged_names.before_wiiu.csv.
+- Features: strings + float constants (PC: base relocs, x87/SSE operand decode; Wii U: .rela.text on lfs/lfd), call graph (PC: E8 scan for order + decomp headers; Wii U: decoded `bl`, intra-module calls have NO relocs), function-pointer tables (data relocs; slot order).
+- Pipeline: 463 string/float anchors -> propagation (neighbour votes, call-ORDER alignment between known callees, pointer-table slot alignment, equal-size layout gaps), size ratio wiiu/pc ~1.10. Converges in ~55 rounds.
+- Result: **9,382 / 48,284 PC functions** (anchor 463, graph 7,839, layout 1,080). `tools\wiiuaudit.py [n] [seed]`: source-order consistency 92% graph / 95% anchor / 100% layout; samples agree with good agent names (CPobj_man::Set_object_binary, em110_main).
+- Confirmations: 10a98010 Pl_vital_calc_force_type, 10a983f0 Pl_vital_calc_item_force_type, 10a984f0 Pl_max_vital_calc (HP = "vital"); 10bbe150 weapon_model_effect_trans; 10b81e30 weapon_trans; 100018b0 mhf_CreateMotionSetFromAAN.
+- **Pass 2 (2026-10-30): 16,640 matched** (anchor 463, graph 8,161, layout 1,263, gapdp 6,753). Added: global-variable mapping (matched pairs with identical distinct-global ref order vote PC global -> Wii U global; mapped globals then act like strings) and `align_gap` (DP alignment of unequal gaps by size + call consistency). Audit's callee-agreement metric (fraction of a pair's known callees that map into the partner's callees): anchor 67% (= baseline for correct pairs), graph 68%, gapdp 60%, layout 57%. Spot check: gapdp ~75% right (D3DX ctors / inlined helpers are typical misses), so gapdp goes to analysis\wiiu_names_weak.jsonl, merged as tier "wiiu-weak" BELOW agent names. Previous matcher: wiiu\wiiumatch.v1.py.
+- Ideas to raise coverage: unequal-gap layout alignment (DP on sizes), integer-immediate features, vtable-based class grouping, data-symbol (OBJECT/.data) xrefs; many unmatched PC funcs are probably PC-only (D3D9/Win32/launcher) or MSVC-inlined.

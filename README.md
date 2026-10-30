@@ -18,6 +18,7 @@ apply the names in this repo to your own copy of the game (see below).
 | `analysis/merged_names.csv` | Final function-name map: `addr,name,confidence,tier,subsystem,purpose` (~47k functions) |
 | `analysis/ghidra_names.csv` | First-pass names from the small-model naming run |
 | `analysis/mh2_matches.csv`, `mh2_names.jsonl` | Functions matched against the Monster Hunter 2 (Dos) PS2 decompilation |
+| `analysis/wiiu_matches.csv`, `wiiu_names.jsonl`, `wiiu_names_weak.jsonl` | Real Capcom function names carried over from the unstripped Wii U build (`tools/wiiumatch.py`): ~9.9k strong + ~6.8k size-aligned (weaker) matches; tiers `wiiu` / `wiiu-weak` in `merged_names.csv` |
 | `analysis/em130_fx_map.json` | Varusaburosu (em130) motion -> effect mapping |
 | `ghidra/scripts/` | Ghidra headless scripts: export functions, decompile in shards, apply names |
 | `tools/` | Python tools: archive/JKR unpacking, model/pac readers, disassembly helpers, MH2 matcher, name merging |

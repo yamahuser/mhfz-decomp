@@ -1,6 +1,7 @@
 """Merge all function-name sources into analysis\\merged_names.csv.
 
-Priority (best first): analysis\\claude_names\\*.jsonl (agent-reviewed) > analysis\\reviews.jsonl (Codex) >
+Priority (best first): analysis\\wiiu_names.jsonl (real symbols, tools\\wiiumatch.py) > analysis\\mh2_names.jsonl >
+analysis\\claude_names\\*.jsonl (agent-reviewed) > analysis\\reviews.jsonl (Codex) >
 analysis\\names.jsonl (small models). Within a source the highest-confidence record per addr wins.
 usage: python -I tools\\merge_names.py        -> prints coverage stats, writes analysis\\merged_names.csv
 """
@@ -36,8 +37,10 @@ def load(paths, tier, last_wins=False):
 
 def main():
     srcs = [
+        load([os.path.join(A, 'wiiu_names.jsonl')], 'wiiu'),  # real names from the unstripped Wii U build (tools\wiiumatch.py)
         load([os.path.join(A, 'mh2_names.jsonl')], 'mh2'),   # names carried over from the MH2 (PS2) decomp by tools\mh2match.py
         load(sorted(glob.glob(os.path.join(A, 'claude_names', '*.jsonl'))), 'agent', last_wins=True),
+        load([os.path.join(A, 'wiiu_names_weak.jsonl')], 'wiiu-weak'),  # size-aligned Wii U names, ~75% right
         load([os.path.join(A, 'reviews.jsonl')], 'codex'),
         load([os.path.join(A, 'names.jsonl')], 'small'),
     ]
@@ -54,7 +57,7 @@ def main():
     tiers = collections.Counter(v[4] for v in merged.values())
     print(f'{len(merged)} functions named -> {out}')
     print('by tier:', dict(tiers))
-    for tname, s in zip(('mh2', 'agent', 'codex', 'small'), srcs):
+    for tname, s in zip(('wiiu', 'mh2', 'agent', 'wiiu-weak', 'codex', 'small'), srcs):
         print(f'  {tname}: {len(s)} records, {sum(1 for v in s.values() if v[0] >= 0.7)} with conf>=0.7')
 
 

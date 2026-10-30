@@ -9,3 +9,6 @@ decomp/
 *.bin
 __pycache__/
 *.log
+wiiu/
+*.pkl
+*.rpx
